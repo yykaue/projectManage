@@ -5,7 +5,7 @@
     "desc": "便于管理苹果大数据前台页面的展示,监控苹果生产,销售等过程中的风险"
   },
   "schedule": {
-    "status": "进行中",
+    "status": "开发中",
     "actualStartTime": "2017-09-25",
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
