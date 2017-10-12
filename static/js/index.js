@@ -482,8 +482,7 @@ function chart2(data) {
         }
       },
       formatter: function(params){
-        return params[0].seriesName+'<br/>'
-                +params[0].name+'：'+params[0].value+'人'+'<br/>'
+        return params[0].name+'：'+params[0].value+'人'+'<br/>'
                 +'参与人：'+params[0].data.value1
       },
       padding:10

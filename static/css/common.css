@@ -240,7 +240,7 @@ body {
 .down {
     position: absolute;
     right: 2px;
-    bottom: 10px;
+    top: 13px;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -256,9 +256,6 @@ body {
     background: url(../img/down.png) no-repeat;
     background-size: 100% 100%;
     transition: 0.3s;
-}
-.down.active {
-    bottom: 10px;
 }
 .down.active i{
     transform:rotate(180deg);
