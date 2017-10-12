@@ -62,7 +62,7 @@ function renderData (res,jsonUrl)  {
                   html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " href="'+res.base.url+'" target="_blank">'+res.base.name+'<span class="num">('+num+'人)</span></a>'
                 }
               }else {
-                html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-wrapper-url">';
+                html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " >'+res.base.name+'<span class="num">('+num+'人)</span></a>';
               }
             if (res.schedule.status == '开发中'){
               html += '<span class="status  developing col-lg-2 col-md-2  col-sm-2  col-xs-3 "><i></i>'+res.schedule.status+'</span>'
