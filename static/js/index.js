@@ -1,6 +1,7 @@
 $(function () {
 
   dataArr =[];
+  dataLen = 0,dataLen2 = 0;
   flag = false;
   getData();
 
@@ -9,37 +10,38 @@ $(function () {
 function getData() {
   $.ajax({
     type:'get',
-    // async:false,
     url:'./configInfo/config.json?t='+(new Date()).valueOf(),
     success:function (res) {
+      dataLen =res.data.length;
       res.data.sort(function (a, b) {
         return parseInt(b.actualStartTime.replace(/\//g, ''), 10) - parseInt(a.actualStartTime.replace(/\//g, ''), 10);//降序
       });
       res.data.forEach(function(item,index){
-        getData1(item.url)
+        getData1(item.url,dataLen)
       });
-    },
-    complete:function(){
-      dataArr.sort(function(a,b){
-        return a.resources.affiliate.length - b.resources.affiliate.length;
-      })
-      getEchartData(dataArr);
-      statusClick(dataArr);
-      getPersonData(dataArr)
+
     }
   });
 
 }
 // 获取个项目json数据
-function getData1 (item) {
+function getData1 (item,dataLen) {
   $.ajax({
     type:'get',
-    async:false,
     url:'./configInfo/'+item+'?t='+(new Date()).valueOf(),
     success:function (res) {
+      dataLen2++;
       var jsonUrl= item;
       renderData (res,jsonUrl);
       dataArr.push(res);
+      if( dataLen = dataLen2) {
+        dataArr.sort(function(a,b){
+          return a.resources.affiliate.length - b.resources.affiliate.length;
+        })
+        getEchartData(dataArr);
+        statusClick(dataArr);
+        getPersonData(dataArr)
+      }
     }
   });
 
@@ -49,7 +51,7 @@ function renderData (res,jsonUrl)  {
 	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
   var oneMonth = monthDiff(res.schedule.actualStartTime);
   var num = res.resources.affiliate.length + 1;
-  var html = '<li>'
+  var html = '<li class="list-li">'
               +'<span class="down " onclick="clickArrow(this)"> <i></i></span>'
               +'<a class="icon iconfont icon-github1 edit-json" href="https://github.com/jusfoun-FE/projectManage/edit/master/configInfo/'+jsonUrl+'" title="编辑" target="_blank"> <i></i></a>';
               if(res.schedule.delay){

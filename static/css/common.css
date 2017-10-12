@@ -48,7 +48,7 @@ body {
 .list-wrapper {
     overflow: hidden;
 }
-.list>li {
+.list-li {
     position: relative;
     padding: 0 30px;
     margin-bottom: 20px;
@@ -58,10 +58,10 @@ body {
     background: #fff;
     transition: 0.3s;
 }
-.list>li:last-child {
+.list-li:last-child {
     margin-bottom: 0;
 }
-.list>li:hover {
+.list-li:hover {
     /*background: #fafafa;*/
     box-shadow: 0 0 20px 1px rgba(60,60,60,.3);
     transition: 0.3s;
