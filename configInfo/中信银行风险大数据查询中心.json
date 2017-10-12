@@ -1,0 +1,32 @@
+﻿{
+  "base": {
+    "name": "中信银行风险大数据查询中心",
+    "url": "http://192.168.1.6:8124/CITICBank/index.html",
+    "desc": "暂无"
+  },
+  "schedule": {
+    "status": "已提测",
+    "actualStartTime": "2017-08-22",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-08-20",
+    "estimatedEndTime": "2017-09-20",
+    "process": 90,
+    "delay": false,
+    "technology":["vue","echarts","sass","moment"]
+  },
+  "resources": {
+    "demander": "金融",
+    "type":"独立纵队",
+    "manager":"周英",
+    "charge": "任新杰",
+    "affiliate": ["冯彦文","王斌颜","颜廷光","吕颖萍"]
+  },
+  "bug": {
+    "total": 100,
+    "resolved": 100,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": "账户名(qd3),密码(222222)"
+  }
+}
