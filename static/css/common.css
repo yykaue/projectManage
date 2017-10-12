@@ -71,10 +71,10 @@ body {
 }
 .title-wrapper {
     position:relative;
-    padding-top: 10px;
+    padding: 5px 0;
     margin: 0;
     line-height: 40px;
-    border-bottom: 1px solid #e5e5e5;
+
 }
 .title-txt {
     position: relative;
@@ -121,19 +121,19 @@ body {
 }
 .delay {
     position: absolute;
-    top: -31px;
-    right: -31px;
+    top: -25px;
+    right: -25px;
     width: 0;
     height: 0;
-    border: 30px solid  transparent;
-    border-bottom: 30px solid  #ff0000;
+    border: 24px solid  transparent;
+    border-bottom: 24px solid  #ff0000;
     background-size: 100% 100%;
     transform:rotate(45deg);
 }
 .delay-txt {
     position: absolute;
-    top: 3px;
-    right: 0;
+    top: 1px;
+    right: -2px;
     font-size: 12px;
     color: #fff;
     transform:rotate(45deg) scale(0.8);
@@ -143,6 +143,7 @@ body {
     float: right;
     height: 42px;
     padding: 0;
+    margin-right: 40px;
     border-radius: 5px;
     line-height: 42px;
     font-size: 14px;
@@ -170,10 +171,8 @@ body {
     background: #bdbdbd;
 }
 .details-wrapper {
-    height: 90px;
+    height: 0;
     position: relative;
-    padding: 0 10px;
-    margin: 15px 0;
     overflow: hidden;
     transition: 0.3s;
 }
@@ -181,8 +180,9 @@ body {
     height: auto;
 }
 .details {
+    padding: 15px 0;
+    border-top: 1px solid #e5e5e5;
     transition: 0.3s;
-
 }
 .details.active {
     transition: 0.3s;
@@ -239,29 +239,38 @@ body {
 }
 .down {
     position: absolute;
-    right: -5px;
-    bottom: 0;
+    right: 2px;
+    bottom: 10px;
     width: 30px;
     height: 30px;
     text-align: center;
     cursor: pointer;
     z-index: 100;
+    transition: 0.3s;
 }
 .down i {
     display: inline-block;
     width: 15px;
     height: 16px;
-    margin-top: 7px;
+    margin-top: 6px;
     background: url(../img/down.png) no-repeat;
     background-size: 100% 100%;
     transition: 0.3s;
 }
 .down.active {
-    bottom: 0;
+    bottom: 10px;
 }
 .down.active i{
     transform:rotate(180deg);
     transition: 0.3s;
+}
+.edit-json {
+  position: absolute;
+  top: 13px;
+  right: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 100;
 }
 .hide-li {
     display: none;
@@ -287,6 +296,7 @@ body {
     background: #fff;
 }
 .chart-block {
+    position: relative;
     padding: 0;
     border-bottom: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
@@ -308,6 +318,35 @@ body {
     height: 250px;
     padding: 0;
 }
+.chart2 {
+  height: 500px;
+}
+.staff-input {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  z-index: 100;
+}
+.staff-input span {
+  margin-left: 10px;
+}
+.develop-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 20px;
+  background: #3dbc75;
+}
+.measured-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 20px;
+  background: #66ccff;
+}
+
 
 
 .container>.navbar-header {

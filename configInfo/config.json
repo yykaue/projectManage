@@ -114,6 +114,11 @@
       "name":"汉鼎官网",
       "url":"汉鼎官网.json",
       "actualStartTime": "2017/10/10"
+    },
+    {
+      "name":"征金在线",
+      "url":"征金在线.json",
+      "actualStartTime": "2017/06/01"
     }
   ]
 }

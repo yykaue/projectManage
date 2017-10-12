@@ -28,3 +28,18 @@ a:hover { text-decoration: underline; }
 
 h1{margin: 0;}
 .row{margin: 0;}
+
+
+/*定义滚动条高宽及背景*/
+::-webkit-scrollbar
+{
+  width: 9px;
+  background-color: transparent;
+}
+
+/*定义滑块*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: rgb(202, 69, 73);/*rgba(102, 109, 137,0.6)*/
+}

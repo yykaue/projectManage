@@ -4,13 +4,6 @@ $(function () {
   flag = false;
   getData();
 
-  $('html').niceScroll({
-    autohidemode:false,
-    horizrailenabled:false,
-    cursorborderradius:'10px',
-    background:'transparent'
-  });
-
 });
 // 获取最外层json数据
 function getData() {
@@ -44,36 +37,33 @@ function getData1 (item) {
     async:false,
     url:'./configInfo/'+item+'?t='+(new Date()).valueOf(),
     success:function (res) {
-      renderData (res);
+      var jsonUrl= item;
+      renderData (res,jsonUrl);
       dataArr.push(res);
     }
   });
 
 }
 //拼接html代码
-function renderData (res) {
+function renderData (res,jsonUrl)  {
 	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
   var oneMonth = monthDiff(res.schedule.actualStartTime);
   var num = res.resources.affiliate.length + 1;
-  var html = '<li>';
+  var html = '<li>'
+              +'<span class="down " onclick="clickArrow(this)"> <i></i></span>'
+              +'<a class="icon iconfont icon-github1 edit-json" href="https://github.com/jusfoun-FE/projectManage/edit/master/configInfo/'+jsonUrl+'" title="编辑" target="_blank"> <i></i></a>';
               if(res.schedule.delay){
                 html += '<span class="delay"></span><i class="delay-txt">延期</i>'
               }
               if(res.base.url){
                 if(res.base.mobile){
-                  html+='<div class="title-wrapper clearfix row"><a class="title-wrapper-url" href="phoneView.html?url='+res.base.url+'" target="_blank">';
-                }else{
-                   html+='<div class="title-wrapper clearfix row"><a class="title-wrapper-url" href="'+res.base.url+'" target="_blank">';
+                  html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="phoneView.html?url='+res.base.url+'" target="_blank"><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
+                }else {
+                  html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " href="'+res.base.url+'" target="_blank">'+res.base.name+'<span class="num">('+num+'人)</span></a>'
                 }
               }else {
                 html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-wrapper-url">';
               }
-            if(res.base.mobile){
-              html +='<a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" ><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
-            }else {
-              html +='<a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 ">'+res.base.name+'<span class="num">('+num+'人)</span></a>'
-            }
-
             if (res.schedule.status == '开发中'){
               html += '<span class="status  developing col-lg-2 col-md-2  col-sm-2  col-xs-3 "><i></i>'+res.schedule.status+'</span>'
             }else if (res.schedule.status == '已提测') {
@@ -86,28 +76,23 @@ function renderData (res) {
               html += '<span class="status  frozen col-lg-2 col-md-2  col-sm-2  col-xs-3"><i></i>'+res.schedule.status+'</span>'
             }
             if((res.schedule.process + 20) < process && (process < 100)){
-              html +='<div class="process-wrapper  col-lg-5 col-md-5 col-sm-4 col-xs-12 ">'
+              html +='<div class="process-wrapper  col-lg-4 col-md-4 col-sm-4 col-xs-12 ">'
                 +'<div class="row">'
-                +'<span class="process-txt fl col-lg-4 col-md-4 col-sm-6 col-xs-4">进度：'+res.schedule.process+'%</span>'
-                +'<div class="process fl col-lg-8 col-md-8 col-sm-6 col-xs-8"><span class="abnormal" style="width:'+res.schedule.process+'%;"></span></div>'
+                +'<span class="process-txt fl col-lg-5 col-md-5 col-sm-6 col-xs-4">进度：'+res.schedule.process+'%</span>'
+                +'<div class="process fl col-lg-7 col-md-7 col-sm-6 col-xs-8"><span class="abnormal" style="width:'+res.schedule.process+'%;"></span></div>'
                 +'</div>'
                 +'</div>';
             }else {
-              html +='<div class="process-wrapper  col-lg-5 col-md-5  col-sm-4 col-xs-12">'
+              html +='<div class="process-wrapper  col-lg-4 col-md-4  col-sm-4 col-xs-12">'
                 +'<div class="row">'
-                +'<span class="process-txt fl col-lg-4 col-md-4 col-sm-6 col-xs-4">进度：'+res.schedule.process+'%</span>'
-                +'<div class="process fl col-lg-8 col-md-8 col-sm-6 col-xs-8"><span class="normal" style="width:'+res.schedule.process+'%;"></span></div>'
+                +'<span class="process-txt fl col-lg-5 col-md-5 col-sm-6 col-xs-4">进度：'+res.schedule.process+'%</span>'
+                +'<div class="process fl col-lg-7 col-md-7 col-sm-6 col-xs-8"><span class="normal" style="width:'+res.schedule.process+'%;"></span></div>'
                 +'</div>'
                 +'</div>';
             }
           html +='</a></div>';
-                  if(oneMonth){
-                    html +='<div class="details-wrapper clearfix active">'
-                            +'<span class="down fr active" onclick="clickArrow(this)"> <i></i></span>'
-                  }else {
                     html +='<div class="details-wrapper clearfix">'
-                      +'<span class="down fr" onclick="clickArrow(this)"> <i></i></span>'
-                  }
+
             html +='<ul class="details clearfix row">'
                     +'<li class="col-lg-5 col-md-5  col-sm-5 col-xs-12">'
                       +'<ul class="row details-ul">'
@@ -165,9 +150,9 @@ function renderData (res) {
                         'element-ui':'icon-eleme',
                         'element':'icon-eleme',
                         'elementui':'icon-eleme',
-                        'mint-ui':'',
-                        'mintui':'',
-                        'mint':'',
+                        'mint-ui':'icon-yezi',
+                        'mintui':'icon-yezi',
+                        'mint':'icon-yezi',
                         'threejs':'icon-ThreeJs',
                         'd3':'icon-D',
                         'echart':'icon-echart',
@@ -189,7 +174,10 @@ function renderData (res) {
                         'vuejs':'icon-vuejs',
                         'react.js':'icon-react',
                         'reactjs':'icon-react',
-                        'react':'icon-react'
+                        'react':'icon-react',
+                        'cms':'icon-cms',
+                        'CMS':'icon-cms',
+                        'svg':'icon-svg1160608easyiconnet'
                       };
                         if(res.schedule.technology) {
                           res.schedule.technology.forEach(function (item) {
@@ -265,12 +253,11 @@ function renderData (res) {
 function clickArrow (e) {
     if ($(e).hasClass('active')){
       $(e).removeClass('active');
-      $(e).parent().height(90);
+      $(e).siblings('.details-wrapper').height(0);
     }else {
-      $('.details-wrapper').height(90);
       $('.down').removeClass('active');
-      var height = $(e).siblings('.details').height();
-      $(e).parent().height(height);
+      var height = $(e).siblings('.details-wrapper').children('.details').height()+ 30;
+      $(e).siblings('.details-wrapper').height(height);
       $(e).addClass('active');
     }
 }
@@ -337,14 +324,15 @@ function getEchartData(data){
       develop += 1;
       developArr.push(item.base.name)
       staffInput.name.push(item.base.name);
-      // staffInput.seriesData.push(item.resources.affiliate.length + 1);
-      staffInput.seriesData.push({name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+      staffInput.seriesData.push({status:'开发中',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
     }else if(item.schedule.status == '已提测') {
       measured += 1;
       measuredArr.push(item.base.name)
       bugData.name.push(item.base.name);
       bugData.resolved.push(item.bug.resolved);
       bugData.unsolved.push(item.bug.unsolved);
+      staffInput.name.push(item.base.name);
+      staffInput.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
     }else if(item.schedule.status == '已完成') {
       finished += 1;
       finishedArr.push(item.base.name)
@@ -460,6 +448,26 @@ function chart1(data){
 
 // 人员投入-柱状图
 function chart2(data) {
+  var i=0,j=0;
+  data.seriesData.forEach(function(item){
+   if(item.status == '开发中'){
+     i += item.value;
+     item.itemStyle={
+       normal:{
+         color:'#3dbc75'
+       }
+     }
+   }else if(item.status == '已提测'){
+     j += item.value;
+     item.itemStyle={
+       normal:{
+         color:'#66ccff'
+       }
+     }
+   }
+  })
+  $('.develop-num').text(i)
+  $('.measured-num').text(j)
   var myChart = echarts.init(document.getElementById('chart2'));
   myChart.setOption({
     tooltip : {
@@ -479,10 +487,10 @@ function chart2(data) {
       padding:10
     },
     grid: {
-      left: 10,
+      left: 20,
       right: 20,
       bottom: 30,
-      top: 30,
+      top: 50,
       containLabel: true
     },
     xAxis :
@@ -551,12 +559,6 @@ function chart2(data) {
             },
             textStyle:{
             }
-          }
-        },
-        itemStyle: {
-          normal: {
-            color:'#ff9900',
-            opacity:0.8
           }
         },
         data:data.seriesData
@@ -898,7 +900,6 @@ function getPersonData (data) {
       })
     }
   })
-  console.log(person1)
   var len = person1.length,len1 = person.length;
   //参与项目人员分组
   for(var i = 0; i < len;i++){
