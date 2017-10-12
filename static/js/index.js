@@ -258,6 +258,7 @@ function clickArrow (e) {
       $(e).siblings('.details-wrapper').height(0);
     }else {
       $('.down').removeClass('active');
+      $('.details-wrapper').height(0);
       var height = $(e).siblings('.details-wrapper').children('.details').height()+ 30;
       $(e).siblings('.details-wrapper').height(height);
       $(e).addClass('active');
