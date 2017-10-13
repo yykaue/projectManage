@@ -31,7 +31,7 @@ function getData1 (item,dataLen,index) {
     type:'get',
     url:'./configInfo/'+item+'?t='+(new Date()).valueOf(),
     success:function (res) {
-      ++dataLen2;
+      dataLen2++;
       var jsonUrl= item;
       renderData (res,jsonUrl);
       dataArr.push(res);
@@ -49,7 +49,7 @@ function renderData (res,jsonUrl)  {
 	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
   var oneMonth = monthDiff(res.schedule.actualStartTime);
   var num = res.resources.affiliate.length + 1;
-  var html = '<li class="list-li" style="margin-top: 20px;">'
+  var html = '<li class="list-li" style="margin-top: 15px;">'
               +'<span class="down " onclick="clickArrow(this)"> <i></i></span>'
               +'<a class="icon iconfont icon-github1 edit-json" href="https://github.com/jusfoun-FE/projectManage/edit/master/configInfo/'+jsonUrl+'" title="编辑" target="_blank"> <i></i></a>';
               if(res.schedule.delay){
@@ -377,7 +377,7 @@ function getEchartData(data){
     }
   })
   staffInput.seriesData.sort(function(a,b){
-    return a.resources.affiliate.length - b.resources.affiliate.length;
+    return a.value - b.value;
   })
   chart1(projectEchartData.seriesData)
   chart2(staffInput)
