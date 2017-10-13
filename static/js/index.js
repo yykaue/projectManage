@@ -48,8 +48,13 @@ function getData1 (item,dataLen,index) {
 function renderData (res,jsonUrl)  {
 	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
   var oneMonth = monthDiff(res.schedule.actualStartTime);
-  var num = res.resources.affiliate.length + 1;
-  var html = '<li class="list-li" style="margin-top: 15px;">'
+  var num=0;
+  if(res.resources.affiliate.length === 1 && !res.resources.affiliate[0]){
+    num = 1
+  }else {
+    num=res.resources.affiliate.length + 1;
+  }
+  var html = '<li class="list-li">'
               +'<span class="down " onclick="clickArrow(this)"> <i></i></span>'
               +'<a class="icon iconfont icon-github1 edit-json" href="https://github.com/jusfoun-FE/projectManage/edit/master/configInfo/'+jsonUrl+'" title="编辑" target="_blank"> <i></i></a>';
               if(res.schedule.delay){
@@ -325,7 +330,11 @@ function getEchartData(data){
       develop += 1;
       developArr.push(item.base.name)
       staffInput.name.push(item.base.name);
-      staffInput.seriesData.push({status:'开发中',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+      if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
+        staffInput.seriesData.push({status:'开发中',name:item.base.name,value: 1,value1:item.resources.charge})
+      }else{
+        staffInput.seriesData.push({status:'开发中',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+      }
     }else if(item.schedule.status == '已提测') {
       measured += 1;
       measuredArr.push(item.base.name)
@@ -333,7 +342,13 @@ function getEchartData(data){
       bugData.resolved.push(item.bug.resolved);
       bugData.unsolved.push(item.bug.unsolved);
       staffInput.name.push(item.base.name);
-      staffInput.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+      if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
+        staffInput.seriesData.push({status:'已提测',name:item.base.name,value: 1,value1:item.resources.charge})
+      }else{
+        staffInput.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+      }
+      // staffInput.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+
     }else if(item.schedule.status == '已完成') {
       finished += 1;
       finishedArr.push(item.base.name)
@@ -452,6 +467,11 @@ function chart1(data){
 
 // 人员投入-柱状图
 function chart2(data) {
+  console.log(data)
+  var yData = [];
+  data.seriesData.forEach(function(item){
+    yData.push(item.name)
+  })
   var i=0,j=0;
   data.seriesData.forEach(function(item){
    if(item.status == '开发中'){
@@ -522,7 +542,7 @@ function chart2(data) {
     yAxis :
       {
         type : 'category',
-        data : data.name,
+        data : yData,
         axisTick: {
           show:false
         },
