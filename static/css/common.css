@@ -269,6 +269,9 @@ body {
   cursor: pointer;
   z-index: 100;
 }
+.edit-json:hover {
+    text-decoration: none;
+}
 .hide-li {
     display: none;
     transition: 0.3s;
@@ -356,6 +359,9 @@ body {
     float: left;
     margin: 0  2px 0 2px;
     font-size: 14px;
+}
+.tech-icon:hover {
+    text-decoration: none;
 }
 .jquery-icon {
     background: url(../img/jquery.png) no-repeat;
@@ -480,6 +486,12 @@ body {
     .title-txt {
         min-width: 210px;
         font-size: 14px;
+    }
+    a.title-txt:visited,
+    a.title-txt:link,
+    a.title-txt:active {
+        color: #333;
+        text-decoration: none;
     }
     .title-txt i {
         top: 1px;

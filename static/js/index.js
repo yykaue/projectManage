@@ -34,7 +34,7 @@ function getData1 (item,dataLen) {
       var jsonUrl= item;
       renderData (res,jsonUrl);
       dataArr.push(res);
-      if( dataLen = dataLen2) {
+      if( dataLen == dataLen2) {
         dataArr.sort(function(a,b){
           return a.resources.affiliate.length - b.resources.affiliate.length;
         })
@@ -59,7 +59,7 @@ function renderData (res,jsonUrl)  {
               }
               if(res.base.url){
                 if(res.base.mobile){
-                  html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="phoneView.html?url='+res.base.url+'" target="_blank"><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
+                  html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="http:192.168.1.6:8124/phoneView.html?url='+res.base.url+'" target="_blank"><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
                 }else {
                   html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " href="'+res.base.url+'" target="_blank">'+res.base.name+'<span class="num">('+num+'人)</span></a>'
                 }
