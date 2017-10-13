@@ -17,7 +17,7 @@ function getData() {
         return parseInt(b.actualStartTime.replace(/\//g, ''), 10) - parseInt(a.actualStartTime.replace(/\//g, ''), 10);//降序
       });
       res.data.forEach(function(item,index){
-        getData1(item.url,dataLen)
+        getData1(item.url,dataLen,index)
       });
 
     }
@@ -25,19 +25,17 @@ function getData() {
 
 }
 // 获取个项目json数据
-function getData1 (item,dataLen) {
+function getData1 (item,dataLen,index) {
+
   $.ajax({
     type:'get',
     url:'./configInfo/'+item+'?t='+(new Date()).valueOf(),
     success:function (res) {
-      dataLen2++;
+      ++dataLen2;
       var jsonUrl= item;
       renderData (res,jsonUrl);
       dataArr.push(res);
       if( dataLen == dataLen2) {
-        dataArr.sort(function(a,b){
-          return a.resources.affiliate.length - b.resources.affiliate.length;
-        })
         getEchartData(dataArr);
         statusClick(dataArr);
         getPersonData(dataArr)
@@ -297,7 +295,9 @@ function monthDiff(time) {
 function getEchartData(data){
   var develop=0,measured=0,finished=0,frozen=0,suspend=0;
   var developArr=[],measuredArr=[],finishedArr=[],frozenArr=[],suspendArr=[];
-
+  data.sort(function(a,b){
+    return a.resources.affiliate.length - b.resources.affiliate.length;
+  })
   // 开发中项目投入人员-柱图
   var staffInput={
     name:[],
