@@ -1,7 +1,7 @@
 ﻿{
   "base": {
     "name": "丽江旅游大数据平台",
-    "url": "http://192.168.1.6:8124/ljTourismBigData/html/index.html",
+    "url": "https://192.168.1.6:8125/ljTourismBigData/html/index.html",
     "desc": "丽江旅游大数据平台风险预警平台APP",
     "mobile":true
   },
