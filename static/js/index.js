@@ -49,7 +49,7 @@ function renderData (res,jsonUrl)  {
 	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
   var oneMonth = monthDiff(res.schedule.actualStartTime);
   var num = res.resources.affiliate.length + 1;
-  var html = '<li class="list-li">'
+  var html = '<li class="list-li" style="margin-top: 20px;">'
               +'<span class="down " onclick="clickArrow(this)"> <i></i></span>'
               +'<a class="icon iconfont icon-github1 edit-json" href="https://github.com/jusfoun-FE/projectManage/edit/master/configInfo/'+jsonUrl+'" title="编辑" target="_blank"> <i></i></a>';
               if(res.schedule.delay){
@@ -57,7 +57,7 @@ function renderData (res,jsonUrl)  {
               }
               if(res.base.url){
                 if(res.base.mobile){
-                  html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="http:192.168.1.6:8124/phoneView.html?url='+res.base.url+'" target="_blank"><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
+                  html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url='+res.base.url+'" target="_blank"><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
                 }else {
                   html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " href="'+res.base.url+'" target="_blank">'+res.base.name+'<span class="num">('+num+'人)</span></a>'
                 }
@@ -295,9 +295,7 @@ function monthDiff(time) {
 function getEchartData(data){
   var develop=0,measured=0,finished=0,frozen=0,suspend=0;
   var developArr=[],measuredArr=[],finishedArr=[],frozenArr=[],suspendArr=[];
-  data.sort(function(a,b){
-    return a.resources.affiliate.length - b.resources.affiliate.length;
-  })
+
   // 开发中项目投入人员-柱图
   var staffInput={
     name:[],
@@ -377,6 +375,9 @@ function getEchartData(data){
     if(!item.value){
       projectType.seriesData.splice(i,1);
     }
+  })
+  staffInput.seriesData.sort(function(a,b){
+    return a.resources.affiliate.length - b.resources.affiliate.length;
   })
   chart1(projectEchartData.seriesData)
   chart2(staffInput)

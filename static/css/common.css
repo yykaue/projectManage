@@ -51,7 +51,6 @@ body {
 .list-li {
     position: relative;
     padding: 0 30px;
-    margin-bottom: 20px;
     border: 1px solid #e6e6e6;
     /*border-top: 2px solid #eb322c;*/
     /*border-top: 2px solid #EB323C;*/
@@ -410,7 +409,6 @@ body {
 /* 筛选条件 */
 .condition-wrapper {
     padding: 10px 0;
-    margin-bottom: 20px;
     border: 1px solid #e6e6e6;
     background: #fff;
 
