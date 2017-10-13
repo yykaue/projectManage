@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "工商大数据",
-    "url": "http:192.168.1.6:8124/gongshangBigData/login.html",
+    "url": "http://192.168.1.6:8124/gongshangBigData/login.html",
     "desc": "工商大数据的静态页面",
     "mobile":false
   },
