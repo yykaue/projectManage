@@ -12,8 +12,8 @@ body {
     z-index: 100;
 }
 .header {
-    height: 75px;
-    padding: 15px 0!important;
+    height: 70px;
+    padding: 12px 0!important;
 }
 .header h1 {
     height: 45px;
@@ -24,6 +24,21 @@ body {
     font-size: 22px;
     color: #fff;
     line-height: 45px;
+}
+.header-wrapper .navbar-nav > li > a {
+    color: #A3A7B9;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.header-wrapper .navbar-nav > li > a:hover,
+.header-wrapper .navbar-nav > li > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+}
+.header-wrapper .navbar-nav > .active > a,
+.header-wrapper .navbar-nav > .active > a:hover,
+.header-wrapper .navbar-nav > .active > a:focus {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #EB5055;
 }
 .footer-wrapper {
     position: relative;
@@ -40,8 +55,6 @@ body {
     color: #fff;
 }
 .wrapper {
-    /*width: 1200px;*/
-    /*margin: 0 auto;*/
     min-height: calc(100% - 115px);
     padding: 20px 0 20px 0;
 }
@@ -326,6 +339,7 @@ body {
   top: 60px;
   right: 20px;
   z-index: 100;
+  font-size: 14px;
 }
 .staff-input span {
   margin-left: 10px;

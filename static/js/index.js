@@ -61,14 +61,28 @@ function renderData (res,jsonUrl)  {
                 html += '<span class="delay"></span><i class="delay-txt">延期</i>'
               }
               if(res.base.url){
-                if(res.base.mobile){
-                  html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url='+res.base.url+'" target="_blank"><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
+                if(res.base.mobile) {
+                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url=' + res.base.url + '" target="_blank"><span class="fl">' + res.base.name + '<span class="num">(' + num + '人)</span></span>'
                 }else {
-                  html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " href="'+res.base.url+'" target="_blank">'+res.base.name+'<span class="num">('+num+'人)</span></a>'
+                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="' + res.base.url + '" target="_blank"><span class="fl">' + res.base.name + '<span class="num">(' + num + '人)</span></span>'
                 }
               }else {
-                html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " >'+res.base.name+'<span class="num">('+num+'人)</span></a>';
+                html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " >'+res.base.name+'<span class="num">('+num+'人)</span>';
               }
+              if(res.base.mobile) {
+                html +='<i></i></a>'
+              }else {
+                html +='</a>'
+              }
+  // if(res.base.url){
+  //   if(res.base.mobile){
+  //     html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url='+res.base.url+'" target="_blank"><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
+  //   }else {
+  //     html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " href="'+res.base.url+'" target="_blank">'+res.base.name+'<span class="num">('+num+'人)</span></a>'
+  //   }
+  // }else {
+  //   html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " >'+res.base.name+'<span class="num">('+num+'人)</span></a>';
+  // }
             if (res.schedule.status == '开发中'){
               html += '<span class="status  developing col-lg-2 col-md-2  col-sm-2  col-xs-3 "><i></i>'+res.schedule.status+'</span>'
             }else if (res.schedule.status == '已提测') {
@@ -467,7 +481,6 @@ function chart1(data){
 
 // 人员投入-柱状图
 function chart2(data) {
-  console.log(data)
   var yData = [];
   data.seriesData.forEach(function(item){
     yData.push(item.name)
@@ -985,12 +998,7 @@ function chart5(data){
       }
     },
     backgroundColor:'#fff',
-    // legend: {
-    //   show:false,
-    //   orient: 'vertical',
-    //   x: 'left',
-    //   data:['内资','外资','港澳台']
-    // },
+
     color:['#6ac73b','#5ea8fd','#f85812','#ff9900','#8e72fa'],
     series: [
       {
