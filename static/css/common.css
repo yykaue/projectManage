@@ -516,7 +516,7 @@ body {
         font-size: 13px;
     }
     .process-wrapper {
-        padding: 0 0 0 10px;
+        padding: 0 46px 0 10px;
         border-top: 1px solid #e5e5e5;
     }
     .details-wrapper {
@@ -529,6 +529,7 @@ body {
         font-size: 16px;
     }
     .status{
+        margin-right: 0;
         font-size: 12px;
     }
     .tech-icon {
@@ -546,5 +547,9 @@ body {
     }
     .condition-list {
         margin-left: 82px;
+    }
+    .down,
+    .edit-json {
+        top: 55px;
     }
 }

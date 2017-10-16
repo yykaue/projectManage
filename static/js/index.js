@@ -74,15 +74,6 @@ function renderData (res,jsonUrl)  {
               }else {
                 html +='</a>'
               }
-  // if(res.base.url){
-  //   if(res.base.mobile){
-  //     html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url='+res.base.url+'" target="_blank"><span class="fl">'+res.base.name+'<span class="num">('+num+'人)</span></span><i></i></a>'
-  //   }else {
-  //     html +='<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " href="'+res.base.url+'" target="_blank">'+res.base.name+'<span class="num">('+num+'人)</span></a>'
-  //   }
-  // }else {
-  //   html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " >'+res.base.name+'<span class="num">('+num+'人)</span></a>';
-  // }
             if (res.schedule.status == '开发中'){
               html += '<span class="status  developing col-lg-2 col-md-2  col-sm-2  col-xs-3 "><i></i>'+res.schedule.status+'</span>'
             }else if (res.schedule.status == '已提测') {
@@ -95,7 +86,7 @@ function renderData (res,jsonUrl)  {
               html += '<span class="status  frozen col-lg-2 col-md-2  col-sm-2  col-xs-3"><i></i>'+res.schedule.status+'</span>'
             }
             if((res.schedule.process + 20) < process && (process < 100)){
-              html +='<div class="process-wrapper  col-lg-4 col-md-4 col-sm-4 col-xs-12 ">'
+              html +='<div class="process-wrapper  col-lg-4 col-md-4 col-sm-4 col-xs-10 ">'
                 +'<div class="row">'
                 +'<span class="process-txt fl col-lg-5 col-md-5 col-sm-6 col-xs-4">进度：'+res.schedule.process+'%</span>'
                 +'<div class="process fl col-lg-7 col-md-7 col-sm-6 col-xs-8"><span class="abnormal" style="width:'+res.schedule.process+'%;"></span></div>'
