@@ -6,9 +6,9 @@
     "mobile":false
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已完成",
     "actualStartTime": "2017-10-10",
-    "actualEndTime": "未定",
+    "actualEndTime": "2017-10-13",
     "estimatedStartTime": "2017-10-10",
     "estimatedEndTime": "2017-10-13",
     "process": 100,
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": ""
+    "remark": "将汉鼎的官网移植到JEECMS"
   }
 }
