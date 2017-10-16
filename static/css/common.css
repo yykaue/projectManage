@@ -13,12 +13,12 @@ body {
     z-index: 100;
 }
 .header {
-    height: 70px;
+    min-height: 50px;
     padding: 12px 0!important;
 }
-.header h1 {
+.header .navbar-brand {
     height: 45px;
-    padding-left: 55px;
+    padding: 0 0 0 55px;
     margin: 0;
     background: url(../img/logo.png) no-repeat scroll 0 0 transparent;
     background-size: 45px;
@@ -27,6 +27,20 @@ body {
     color: #fff;
     line-height: 45px;
     opacity: 0.7;
+}
+.navbar-toggle {
+    margin-top: 2px;
+    border: 0;
+}
+.navbar-header .navbar-toggle .icon-bar {
+    border-radius: 0;
+    display: block;
+    height: 4px;
+    width: 30px;
+    background-color: #EB5055;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
 }
 .header-wrapper .navbar-nav > li > a {
     padding: 10px 15px;
@@ -465,6 +479,27 @@ body {
     color: #777;
 }
 
+/* 模态框chart*/
+.chart-force {
+    width: 900px;
+    height: 750px;
+    padding: 0;
+}
+.icon-relation {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    opacity:0.8;
+}
+.icon-relation:hover{
+    opacity:1;
+    color: #555;
+}
+
+
 @media (min-width: 1200px) {
     .chart-block {
         border-bottom: 1px solid #e5e5e5;
@@ -494,11 +529,15 @@ body {
         border: none;
         background: none;
     }
+
 }
 @media  (max-width:768px) {
     .container>.navbar-header {
         margin-left: 20px;
         font-size: 18px;
+    }
+    .header-small .nav li a {
+        padding: 10px 30px;
     }
     .list>li {
         padding: 0 15px;
@@ -536,7 +575,9 @@ body {
         padding: 0;
     }
     .chart-title {
+        position:relative;
         font-size: 16px;
+
     }
     .status{
         margin-right: 0;
@@ -562,10 +603,8 @@ body {
     .edit-json {
         top: 55px;
     }
+    .icon-relation {
+        display: none;
+    }
 }
-/* 模态框chart*/
-.chart-force {
-    width: 900px;
-    height: 750px;
-    padding: 0;
-}
+

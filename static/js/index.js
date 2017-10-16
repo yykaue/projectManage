@@ -471,9 +471,14 @@ function chart1(data){
 
 // 人员投入-柱状图
 function chart2(data) {
+
   var yData = [];
   data.seriesData.forEach(function(item){
-    yData.push(item.name)
+    yData.push(item.name);
+     if(!item.value1.split(',')[1]){
+       item.value1 = item.value1.split(',')[0]
+     }
+
   })
   var i=0,j=0;
   data.seriesData.forEach(function(item){
@@ -915,16 +920,19 @@ function getPersonData (data) {
   }
   //获取所有参与项目的人员
   data.forEach(function(item, index){
-    if(person1.indexOf(item.resources.charge) === -1){
-      person1.push(item.resources.charge)
+    if(item.schedule.status == '开发中' || item.schedule.status == '已提测'){
+      if(person1.indexOf(item.resources.charge) === -1){
+        person1.push(item.resources.charge)
+      }
+      if(item.resources.affiliate.length > 0 && item.resources.affiliate[0]){
+        item.resources.affiliate.forEach(function(item,index){
+          if(person1.indexOf(item) === -1){
+            person1.push(item)
+          }
+        })
+      }
     }
-    if(item.resources.affiliate.length > 0 && item.resources.affiliate[0]){
-      item.resources.affiliate.forEach(function(item,index){
-        if(person1.indexOf(item) === -1){
-          person1.push(item)
-        }
-      })
-    }
+
   })
   var len = person1.length,len1 = person.length;
   //参与项目人员分组
@@ -973,8 +981,8 @@ function chart5(data){
   myChart.setOption({
     tooltip: {
       trigger: 'item',
+      confine:true,
       formatter: function(params){
-
         if(params.data.value2.length > 0){
           return params.data.name +'：'+ params.data.value+'人'+'<br/>'
             + '已投入('+params.data.value1.length+'人)：'+params.data.value1+'<br/>'
@@ -994,7 +1002,7 @@ function chart5(data){
       {
         name:'人员分配',
         type:'pie',
-        radius:[0,'58%'],
+        radius:[0,'50%'],
         label:{
           normal:{
             formatter:'{b}:{c}人'
@@ -1178,9 +1186,25 @@ function drawChart(data) {
   // ECharts配置参数
   var option = {
     legend: {
+      textStyle:{
+        color: '#555'
+      },
+      bottom: 50,
+      left: 20,
+      orient:'vertical',
       data: teams
     },
-    color:['#6ac73b','#5ea8fd','#f85812','#ff9900','#8e72fa','#00aeff'],
+    title:{
+      text:'项目-人员关系图',
+      left: 'center',
+      top: 15,
+      textStyle:{
+        color: '#555',
+        fontSize: 20
+
+      }
+    },
+    color:['#6ac73b','#ff9900','#339999','#f85812','#8e72fa','#00aeff'],
     series: [{
       name: 'Les Miserables',
       type: 'graph',
@@ -1192,6 +1216,10 @@ function drawChart(data) {
       draggable: true,
       animation: true,
       focusNodeAdjacency: true,
+      left: 30,
+      top: 30,
+      right: 30,
+      bottom: 30,
       label: {
         normal: {
           show: true,
@@ -1201,13 +1229,23 @@ function drawChart(data) {
       force: {
         initLayout: 'force',
         edgeLength: [30, 80],
-        repulsion: 150
+        repulsion: 100
       }
     }]
   };
   // 画图
   var myChart = echarts.init(document.getElementById('chart_force'));
+
   myChart.setOption(option);
+  window.addEventListener("resize", function () {
+    var time = null;
+    clearTimeout(time);
+    time = setTimeout(function () {
+      var width = $('#chart_force').parent().width();
+      $('#chart_force').width(width);
+      myChart.resize()
+    }, 100);
+  });
   // 事件
   myChart.on('legendselectchanged', function (params) {
     var groupList=[
@@ -1240,7 +1278,7 @@ function drawChart(data) {
       }
     });
     showProjects=Array.from(selectedProjects); 
-    var person=opt.series[0].data.slice(0,40);
+    var person=opt.series[0].data.slice(0,persons.length);
     var newData=person.concat(showProjects);
     opt.series[0].data=newData;
 
