@@ -11,7 +11,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-04",
     "estimatedEndTime": "2017-10-25",
-    "process": 60,
+    "process": 70,
     "delay": false,
 	"technology":["Vue","Mint UI"]
   },
@@ -23,8 +23,8 @@
     "affiliate": ["林源","邢玮"]
   },
   "bug": {
-    "total": 15,
-    "resolved": 15,
+    "total": 0,
+    "resolved": 0,
     "unsolved": 0
   },
   "others": {
