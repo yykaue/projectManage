@@ -86,7 +86,7 @@ function renderData (res,jsonUrl)  {
               html += '<span class="status  frozen col-lg-2 col-md-2  col-sm-2  col-xs-3"><i></i>'+res.schedule.status+'</span>'
             }
             if((res.schedule.process + 20) < process && (process < 100)){
-              html +='<div class="process-wrapper  col-lg-4 col-md-4 col-sm-4 col-xs-10 ">'
+              html +='<div class="process-wrapper  col-lg-4 col-md-4 col-sm-4 col-xs-12 ">'
                 +'<div class="row">'
                 +'<span class="process-txt fl col-lg-5 col-md-5 col-sm-6 col-xs-4">进度：'+res.schedule.process+'%</span>'
                 +'<div class="process fl col-lg-7 col-md-7 col-sm-6 col-xs-8"><span class="abnormal" style="width:'+res.schedule.process+'%;"></span></div>'
