@@ -20,9 +20,9 @@
     "type":"",
     "manager":"",
     "charge": "汝银娟",
-    "affiliate": ["郭惠敏","周志国"]
+    "affiliate": []
   },
-  "bug": {
+  "bug": { 
     "total": 0,
     "resolved": 0,
     "unsolved": 0
