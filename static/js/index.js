@@ -4,7 +4,6 @@ $(function () {
   dataLen = 0,dataLen2 = 0;
   flag = false;
   getData();
-
 });
 // 获取最外层json数据
 function getData() {
@@ -38,7 +37,7 @@ function getData1 (item,dataLen,index) {
       if( dataLen == dataLen2) {
         getEchartData(dataArr);
         statusClick(dataArr);
-        getPersonData(dataArr)
+        getPersonData(dataArr);
       }
     }
   });
@@ -1007,5 +1006,253 @@ function chart5(data){
   })
   echartsResize(myChart)
 }
+
+function drawChart(data) {
+  var teams = ['公共组', '一组', '二组', '三组', '四组'];
+  var persons = [{
+    name: "闫磊",
+    team: 0
+  }, {
+    name: "彭庆凯",
+    team: 0
+  }, {
+    name: "胡杰",
+    team: 0
+  }, {
+    name: "周志国",
+    team: 0
+  }, {
+    name: "郭惠敏",
+    team: 0
+  }, {
+    name: "汝银娟",
+    team: 0
+  }, {
+    name: "李猛",
+    team: 0
+  }, {
+    name: "张涛",
+    team: 0
+  }, {
+    name: "杜万福",
+    team: 1
+  }, {
+    name: "吉亚峰",
+    team: 1
+  }, {
+    name: "魏阁",
+    team: 1
+  }, {
+    name: "王帅",
+    team: 1
+  }, {
+    name: "商业庆",
+    team: 1
+  }, {
+    name: "任传真",
+    team: 1
+  }, {
+    name: "杨羽珂",
+    team: 1
+  }, {
+    name: "杨杰",
+    team: 1
+  }, {
+    name: "邢玮",
+    team: 1
+  }, {
+    name: "林源",
+    team: 1
+  }, {
+    name: "冯彦文",
+    team: 3
+  }, {
+    name: "王斌彦",
+    team: 3
+  }, {
+    name: "杨勇冠",
+    team: 3
+  }, {
+    name: "王杰",
+    team: 3
+  }, {
+    name: "杨微",
+    team: 3
+  }, {
+    name: "郑梦丽",
+    team: 3
+  }, {
+    name: "柳杨",
+    team: 2
+  }, {
+    name: "陈胜",
+    team: 2
+  }, {
+    name: "邵金东",
+    team: 2
+  }, {
+    name: "褚甜甜",
+    team: 2
+  }, {
+    name: "郭志敏",
+    team: 2
+  }, {
+    name: "温兴月",
+    team: 2
+  }, {
+    name: "李鹏飞",
+    team: 2
+  }, {
+    name: "魏彬",
+    team: 2
+  }, {
+    name: "任新杰",
+    team: 4
+  }, {
+    name: "冯红阳",
+    team: 4
+  }, {
+    name: "韩凯波",
+    team: 4
+  }, {
+    name: "李妮",
+    team: 4
+  }, {
+    name: "颜庭光",
+    team: 4
+  }, {
+    name: "吕颖萍",
+    team: 4
+  }, {
+    name: "徐媛媛",
+    team: 4
+  }];
+  var projects = [];
+  data.forEach(function (value, index) {
+    if (value.schedule.status == '已提测' || value.schedule.status == '开发中') {
+      var obj = {
+        persons: []
+      };
+      obj.name = value.base.name;
+      obj.persons = value.resources.affiliate;
+      obj.persons.push(value.resources.charge);
+      projects.push(obj);
+    }
+  });
+  // 封装一些配置参数
+  var datas = persons.map(p => {
+    return {
+      name: p.name,
+      symbolSize: 10,
+      category: p.team
+    }
+  });
+  datas.push(...projects.map((p, i) => {
+    return {
+      name: p.name,
+      symbolSize: 20 + p.persons.length * 5,
+      category: teams.length
+    }
+  }));
+  var links = [];
+  projects.forEach(pro => {
+    links.push(...pro.persons.map(per => {
+      return {
+        source: pro.name,
+        target: per,
+        value: 200
+      }
+    }))
+  });
+  var categories = teams.map(team => {
+    return {
+      name: team
+    }
+  });
+  categories.push(...projects.map(p => {
+    return {
+      name: p.name
+    }
+  }));
+
+  // ECharts配置参数
+  var option = {
+    legend: {
+      data: teams
+    },
+    color:['#6ac73b','#5ea8fd','#f85812','#ff9900','#8e72fa','#00aeff'],
+    series: [{
+      name: 'Les Miserables',
+      type: 'graph',
+      layout: 'force',
+      data: datas,
+      links: links,
+      categories: categories,
+      roam: true,
+      draggable: true,
+      animation: true,
+      focusNodeAdjacency: true,
+      label: {
+        normal: {
+          show: true,
+          position: 'right'
+        }
+      },
+      force: {
+        initLayout: 'force',
+        edgeLength: [30, 80],
+        repulsion: 150
+      }
+    }]
+  };
+  // 画图
+  var myChart = echarts.init(document.getElementById('chart_force'));
+  myChart.setOption(option);
+  // 事件
+  myChart.on('legendselectchanged', function (params) {
+    var groupList=[
+      ['李猛','郭惠敏','汝银娟','胡杰','彭庆凯','闫磊','张涛','周志国'],
+      ['王帅','邢玮','杜万福','吉亚峰','林源','任传真','商业庆','魏阁','杨杰','杨羽珂'],
+      ['魏彬','陈胜','褚甜甜','郭志敏','李鹏飞','柳杨','邵金东','温兴月'],
+      ['杨勇冠','王杰','杨微','冯彦文','王斌彦','郑梦丽'],
+      ['任新杰','韩凯波','冯红阳','李妮','吕颖萍','徐媛媛','颜庭光']
+    ];
+    var allProjects=datas.slice(persons.length);
+    var selectedProjects=new Set();
+    var showProjects=[];
+
+    var opt = myChart.getOption();
+
+    opt.legend[0].data.forEach(function(value,index){
+      if (params.selected[value]) {
+        var mapGroup=new Set();
+        var g=groupList[index];
+        opt.series[0].links.forEach(function(value,index){
+          if(g.includes(value.target)){
+            mapGroup.add(value.source);
+          }
+        });
+        allProjects.forEach(function(value,index){
+          if(mapGroup.has(value.name)){
+            selectedProjects.add(value);
+          }
+        });
+      }
+    });
+    showProjects=Array.from(selectedProjects); 
+    var person=opt.series[0].data.slice(0,40);
+    var newData=person.concat(showProjects);
+    opt.series[0].data=newData;
+
+    myChart.setOption(opt);
+  });
+  myChart.setOption(option);
+
+}
+
+$('#force-modal').on('click',function(){
+  $('#myModal').modal();
+  drawChart(dataArr);
+})
 
 

@@ -470,6 +470,9 @@ body {
         border-bottom: 1px solid #e5e5e5;
         border-right: none;
     }
+    .modal-lg {
+        width: 900px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     .no-right-border {
@@ -559,4 +562,10 @@ body {
     .edit-json {
         top: 55px;
     }
+}
+/* 模态框chart*/
+.chart-force {
+    width: 900px;
+    height: 750px;
+    padding: 0;
 }

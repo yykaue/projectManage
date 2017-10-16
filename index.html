@@ -49,6 +49,10 @@
 				<div class="chart-wrapper col-lg-4 col-lg-push-8 col-md-12 col-sm-12">
 					<div class="row chart-big-wrapper">
 						<div class="chart-block col-lg-12 col-md-6">
+							<p class="chart-title">人员项目详情</p>
+							<button type="button" class="btn btn-primary" id="force-modal">人员项目详情</button>
+						</div>
+						<div class="chart-block col-lg-12 col-md-6">
 							<p class="chart-title">人员分配情况</p>
 							<div class="chart" id="chart5"></div>
 						</div>
@@ -113,6 +117,14 @@
 					<p class="col-lg-6 col-md-6 col-sm-6 sol-xs-12">Copyright 2017 by Jusfoun.com. All Right Reserved</p>
 				</div>
 
+			</div>
+		</div>
+		<!-- Large modal -->
+		<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="chart-force" id="chart_force"></div>
+				</div>
 			</div>
 		</div>
 	<script src="static/js/lib/jquery.min.js"></script>
