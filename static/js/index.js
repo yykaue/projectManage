@@ -4,7 +4,6 @@ $(function () {
   dataLen = 0,dataLen2 = 0;
   flag = false;
   getData();
-
 });
 // 获取最外层json数据
 function getData() {
@@ -39,7 +38,6 @@ function getData1 (item,dataLen,index) {
         getEchartData(dataArr);
         statusClick(dataArr);
         getPersonData(dataArr);
-        drawChart(dataArr);
       }
     }
   });
@@ -1157,7 +1155,7 @@ function drawChart(data) {
     return {
       name: p.name,
       symbolSize: 20 + p.persons.length * 5,
-      category: teams.length + i
+      category: teams.length + 1
     }
   }));
   var links = [];
@@ -1186,6 +1184,7 @@ function drawChart(data) {
     legend: {
       data: teams
     },
+    color:['#6ac73b','#5ea8fd','#f85812','#ff9900','#8e72fa','red','red'],
     series: [{
       name: 'Les Miserables',
       type: 'graph',
@@ -1215,31 +1214,49 @@ function drawChart(data) {
   myChart.setOption(option);
   // 事件
   myChart.on('legendselectchanged', function (params) {
-    var name = params.name;
-    if (name == '公共组') {
-      var opt = myChart.getOption();
-      myChart.setOption(opt);
-    }
-    if (name == '一组') {
-      var opt = myChart.getOption();
-      myChart.setOption(opt);
-    }
-    if (name == '二组') {
-      var opt = myChart.getOption();
-      myChart.setOption(opt);
-    }
-    if (name == '三组') {
-      var opt = myChart.getOption();
-      myChart.setOption(opt);
-    }
-    if (name == '四组') {
-      var opt = myChart.getOption();
-      myChart.setOption(opt);
-    }
-    console.log(name);
+    var groupList=[
+      ['李猛','郭惠敏','汝银娟','胡杰','彭庆凯','闫磊','张涛','周志国'],
+      ['王帅','邢玮','杜万福','吉亚峰','林源','任传真','商业庆','魏阁','杨杰','杨羽珂'],
+      ['魏彬','陈胜','褚甜甜','郭志敏','李鹏飞','柳杨','邵金东','温兴月'],
+      ['杨勇冠','王杰','杨微','冯彦文','王斌彦','郑梦丽'],
+      ['任新杰','韩凯波','冯红阳','李妮','吕颖萍','徐媛媛','颜庭光']
+    ];
+    var allProjects=datas.slice(persons.length);
+    var selectedProjects=new Set();
+    var showProjects=[];
+
+    var opt = myChart.getOption();
+
+    opt.legend[0].data.forEach(function(value,index){
+      if (params.selected[value]) {
+        var mapGroup=new Set();
+        var g=groupList[index];
+        opt.series[0].links.forEach(function(value,index){
+          if(g.includes(value.target)){
+            mapGroup.add(value.source);
+          }
+        });
+        allProjects.forEach(function(value,index){
+          if(mapGroup.has(value.name)){
+            selectedProjects.add(value);
+          }
+        });
+      }
+    });
+    showProjects=Array.from(selectedProjects); 
+    var person=opt.series[0].data.slice(0,40);
+    var newData=person.concat(showProjects);
+    opt.series[0].data=newData;
+
+    myChart.setOption(opt);
   });
   myChart.setOption(option);
 
 }
+
+$('#force-modal').on('click',function(){
+  $('#myModal').modal();
+  drawChart(dataArr);
+})
 
 
