@@ -7,10 +7,10 @@
   "schedule": {
     "status": "开发中",
     "actualStartTime": "2017-09-30",
-    "actualEndTime": "未定",
+    "actualEndTime": "2017-10-18",
     "estimatedStartTime": "2017-09-30",
     "estimatedEndTime": "",
-    "process": 30,                    
+    "process": 90,                    
     "delay": false,
     "technology":["jQuery"]
   },
@@ -29,4 +29,4 @@
   "others": {
     "remark": ""
   }
-}
+} 
