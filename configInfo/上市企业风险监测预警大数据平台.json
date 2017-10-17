@@ -1,0 +1,32 @@
+﻿{
+  "base": {
+    "name": "上市企业风险监测预警大数据平台",
+    "url": "",
+    "desc": "暂无"
+  },
+  "schedule": {
+    "status": "开发中",
+    "actualStartTime": "2017-10-17",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-10-17",
+    "estimatedEndTime": "2017-10-30",
+    "process": 10,
+    "delay": false,
+    "technology":[]
+  },
+  "resources": {
+    "demander": "金融",
+    "type":"独立纵队",
+    "manager":"周英",
+    "charge": "任新杰",
+    "affiliate": ["颜庭光","吕颖萍"]
+  },
+  "bug": {
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": ""
+  }
+}
