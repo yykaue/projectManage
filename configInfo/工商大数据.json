@@ -8,9 +8,9 @@
   "schedule": {
     "status": "开发中",
     "actualStartTime": "2017-10-10",
-    "actualEndTime": "2017-10-17",
+    "actualEndTime": "未定",
     "estimatedStartTime": "2017-10-10",
-    "estimatedEndTime": "未定",
+    "estimatedEndTime": "2017-10-17",
     "process": 90,
     "delay": false,
     "technology":["Media Query"]
