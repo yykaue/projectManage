@@ -6,12 +6,12 @@
     "mobile":false
   },
   "schedule": {
-    "status": "已完成",
+    "status": "开发中",
     "actualStartTime": "2017-10-10",
-    "actualEndTime": "2017-10-12",
+    "actualEndTime": "2017-10-17",
     "estimatedStartTime": "2017-10-10",
-    "estimatedEndTime": "2017-10-11",
-    "process": 100,
+    "estimatedEndTime": "未定",
+    "process": 90,
     "delay": false,
     "technology":["Media Query"]
   },
