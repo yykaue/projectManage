@@ -11,7 +11,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-15",
     "estimatedEndTime": "2017-10-15",
-    "process": 80,
+    "process": 100, 
     "delay": false,
     "technology":["jQuery","rem"]
   },
@@ -20,7 +20,7 @@
     "type":"合资公司",
     "manager":"张国良",
     "charge": "褚甜甜",
-    "affiliate": ["李妮"]
+    "affiliate": [""]
   },
   "bug": {
     "total": 0,
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "已优化部分，部分色值已和项目经理确认不做修改.新增需求还在讨论中"
+    "remark": "10.18日给客户演示，目前前端进度已完成，远程配合后端联调"
   }
 }
