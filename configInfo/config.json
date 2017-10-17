@@ -129,6 +129,16 @@
       "name":"智城大数据",
       "url":"智城大数据.json",
       "actualStartTime": "2017/05/10"
+    },
+    {
+      "name":"征金在线",
+      "url":"征金在线.json",
+      "actualStartTime": "2017/10/17"
+    },
+    {
+      "name":"上市企业风险监测预警大数据平台",
+      "url":"上市企业风险监测预警大数据平台.json",
+      "actualStartTime": "2017/10/17"
     }
   ]
 }
