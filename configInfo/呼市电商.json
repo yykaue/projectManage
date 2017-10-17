@@ -20,7 +20,7 @@
     "type":"合资公司",
     "manager":"张书兵",
     "charge": "褚甜甜",
-    "affiliate": ["温兴月","张涛","周志国"]
+    "affiliate": [""]
   },
   "bug": {
     "total": 146,
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "暂无"
+    "remark": "等待招标"
   }
 }
