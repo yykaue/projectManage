@@ -12,7 +12,7 @@
     "estimatedEndTime": "",
     "process": 10,
     "delay": false,
-    "technology":["vue","echarts","sass","moment"]
+    "technology":[]
   },
   "resources": {
     "demander": "金融",
