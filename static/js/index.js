@@ -310,6 +310,14 @@ function getEchartData(data){
     name:[],
     seriesData:[]
   };
+  var staffInput1={
+    name:[],
+    seriesData:[]
+  };
+  var staffInputData={
+    name:[],
+    seriesData:[]
+  }
   // 已提测项目bug堆积图
   var bugData={
     name:[],
@@ -345,11 +353,11 @@ function getEchartData(data){
       bugData.name.push(item.base.name);
       bugData.resolved.push(item.bug.resolved);
       bugData.unsolved.push(item.bug.unsolved);
-      staffInput.name.push(item.base.name);
+      staffInput1.name.push(item.base.name);
       if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
-        staffInput.seriesData.push({status:'已提测',name:item.base.name,value: 1,value1:item.resources.charge})
+        staffInput1.seriesData.push({status:'已提测',name:item.base.name,value: 1,value1:item.resources.charge})
       }else{
-        staffInput.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+        staffInput1.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
       }
       // staffInput.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
 
@@ -398,8 +406,13 @@ function getEchartData(data){
   staffInput.seriesData.sort(function(a,b){
     return a.value - b.value;
   })
+  staffInput1.seriesData.sort(function(a,b){
+    return a.value - b.value;
+  })
+  staffInputData.name = staffInput1.name.concat(staffInput.name)
+  staffInputData.seriesData = staffInput1.seriesData.concat(staffInput.seriesData)
   chart1(projectEchartData.seriesData)
-  chart2(staffInput)
+  chart2(staffInputData)
   chart3 (bugData)
   chart4(projectType.seriesData)
 }
