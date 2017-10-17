@@ -13,7 +13,7 @@
     "estimatedEndTime": "2017-10-15",
     "process": 100, 
     "delay": false,
-    "technology":["jQuery","rem"]
+    "technology":["jQuery","sass"]
   },
   "resources": {
     "demander": "",
