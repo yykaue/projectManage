@@ -11,7 +11,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-02",
     "estimatedEndTime": "2017-10",
-    "process": 90,
+    "process": 95,
     "delay": false,
     "technology":["layer弹层","水印效果"]
   },
@@ -20,12 +20,12 @@
     "type":"总部平台",
     "manager":"马国杰",
     "charge": "柳杨",
-    "affiliate": ["汝银娟","邵金东"]
+    "affiliate": []
   },
   "bug": {
-    "total": 22,
-    "resolved": 22,
-    "unsolved": 0
+    "total": 44,
+    "resolved": 37,
+    "unsolved": 7
   },
   "others": {
     "remark": "这个是测试地址，只有在公司内网可以进入，正式地址在公安内部网，进不到网页中，账户名(zhidui),密码(123456)"                 
