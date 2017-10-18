@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-05-02", 
     "estimatedEndTime": "2017-11-30",   
-    "process": 80,                      
+    "process": 82,                      
     "delay": false,                     
     "technology":["layui","gulp"]               
   },
@@ -23,9 +23,9 @@
     "affiliate": ["任传真"]       
   },
   "bug": {
-    "total": 59,                     
-    "resolved": 58,                  
-    "unsolved": 1                     
+    "total": 89,                     
+    "resolved": 89,                  
+    "unsolved": 0                     
   },
   "others": {
     "remark": "企业端，政府端，消费端，运维端提测中，决策分析处于开发中"   
