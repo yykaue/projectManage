@@ -24,8 +24,8 @@
   },
   "bug": {
     "total": 44,
-    "resolved": 37,
-    "unsolved": 7
+    "resolved": 44,
+    "unsolved": 0
   },
   "others": {
     "remark": "这个是测试地址，只有在公司内网可以进入，正式地址在公安内部网，进不到网页中，账户名(zhidui),密码(123456)"                 
