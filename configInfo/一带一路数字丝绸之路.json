@@ -10,7 +10,7 @@
     "actualStartTime": "2017-09-18",    
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-18", 
-    "estimatedEndTime": "2017-10-30",   
+    "estimatedEndTime": "2017-12-30",   
     "process": 30,                     
     "delay": true,                      
     "technology":["vue","element-ui"]               
@@ -20,7 +20,7 @@
     "type":"内部研发平台",				            
     "manager":"崔志华",                  
     "charge": "冯彦文",                  
-    "affiliate": ["柳杨","吕颖萍","颜庭光","王斌彦"]       
+    "affiliate": ["杨勇冠","王斌彦"]       
   },
   "bug": {
     "total": 0,                     
