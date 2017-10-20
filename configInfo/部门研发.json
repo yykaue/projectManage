@@ -18,9 +18,9 @@
   "resources": {
     "demander": "",
     "type":"内部研发平台",
-    "manager":"",
+    "manager":"朱润亚",
     "charge": "朱润亚",
-    "affiliate": ["李猛","王帅","魏彬","杨勇冠","任新杰"]
+    "affiliate": ["魏彬","王帅","杨勇冠","任新杰","李猛"]
   },
   "bug": { 
     "total": 0,
