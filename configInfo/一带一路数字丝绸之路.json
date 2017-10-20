@@ -12,7 +12,7 @@
     "estimatedStartTime": "2017-09-18", 
     "estimatedEndTime": "2017-12-30",   
     "process": 30,                     
-    "delay": true,                      
+    "delay": false,                      
     "technology":["vue","element-ui"]               
   },
   "resources": {
