@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "部门内部研发",
+    "url": "https://jusfoun-fe.github.io/",
+    "desc": "",
+    "mobile":false
+  },
+  "schedule": {
+    "status": "开发中",
+    "actualStartTime": "2017-10-09",
+    "actualEndTime": "2017-10-13",
+    "estimatedStartTime": "2017-10-10",
+    "estimatedEndTime": "2017-12-31",
+    "process": 30,
+    "delay": false,
+    "technology":["Echarts","D3","WebGL","react","vue"]
+  },
+  "resources": {
+    "demander": "",
+    "type":"内部研发平台",
+    "manager":"",
+    "charge": "朱润亚",
+    "affiliate": ["李猛","王帅","魏彬","杨勇冠","任新杰"]
+  },
+  "bug": { 
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": "部门内部研发，定期组织部门内部培训；近期研发包括：vue培训、图表配置工具功能完善、WebGL、D3"
+  }
+}
