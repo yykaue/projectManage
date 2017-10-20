@@ -990,6 +990,11 @@ function compare(arr1,arr2){
 
 // 部门人员分配情况
 function chart5(data){
+  var num = 0;
+  data.forEach(function(item){
+    num +=item.value2.length;
+  })
+  $('.uncommitted-num').text(num);
   var myChart = echarts.init(document.getElementById('chart5'));
   myChart.setOption({
     tooltip: {
@@ -1015,7 +1020,8 @@ function chart5(data){
       {
         name:'人员分配',
         type:'pie',
-        radius:[0,'50%'],
+        center:['50%','43%'],
+        radius:[0,'45%'],
         label:{
           normal:{
             formatter:'{b}:{c}人'
