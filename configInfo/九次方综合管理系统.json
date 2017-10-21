@@ -1,6 +1,6 @@
 ﻿{
   "base": {
-    "name": "九次方综合管理系统",             
+    "name": "九次方综合管理系统-新版CRM一期",             
     "url": "http://192.168.1.6:8124/jusfounManagementSystem/html/index/index.html",           
     "desc": "",                          
     "mobile":false                      
@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-30", 
     "estimatedEndTime": "2017-12-30",   
-    "process": 30,
+    "process": 90,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"]              
   },
