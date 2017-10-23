@@ -10,7 +10,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-10-17",
     "estimatedEndTime": "2017-10-30",
-    "process": 10,
+    "process": 30,
     "delay": false,
     "technology":[]
   },
@@ -27,6 +27,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": ""
+    "remark": "现在等待后端提供接口联调"
   }
 }
