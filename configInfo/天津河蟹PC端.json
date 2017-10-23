@@ -3,7 +3,7 @@
     "name": "天津河蟹PC端",            
     "url": "./tianjinCrabPC/index.html",         
     "desc": "河蟹养殖追溯",
-    "mobile":true
+    "mobile":false
   },
   "schedule": {
     "status": "开发中",                  
