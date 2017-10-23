@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-11",
     "estimatedEndTime": "2017-10-30",
-    "process": 60,                      
+    "process": 80,                      
     "delay": false,
     "technology":["vuejs"]	
   },
@@ -28,6 +28,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "暂无"
+    "remark": "该项目的PC端任务紧急，全体人员转到PC端开发，移动端暂停开发"
   }
 }
