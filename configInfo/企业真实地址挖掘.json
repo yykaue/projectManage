@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "企业真实地址挖掘", 
+    "url": "",
+    "desc": "企业真实地址挖掘",               
+    "mobile":false 
+  },
+  "schedule": {
+    "status": "开发中",    
+    "actualStartTime": "2017-10-19", 
+    "actualEndTime": "未定",
+    "estimatedStartTime": "2017-10-19", 
+    "estimatedEndTime": "2017-10-30", 
+    "process": 20,                      
+    "delay": false,                     
+    "technology":["vue","echarts"]            
+  },
+  "resources": {
+    "demander": "九次方大数据",   
+    "type":"独立纵队",				       
+    "manager":"",            
+    "charge": "王帅",        
+    "affiliate": ["汝银娟","冯彦文"]    
+  },
+  "bug": {
+    "total": 0,            
+    "resolved": 0,         
+    "unsolved": 0           
+  },
+  "others": {
+    "remark": "开发进行中"     
+  }
+}
