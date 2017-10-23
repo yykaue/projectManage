@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "天津河蟹PC端",            
+    "url": "./tianjinCrabPC/index.html",         
+    "desc": "河蟹养殖追溯",
+    "mobile":true
+  },
+  "schedule": {
+    "status": "开发中",                  
+    "actualStartTime": "2017-09-25",
+    "actualEndTime": "",      
+    "estimatedStartTime": "2017-09-11",
+    "estimatedEndTime": "2017-10-30",
+    "process": 50,                      
+    "delay": false,
+    "technology":["vuejs"]	
+  },
+  "resources": {
+    "demander": "",
+    "type":"合资公司",
+    "manager":"李静波",                  
+    "charge": "胡杰",                  
+    "affiliate": ["胡杰","郑梦丽","商业庆","李猛","闫磊","杨冠勇"]       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                  
+    "unsolved": 0                     
+  },
+  "others": {
+    "remark": ""
+  }
+}
