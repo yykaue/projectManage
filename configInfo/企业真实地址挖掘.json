@@ -11,7 +11,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-10-19", 
     "estimatedEndTime": "2017-10-30", 
-    "process": 20,                      
+    "process": 30,                      
     "delay": false,                     
     "technology":["vue","echarts"]            
   },
