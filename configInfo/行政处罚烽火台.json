@@ -1,0 +1,34 @@
+﻿{
+  "base": {
+    "name": "行政处罚烽火台",
+    "url": "",
+    "desc": ""
+  },
+  "schedule": {
+    "status": "开发中",
+    "actualStartTime": "2017-10-23",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-10-24",
+    "estimatedEndTime": "",
+    "process": ,
+    "delay": false,
+    "technology":["vue","element-ui","echarts"]
+  },
+  "resources": {
+    "demander": "金融",
+    "type":"",
+    "manager":"",
+    "charge": "张涛",
+    "affiliate": ["张涛"]
+  },
+  "bug": {
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": "开发进行中"
+  }
+}
+
+
