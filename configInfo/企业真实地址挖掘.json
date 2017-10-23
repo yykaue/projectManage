@@ -3,7 +3,8 @@
     "name": "企业真实地址挖掘", 
     "url": "",
     "desc": "企业真实地址挖掘",               
-    "mobile":false 
+    "mobile":false,
+    "scene":true
   },
   "schedule": {
     "status": "开发中",    
