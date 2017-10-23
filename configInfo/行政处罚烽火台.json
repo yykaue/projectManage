@@ -10,7 +10,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-10-24",
     "estimatedEndTime": "",
-    "process": ,
+    "process": 0,
     "delay": false,
     "technology":["vue","element-ui","echarts"]
   },
