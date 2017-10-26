@@ -8,10 +8,10 @@
   "schedule": {
     "status": "已提测",
     "actualStartTime": "2017-09-07",
-    "actualEndTime": "",
+    "actualEndTime": "2017-10-25",
     "estimatedStartTime": "2017-09-04",
     "estimatedEndTime": "2017-10-25",
-    "process": 95,
+    "process": 100,
     "delay": false,
 	"technology":["Vue","Mint UI"]
   },
