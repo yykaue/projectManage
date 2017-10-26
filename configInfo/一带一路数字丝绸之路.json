@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-18", 
     "estimatedEndTime": "2017-12-30",   
-    "process": 30,                     
+    "process": 10,                     
     "delay": false,                      
     "technology":["vue","element-ui"]               
   },
@@ -28,6 +28,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "前端暂停开发，十一之后会重新改版"                  
+    "remark": "以前版本推倒重来,暂定前端11月1日开始"                  
   }
 }
