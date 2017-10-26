@@ -85,6 +85,8 @@ function renderData (res,jsonUrl)  {
               html += '<span class="status  frozen col-lg-2 col-md-2  col-sm-2  col-xs-3"><i></i>'+res.schedule.status+'</span>'
             }else if (res.schedule.status == '暂停开发') {
               html += '<span class="status  frozen col-lg-2 col-md-2  col-sm-2  col-xs-3"><i></i>'+res.schedule.status+'</span>'
+            }else if (res.schedule.status == '即将启动') {
+              html += '<span class="status  about-start col-lg-2 col-md-2  col-sm-2  col-xs-3"><i></i>'+res.schedule.status+'</span>'
             }
             if((res.schedule.process + 20) < process && (process < 100)){
               html +='<div class="process-wrapper  col-lg-4 col-md-4 col-sm-4 col-xs-12 ">'
@@ -304,8 +306,8 @@ function monthDiff(time) {
 }
 // 获取echart所需数据
 function getEchartData(data){
-  var develop=0,measured=0,finished=0,frozen=0,suspend=0;
-  var developArr=[],measuredArr=[],finishedArr=[],frozenArr=[],suspendArr=[];
+  var develop=0,measured=0,finished=0,frozen=0,suspend=0,start=0;
+  var developArr=[],measuredArr=[],finishedArr=[],frozenArr=[],suspendArr=[],startArr=[];
 
   // 开发中项目投入人员-柱图
   var staffInput={
@@ -372,6 +374,9 @@ function getEchartData(data){
     }else if(item.schedule.status == '暂停开发') {
       suspend += 1;
       suspendArr.push(item.base.name)
+    }else if(item.schedule.status == '即将启动') {
+      start += 1;
+      startArr.push(item.base.name)
     }
 
     if(item.resources.type == '合资公司'){
@@ -392,7 +397,8 @@ function getEchartData(data){
       {name:'已提测',value:measured,value1:measuredArr},
       {name:'已完成',value:finished,value1:finishedArr},
       {name:'已冻结',value:frozen,value1:frozenArr},
-      {name:'暂停开发',value:suspend,value1:suspendArr}
+      {name:'暂停开发',value:suspend,value1:suspendArr},
+      {name:'即将启动',value:start,value1:startArr}
     ]
   };
   projectEchartData.seriesData.forEach(function(item,i){
@@ -486,7 +492,7 @@ function chart1(data){
 
 // 人员投入-柱状图
 function chart2(data) {
-
+  $('#chart2').height(data.name.length*24)
   var yData = [];
   data.seriesData.forEach(function(item){
     yData.push(item.name);
@@ -571,8 +577,8 @@ function chart2(data) {
         },
         axisLabel:{
           formatter:function(params){
-            if(params.length > 5) {
-              return params.slice(0,5)+'...'
+            if(params.length > 8) {
+              return params.slice(0,8)+'...'
             }else {
               return params
             }

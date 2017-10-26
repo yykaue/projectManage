@@ -204,6 +204,9 @@ body {
 .frozen i {
     background: #bdbdbd;
 }
+.about-start i {
+    background: #9999FF;
+}
 .details-wrapper {
     height: 0;
     position: relative;
@@ -352,9 +355,9 @@ body {
     height: 250px;
     padding: 0;
 }
-.chart2 {
-  height: 500px;
-}
+/*.chart2 {*/
+  /*height: 550px;*/
+/*}*/
 .staff-input {
   position: absolute;
   top: 60px;
