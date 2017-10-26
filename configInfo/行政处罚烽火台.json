@@ -2,7 +2,9 @@
   "base": {
     "name": "行政处罚烽火台",
     "url": "",
-    "desc": ""
+    "desc": "",               
+    "mobile":false,
+    "scene":true
   },
   "schedule": {
     "status": "开发中",
