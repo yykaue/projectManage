@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "政务信息共享官网",           
+    "url": "",           
+    "desc": "政务信息管理系统",                          
+    "mobile":false                       
+  },
+  "schedule": {
+    "status": "开发中",                  
+    "actualStartTime": "2017-10-24",  
+    "actualEndTime": "",    
+    "estimatedStartTime": "2017-10-24",
+    "estimatedEndTime": "2017-11-17",  
+    "process": 10,                     
+    "delay": false,                   
+    "technology":["css3","jquery"] 
+  },
+  "resources": {
+    "demander": "王苏栋", 
+    "type":"独立纵队",				      
+    "manager":"王苏栋",                
+    "charge": "李猛",                 
+    "affiliate": ["魏阁","柳杨","郭惠敏"]      
+  },
+  "bug": {
+    "total": 0, 
+    "resolved": 0,
+    "unsolved": 0 
+  },
+  "others": {
+    "remark": ""     
+  }
+}
