@@ -12,7 +12,7 @@
     "estimatedEndTime": "2017-10-30",
     "process": 60,
     "delay": false,
-    "technology":[]
+    "technology":["vue"]
   },
   "resources": {
     "demander": "金融",
