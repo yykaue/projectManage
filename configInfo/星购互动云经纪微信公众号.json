@@ -11,7 +11,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-04",
     "estimatedEndTime": "2017-10-25",
-    "process": 95,
+    "process": 100,
     "delay": false,
 	"technology":["Vue","Mint UI"]
   },
