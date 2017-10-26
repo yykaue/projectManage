@@ -4,7 +4,7 @@
     "url": "./xxx/index.html",           //项目url,xxx为项目文件夹名称(必填)
     "desc": "",                           //项目描述
     "mobile":true,                        //是否为移动端显示 true:是，false:否
-    "scene":true                          //是否为小场景项目
+    "scene":true                          //是否为小场景项目 true:是，false:否
   },
   "schedule": {
     "status": "开发中",                  //项目状态(开发中、已提测、已结束、已冻结、暂停开发,即将启动)(必填)
