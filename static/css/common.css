@@ -512,7 +512,15 @@ body {
     font-weight: bold;
     color: #fd674e;
 }
-
+.icon-changjing {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 10px;
+    font-size: 16px;
+}
 
 @media (min-width: 1200px) {
     .chart-block {

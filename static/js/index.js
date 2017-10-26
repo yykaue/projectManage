@@ -9,7 +9,7 @@ $(function () {
 function getData() {
   $.ajax({
     type:'get',
-    url:'./configInfo/config.json?t='+(new Date()).valueOf(),
+    url:'https://jusfoun-fe.github.io/projectManage/configInfo/config.json?t='+(new Date()).valueOf(),
     success:function (res) {
       dataLen =res.data.length;
       res.data.sort(function (a, b) {
@@ -28,7 +28,7 @@ function getData1 (item,dataLen,index) {
 
   $.ajax({
     type:'get',
-    url:'./configInfo/'+item+'?t='+(new Date()).valueOf(),
+    url:'https://jusfoun-fe.github.io/projectManage/configInfo/'+item+'?t='+(new Date()).valueOf(),
     success:function (res) {
       dataLen2++;
       var jsonUrl= item;
@@ -70,6 +70,8 @@ function renderData (res,jsonUrl)  {
               }
               if(res.base.mobile) {
                 html +='<i></i></a>'
+              }else if(res.base.scene){
+                html +='<span class="icon iconfont icon-changjing"></span></a>'
               }else {
                 html +='</a>'
               }
