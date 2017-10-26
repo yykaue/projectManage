@@ -1,0 +1,32 @@
+{
+  "base": {
+    "name": "荣昌生猪大数据平台",             
+    "url": "",           
+    "desc": ""                                         
+  },
+  "schedule": {
+    "status": "开发中",                  
+    "actualStartTime": "2017/10/17",    
+    "actualEndTime": "未定",     
+    "estimatedStartTime": "2017/10/17", 
+    "estimatedEndTime": "2017/10/27",  
+    "process": 80,                      
+    "delay": false,                     
+    "technology":["vue.js"]               
+  },
+  "resources": {
+    "demander": "",                     
+    "type":"合资公司",				           
+    "manager":"柴成",                  
+    "charge": "李妮",                  
+    "affiliate": []       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                  
+    "unsolved": 0                     
+  },
+  "others": {
+    "remark": "该项目为大屏展示，现在先做demo页。"                  
+  }
+}
