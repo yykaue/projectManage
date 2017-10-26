@@ -3,7 +3,8 @@
     "name": "大数据情报服务平台",
     "url": "http://192.168.1.6:8124/yuqingBigData/html/index.html",
     "desc": "依托丰富的数据优势与人工智能能力，提供稳定强大的舆情采集，分析及展示服务。服务于多个行业，提供可靠的事实舆情跟踪，辅助提高服务质量和口碑等",
-    "mobile":false
+    "mobile":false,
+    "scene":false
   },
   "schedule": {
     "status": "开发中",
