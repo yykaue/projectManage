@@ -5,7 +5,7 @@
     "desc": "贵州警局"
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已完成",
     "actualStartTime": "2017-09-30",
     "actualEndTime": "2017-10-18",
     "estimatedStartTime": "2017-09-30",
