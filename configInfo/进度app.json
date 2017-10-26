@@ -6,7 +6,7 @@
     "mobile":true
   },
   "schedule": {
-    "status": "开发中",
+    "status": "暂停开发",
     "actualStartTime": "2017-09-21",
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-15",
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "一直没演示成功，具体等消息"
+    "remark": "前端处于停止状态，还没启动新需求"
   }
 }
