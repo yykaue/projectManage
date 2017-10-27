@@ -1,0 +1,34 @@
+{
+  "base": {
+    "name": "僵尸企业库",            
+    "url": "",          
+    "desc": "",                          
+    "mobile":false,
+    "scene":true
+  },
+  "schedule": {
+    "status": "开发中",                 
+    "actualStartTime": "2017-10-09",    
+    "actualEndTime": "未定",      
+    "estimatedStartTime": "2017-10-09", 
+    "estimatedEndTime": "2017-10-31",   
+    "process": 65,                      
+    "delay": false,                     
+    "technology":["vue","element-ui","echarts","iconfont"]              
+  },
+  "resources": {
+    "demander": "九次放大数据",            
+    "type":"独立纵队",				            
+    "manager":"张三",                  
+    "charge": "杨杰",                  
+    "affiliate": ["邢玮"]       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                 
+    "unsolved": 0                    
+  },
+  "others": {
+    "remark": ""               
+  }
+}
