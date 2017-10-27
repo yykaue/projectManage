@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-30", 
     "estimatedEndTime": "2017-12-30",   
-    "process": 85,
+    "process": 87,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"]              
   },
@@ -23,11 +23,11 @@
     "affiliate": ["杜万福","王斌彦","周志国"]
   },
   "bug": {
-    "total": 0,                     
-    "resolved": 0,                  
+    "total": 33,                     
+    "resolved": 33,                  
     "unsolved": 0                     
   },
   "others": {
-    "remark": ""                  
+    "remark": "账户号(yyk@jusfoun.com),密码(111111),目前处于测试阶段,请别动数据!!!"                  
   }
 }
