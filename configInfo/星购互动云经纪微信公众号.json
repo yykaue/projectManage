@@ -6,11 +6,11 @@
     "mobile":true
   },
   "schedule": {
-    "status": "已提测",
+    "status": "已结束",
     "actualStartTime": "2017-09-07",
-    "actualEndTime": "2017-10-25",
+    "actualEndTime": "2017-10-27",
     "estimatedStartTime": "2017-09-04",
-    "estimatedEndTime": "2017-10-25",
+    "estimatedEndTime": "2017-10-27",
     "process": 100,
     "delay": false,
 	"technology":["Vue","Mint UI"]
@@ -23,8 +23,8 @@
     "affiliate": ["林源","邢玮"]
   },
   "bug": {
-    "total": 2,
-    "resolved": 2,
+    "total": 11,
+    "resolved": 11,
     "unsolved": 0
   },
   "others": {
