@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "软件产品服务综合展示平台",            
+    "url": "",           
+    "desc": "",                           
+    "mobile":false                       
+  },
+  "schedule": {
+    "status": "开发中",                  
+    "actualStartTime": "2017-10-25",    
+    "actualEndTime": "未定",      
+    "estimatedStartTime": "", 
+    "estimatedEndTime": "2017-10-25",   
+    "process": 90,                      
+    "delay": false,                     
+    "technology":["vue"]               
+  },
+  "resources": {
+    "demander": "",                    
+    "type":"",				           
+    "manager":"",                 
+    "charge": "朱润亚",                  
+    "affiliate": ["王帅"]       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                  
+    "unsolved": 0                     
+  },
+  "others": {
+    "remark": ""   
+  }
+}
