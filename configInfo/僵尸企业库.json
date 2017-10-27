@@ -12,7 +12,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-10-09", 
     "estimatedEndTime": "2017-10-31",   
-    "process": 65,                      
+    "process": 68,                      
     "delay": false,                     
     "technology":["vue","element-ui","echarts","iconfont"]              
   },
