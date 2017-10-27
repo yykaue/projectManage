@@ -50,6 +50,8 @@ function renderData (res,jsonUrl)  {
   var num=0;
   if(res.resources.affiliate.length === 1 && !res.resources.affiliate[0]){
     num = 1
+  }else if(res.resources.charge.length === 0){
+    num = 1
   }else {
     num=res.resources.affiliate.length + 1;
   }
