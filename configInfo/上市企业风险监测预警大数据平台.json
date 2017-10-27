@@ -5,12 +5,12 @@
     "desc": "暂无"
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已提测",
     "actualStartTime": "2017-10-17",
     "actualEndTime": "",
     "estimatedStartTime": "2017-10-17",
     "estimatedEndTime": "2017-10-30",
-    "process": 60,
+    "process": 70,
     "delay": false,
     "technology":["vue"]
   },
@@ -27,6 +27,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "前后端接口联调"
+    "remark": "已提测"
   }
 }
