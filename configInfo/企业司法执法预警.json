@@ -1,0 +1,34 @@
+{
+  "base": {
+    "name": "企业司法执法预警",            
+    "url": "http://192.168.1.6:8123",          
+    "desc": "",                          
+    "mobile":false,
+    "scene":true
+  },
+  "schedule": {
+    "status": "即将启动",                 
+    "actualStartTime": "",    
+    "actualEndTime": "",      
+    "estimatedStartTime": "2017-10-30", 
+    "estimatedEndTime": "",   
+    "process": 0,                      
+    "delay": false,                     
+    "technology":["vue","element-ui","echarts","iconfont"]              
+  },
+  "resources": {
+    "demander": "九次放大数据",            
+    "type":"独立纵队",				            
+    "manager":"",                  
+    "charge": "",                  
+    "affiliate": ["林源"]       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                 
+    "unsolved": 0                    
+  },
+  "others": {
+    "remark": ""               
+  }
+}
