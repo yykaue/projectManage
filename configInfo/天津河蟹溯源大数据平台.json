@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "天津河蟹溯源大数据平台",            
+    "url": "",         
+    "desc": "河蟹养殖追溯",
+    "mobile":false
+  },
+  "schedule": {
+    "status": "即将启动",                  
+    "actualStartTime": "2017-09-25",
+    "actualEndTime": "",      
+    "estimatedStartTime": "2017-11-12",
+    "estimatedEndTime": "未定",
+    "process": 0,                      
+    "delay": false,
+    "technology":["vuejs"]	
+  },
+  "resources": {
+    "demander": "",
+    "type":"合资公司",
+    "manager":"李静波",                  
+    "charge": "胡杰",                  
+    "affiliate": []       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                  
+    "unsolved": 0                     
+  },
+  "others": {
+    "remark": ""
+  }
+}
