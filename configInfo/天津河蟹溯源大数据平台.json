@@ -2,17 +2,17 @@
   "base": {
     "name": "天津河蟹溯源大数据平台",            
     "url": "",         
-    "desc": "河蟹养殖追溯",
+    "desc": "河蟹标准化生产与溯源大数据平台",
     "mobile":false
   },
   "schedule": {
     "status": "即将启动",                  
-    "actualStartTime": "2017-09-25",
+    "actualStartTime": "2017-11-12",
     "actualEndTime": "",      
-    "estimatedStartTime": "2017-11-12",
+    "estimatedStartTime": "2017-10-12",
     "estimatedEndTime": "未定",
     "process": 0,                      
-    "delay": false,
+    "delay": true,
     "technology":["vuejs"]	
   },
   "resources": {
