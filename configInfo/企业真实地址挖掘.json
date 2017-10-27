@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "企业真实地址挖掘", 
-    "url": "",
+    "url": "http://192.168.1.6:8123",
     "desc": "企业真实地址挖掘",               
     "mobile":false,
     "scene":true
