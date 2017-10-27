@@ -65,11 +65,7 @@
       "url":"进度app.json",
       "actualStartTime": "2017/09/22"
     },
-    {
-      "name":"金融小场景",
-      "url":"金融小场景.json",
-      "actualStartTime": "2017/08/10"
-    },
+   
     {
       "name":"关注人员轨迹分析",
       "url":"关注人员轨迹分析.json",
