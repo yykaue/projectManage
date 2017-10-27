@@ -10,7 +10,7 @@
     "actualEndTime": "未定",     
     "estimatedStartTime": "2017/10/17", 
     "estimatedEndTime": "2017/10/27",  
-    "process": 80,                      
+    "process": 85,                      
     "delay": false,                     
     "technology":["vue.js"]               
   },
