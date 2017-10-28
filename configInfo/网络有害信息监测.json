@@ -2,15 +2,15 @@
   "base": {
     "name": "网络有害信息监测",
     "url": "http://192.168.1.6:8124/NetworkMonitor/html/index.html",
-    "desc": "9.25版本系统开发"
+    "desc": "10.31版本系统开发"
   },
   "schedule": {
-    "status": "已完成",
-    "actualStartTime": "2017-09-19",
-    "actualEndTime": "2017-09-23",
-    "estimatedStartTime": "2017-09-19",
-    "estimatedEndTime": "2017-09-23",
-    "process": 100,                    
+    "status": "开发中",
+    "actualStartTime": "2017-10-26",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-10-26",
+    "estimatedEndTime": "2017-10-30",
+    "process": 50,                    
     "delay": false,
     "technology":["jQuery","Layui"]
   },
@@ -19,11 +19,11 @@
     "type":"独立纵队",			
     "manager":"柴成",
     "charge": "闫磊",
-    "affiliate": [""]
+    "affiliate": ["韩凯波"]
   },
   "bug": {
-    "total": 22,
-    "resolved": 22,
+    "total": 0,
+    "resolved": 0,
     "unsolved": 0                
   },
   "others": {
