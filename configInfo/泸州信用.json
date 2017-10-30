@@ -11,7 +11,7 @@
     "actualEndTime": "2017-10-19",      
     "estimatedStartTime": "2017-09-28", 
     "estimatedEndTime": "未定",   
-    "process": 87,                      
+    "process": 89,                      
     "delay": false,                      
     "technology":["layui"]               
   },
@@ -20,7 +20,7 @@
     "type":"合资公司",				            
     "manager":"苏伟杰",                  
     "charge": "吉亚峰",                  
-    "affiliate": ["郭惠敏","冯红阳","王杰"]       
+    "affiliate": ["杨薇","李鹏飞","冯红阳","王杰"]       
   },
   "bug": {
     "total": 0,                     
