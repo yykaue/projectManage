@@ -1,17 +1,17 @@
 {
   "base": {
     "name": "天津河蟹溯源大数据平台",            
-    "url": "",         
+    "url": "./tianjinCrabBigData/index.html",         
     "desc": "河蟹标准化生产与溯源大数据平台",
     "mobile":false
   },
   "schedule": {
-    "status": "即将启动",                  
+    "status": "开发中",                  
     "actualStartTime": "2017-11-12",
     "actualEndTime": "",      
     "estimatedStartTime": "2017-10-12",
     "estimatedEndTime": "未定",
-    "process": 0,                      
+    "process": 5,                      
     "delay": true,
     "technology":["vuejs"]	
   },
