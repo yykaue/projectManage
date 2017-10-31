@@ -1,0 +1,34 @@
+{
+  "base": {
+    "name": "深圳政务信息资源数据可视化展示",             
+    "url": "",          
+    "desc": "深圳政务信息资源数据可视化展示项目",                           
+    "mobile":false,                       
+    "scene":false                         
+  },
+  "schedule": {
+    "status": "开发中",                  
+    "actualStartTime": "2017-10-31",    
+    "actualEndTime": "2017-11-30",      
+    "estimatedStartTime": "2017-10-16", 
+    "estimatedEndTime": "2017-11-30",   
+    "process": 0,                      
+    "delay": false,                      
+    "technology":["jquery"]               
+  },
+  "resources": {
+    "demander": "粤数",                     
+    "type":"合资公司",				                  
+    "manager":"王鹏",                   
+    "charge": "邢玮",                   
+    "affiliate": [""]       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                  
+    "unsolved": 0                     
+  },
+  "others": {
+    "remark": ""                 
+  }
+}
