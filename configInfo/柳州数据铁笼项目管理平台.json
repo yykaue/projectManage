@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "柳州数据铁笼项目管理平台",  
+    "url": "http://192.168.1.6:8124/LiuZhouDataManagement/index.html", 
+    "desc": "政府项目",
+    "scene":false
+  },
+  "schedule": {
+    "status": "即将启动",
+    "actualStartTime": "2017-11-6",
+    "actualEndTime": "未定",
+    "estimatedStartTime": "2017-11-6",
+    "estimatedEndTime": "2018-1-5",
+    "process": 0,                    
+    "delay": false,
+    "technology":["vue","echarts","sass"]
+  },
+  "resources": {
+    "demander": "农业部信息中心",     
+    "type":"独立纵队",			
+    "manager":"栾新瑞",                 
+    "charge": "魏彬",                 
+    "affiliate": [""]
+  },
+  "bug": {
+    "total": 0,                
+    "resolved": 0,             
+    "unsolved": 0                
+  },
+  "others": {
+    "remark": "暂无"
+  }
+}
