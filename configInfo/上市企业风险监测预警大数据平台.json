@@ -9,9 +9,9 @@
     "actualStartTime": "2017-10-17",
     "actualEndTime": "",
     "estimatedStartTime": "2017-10-17",
-    "estimatedEndTime": "2017-10-30",
+    "estimatedEndTime": "2017-11-1",
     "process": 100,
-    "delay": false,
+    "delay": true,
     "technology":["vue"]
   },
   "resources": {
@@ -27,6 +27,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "bug调试、上线"
+    "remark": "项目调整、权限系统样式修改、上线"
   }
 }
