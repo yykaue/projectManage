@@ -6,11 +6,11 @@
     "mobile":false
   },
   "schedule": {
-    "status": "暂停开发",
+    "status": "开发中",
     "actualStartTime": "2017-10-10",
-    "actualEndTime": "2017-12-31",
+    "actualEndTime": "2017-11-30",
     "estimatedStartTime": "2017-10-10",
-    "estimatedEndTime": "2017-12-31",
+    "estimatedEndTime": "2017-11-30",
     "process": 30,
     "delay": false,
     "technology":["Echarts","D3","WebGL","react","vue"]
@@ -20,7 +20,7 @@
     "type":"内部研发平台",
     "manager":"朱润亚",
     "charge": "朱润亚",
-    "affiliate": ["魏彬","王帅","杨勇冠","任新杰","李猛"]
+    "affiliate": ["魏彬","王帅","杨勇冠","任新杰","李猛","韩凯波"]
   },
   "bug": { 
     "total": 0,
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "部门内部研发，定期组织部门内部培训；近期研发包括：vue培训、图表配置工具功能完善、WebGL、D3"
+    "remark": "部门内部研发,前端通用组件开发(npm包管理,命名空间定义),定期组织部门内部培训；近期研发包括：vue培训、图表配置工具功能完善、WebGL、D3"
   }
 }
