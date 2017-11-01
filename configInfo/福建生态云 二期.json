@@ -8,9 +8,9 @@
   "schedule": {
     "status": "开发中",
     "actualStartTime": "2017-08-18",
-    "actualEndTime": "未定",
+    "actualEndTime": "2017-11-03",
     "estimatedStartTime": "2017-08-18",
-    "estimatedEndTime": "未定",
+    "estimatedEndTime": "2017-11-03",
     "process": 65,
     "delay": false,
     "technology": ["vue"]
@@ -19,8 +19,8 @@
     "demander": "福建星元次方",
     "type":"合资公司",
     "manager":"陈志丹",
-    "charge": "陈胜",
-    "affiliate": ["王杰"]
+    "charge": "任新杰",
+    "affiliate": []
   },
   "bug": {
     "total": 0,
