@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "重庆云", 
+    "url": "",         
+    "desc": "",                          
+    "mobile":false                    
+  },
+  "schedule": {
+    "status": "即将启动",                 
+    "actualStartTime": "2017-11-02",
+    "actualEndTime": "未定",    
+    "estimatedStartTime": "2017-11-02", 
+    "estimatedEndTime": "2017-11-30",   
+    "process": 0,                     
+    "delay": false,                      
+    "technology":["vue"]            
+  },
+  "resources": {
+    "demander": "",                    
+    "type":"合资公司",				         
+    "manager":"许峰",                
+    "charge": "褚甜甜",              
+    "affiliate": [""]      
+  },
+  "bug": {
+    "total": 135,                    
+    "resolved": 135,                  
+    "unsolved": 0                  
+  },
+  "others": {
+    "remark": "账户名(17600801597),密码(111111)"                  
+  }
+}
