@@ -38,6 +38,7 @@ function getData1 (item,dataLen,index) {
         getEchartData(dataArr);
         statusClick(dataArr);
         getPersonData(dataArr);
+        keyword(dataArr)
       }
     }
   });
@@ -348,11 +349,20 @@ function getEchartData(data){
       develop += 1;
       developArr.push(item.base.name)
       staffInput.name.push(item.base.name);
-      if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
-        staffInput.seriesData.push({status:'开发中',name:item.base.name,value: 1,value1:item.resources.charge})
-      }else{
-        staffInput.seriesData.push({status:'开发中',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+      if(item.resources.charge){
+        if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
+          staffInput.seriesData.push({status:'开发中',name:item.base.name,value: 1,value1:item.resources.charge})
+        }else{
+          staffInput.seriesData.push({status:'开发中',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+        }
+      }else {
+        if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
+          staffInput.seriesData.push({status:'开发中',name:item.base.name,value: 0,value1:'无'})
+        }else{
+          staffInput.seriesData.push({status:'开发中',name:item.base.name,value:item.resources.affiliate.length ,value1:item.resources.affiliate.join(',')})
+        }
       }
+
     }else if(item.schedule.status == '已提测') {
       measured += 1;
       measuredArr.push(item.base.name)
@@ -360,11 +370,20 @@ function getEchartData(data){
       bugData.resolved.push(item.bug.resolved);
       bugData.unsolved.push(item.bug.unsolved);
       staffInput1.name.push(item.base.name);
-      if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
-        staffInput1.seriesData.push({status:'已提测',name:item.base.name,value: 1,value1:item.resources.charge})
+      if(item.resources.charge){
+        if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
+          staffInput1.seriesData.push({status:'已提测',name:item.base.name,value: 1,value1:item.resources.charge})
+        }else{
+          staffInput1.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+        }
       }else{
-        staffInput1.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
+        if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
+          staffInput1.seriesData.push({status:'已提测',name:item.base.name,value: 0,value1:'无'})
+        }else{
+          staffInput1.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length,value1:item.resources.affiliate.join(',')})
+        }
       }
+
       // staffInput.seriesData.push({status:'已提测',name:item.base.name,value:item.resources.affiliate.length + 1,value1:item.resources.charge+','+item.resources.affiliate.join(',')})
 
     }else if(item.schedule.status == '已完成') {
@@ -766,9 +785,9 @@ function statusClick(dataArr){
   $('.status-list span').click(function () {
     var statusArr=[];
     $('#listWrapper').html('');
+    $('.keyword-list span').removeClass('active');
     $(this).addClass('active').siblings().removeClass('active');
     value = $(this).text();
-
     if (typeArrData.length > 0) {
       if(value !== '全部') {
         typeArrData.forEach(function(item,index){
@@ -788,6 +807,7 @@ function statusClick(dataArr){
           var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
           $('#listWrapper').append(html);
         }
+
       }else {
         statusArrData = dataArr;
         typeArrData.sort(function(a,b){
@@ -816,6 +836,28 @@ function statusClick(dataArr){
           var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
           $('#listWrapper').append(html);
         }
+        // 筛选出进度异常的数据
+        var abnormalArr = [];
+        dataArr.forEach(function(item){
+          var process = getProcess(item.schedule.estimatedStartTime,item.schedule.estimatedEndTime);
+          if ((item.schedule.process + 20) < process && (process < 100)){
+            abnormalArr.push(item)
+          }
+        })
+        if(value == '进度异常'){
+          $('#listWrapper').html('');
+          if(abnormalArr.length > 0){
+            abnormalArr.sort(function (a, b) {
+              return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
+            });
+            abnormalArr.forEach(function(item,index){
+              renderData (item)
+            })
+          }else {
+            var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
+            $('#listWrapper').append(html);
+          }
+        }
       }else {
         statusArrData = dataArr;
         if (value1 == '全部'){
@@ -829,6 +871,7 @@ function statusClick(dataArr){
   $('.type-list span').click(function () {
     var typeArr=[];
     $('#listWrapper').html('');
+    $('.keyword-list span').removeClass('active');
     $(this).addClass('active').siblings().removeClass('active');
     value1 = $(this).text();
 
@@ -1043,7 +1086,7 @@ function chart5(data){
   })
   echartsResize(myChart)
 }
-
+//项目-人员关系图谱
 function drawChart(data) {
   var teams = ['公共组', '一组', '二组', '三组', '四组'];
   var persons = [{
@@ -1316,10 +1359,51 @@ function drawChart(data) {
   myChart.setOption(option);
 
 }
-
+//点击显示项目-人员关系图谱
 $('#force-modal').on('click',function(){
   $('#myModal').modal();
   drawChart(dataArr);
 })
+
+// 关键词搜索
+function keyword(data){
+  var apple=[],crab=[],scene=[],origins=[];
+  data.forEach(function(item){
+    var name = item.base.name;
+    if(name.indexOf('苹果') > -1){
+      apple.push(item)
+    }else if (name.indexOf('河蟹') > -1){
+      crab.push(item)
+    }else if (name.indexOf('一带一路') > -1){
+      origins.push(item)
+    }else if (item.base.scene){
+      scene.push(item)
+    }
+  })
+  $('.keyword-list span').on('click',function(){
+    $('#listWrapper').html('');
+    var text = $(this).text();
+    $('.status-list span').removeClass('active').eq(0).addClass('active');
+    $('.type-list span').removeClass('active').eq(0).addClass('active');
+    $(this).addClass('active').siblings().removeClass('active');
+    if(text == '苹果'){
+      apple.forEach(function(item,index){
+        renderData (item);
+      })
+    }else if(text == '河蟹'){
+      crab.forEach(function(item,index){
+        renderData (item);
+      })
+    }else if(text == '小场景'){
+      scene.forEach(function(item,index){
+        renderData (item);
+      })
+    }else if(text == '一带一路'){
+      origins.forEach(function(item,index){
+        renderData (item);
+      })
+    }
+  })
+}
 
 

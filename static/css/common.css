@@ -477,6 +477,9 @@ body {
     color: #fd674e;
 }
 .no-result {
+    margin-top: 10px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
     line-height: 50px;
     text-align: center;
     font-size: 16px;
@@ -525,7 +528,10 @@ body {
     margin: 0 0 0 10px;
     font-size: 16px;
 }
-
+/*关键词*/
+.keyword {
+    padding: 10px 0 0 0;
+}
 @media (min-width: 1200px) {
     .chart-block {
         border-bottom: 1px solid #e5e5e5;
@@ -533,6 +539,7 @@ body {
     }
     .modal-lg {
         width: 900px;
+        margin-top: 90px;
     }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
