@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-30", 
     "estimatedEndTime": "2017-12-30",   
-    "process": 95,
+    "process": 97,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"]              
   },
@@ -23,8 +23,8 @@
     "affiliate": ["杜万福","王斌彦","周志国"]
   },
   "bug": {
-    "total": 39,                     
-    "resolved": 39,                  
+    "total": 56,                     
+    "resolved": 56,                  
     "unsolved": 0                     
   },
   "others": {
