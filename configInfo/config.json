@@ -210,6 +210,16 @@
       "name":"深圳政务信息资源数据可视化展示",
       "url":"深圳政务信息资源数据可视化展示.json", 
       "actualStartTime": "2017/10/31"
+    }, 
+    {
+      "name":"重庆云",
+      "url":"重庆云.json", 
+      "actualStartTime": "2017/11/02"
+    }, 
+    {
+      "name":"一带一路官网国际版",
+      "url":"一带一路官网国际版.json", 
+      "actualStartTime": "2017/11/02"
     }
   ]
 }
