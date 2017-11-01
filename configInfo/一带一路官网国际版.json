@@ -1,0 +1,32 @@
+{
+  "base": {
+    "name": "一带一路官网国际版",             
+    "url": "",           
+    "desc": ""                                         
+  },
+  "schedule": {
+    "status": "即将开始",                  
+    "actualStartTime": "2017/11/02",    
+    "actualEndTime": "未定",     
+    "estimatedStartTime": "2017/11/02", 
+    "estimatedEndTime": "2017/11/30",  
+    "process": 0,                      
+    "delay": false,                     
+    "technology":["vue.js"]               
+  },
+  "resources": {
+    "demander": "",                     
+    "type":"合资公司",				           
+    "manager":"",                  
+    "charge": "李猛",                  
+    "affiliate": []       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                  
+    "unsolved": 0                     
+  },
+  "others": {
+    "remark": ""                  
+  }
+}
