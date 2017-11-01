@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "一带一路大数据官网",
+    "url": "",
+    "desc": "一带一路大数据官网",
+    "mobile":false
+  },
+  "schedule": {
+    "status": "即将启动",
+    "actualStartTime": "",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-11-02",
+    "estimatedEndTime": "",
+    "process": 0,
+    "delay": false,
+    "technology":[""]
+  },
+  "resources": {
+    "demander": "九次方",
+    "type":"独立纵队",
+    "manager":"",
+    "charge": "李猛",
+    "affiliate": []
+  },
+  "bug": {
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": ""                 
+  }
+}
