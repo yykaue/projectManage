@@ -10,7 +10,7 @@
     "actualStartTime": "2017-11-02",
     "actualEndTime": "未定",    
     "estimatedStartTime": "2017-11-02", 
-    "estimatedEndTime": "2017-11-30",   
+    "estimatedEndTime": "2017-11-16",   
     "process": 0,                     
     "delay": false,                      
     "technology":["vue"]            
@@ -19,8 +19,8 @@
     "demander": "",                    
     "type":"合资公司",				         
     "manager":"许峰",                
-    "charge": "褚甜甜",              
-    "affiliate": [""]      
+    "charge": "韩凯波",              
+    "affiliate": ["徐媛媛"]      
   },
   "bug": {
     "total": 135,                    
