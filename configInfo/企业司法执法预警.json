@@ -11,8 +11,8 @@
     "actualStartTime": "",    
     "actualEndTime": "",      
     "estimatedStartTime": "2017-10-30", 
-    "estimatedEndTime": "",   
-    "process": 5,                      
+    "estimatedEndTime": "2017-11-30",   
+    "process": 18,                      
     "delay": false,                     
     "technology":["vue","element-ui","echarts","iconfont"]              
   },
