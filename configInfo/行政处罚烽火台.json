@@ -17,8 +17,8 @@
     "technology":["vue","element-ui","echarts"]
   },
   "resources": {
-    "demander": "金融",
-    "type":"",
+    "demander": "",
+    "type":"金融",
     "manager":"",
     "charge": "张涛",
     "affiliate": [""]
