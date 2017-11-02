@@ -6,14 +6,14 @@
     "mobile":false
   },
   "schedule": {
-    "status": "已提测",
+    "status": "已完成",
     "actualStartTime": "2017-02",
     "actualEndTime": "",
     "estimatedStartTime": "2017-02",
     "estimatedEndTime": "2017-10",
-    "process": 95,
+    "process": 100,
     "delay": false,
-    "technology":["layer弹层","水印效果"]
+    "technology":["layer弹层","水印效果","jQuery"]
   },
   "resources": {
     "demander": "九次方",
