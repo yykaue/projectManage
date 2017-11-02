@@ -6,7 +6,7 @@
     "mobile":true
   },
   "schedule": {
-    "status": "已提测",
+    "status": "已完成",
     "actualStartTime": "2017-09-21",
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-15",
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "前端处于停止状态，项目阶段（现在处在给主管部门汇报阶段 根据主管部门提出的问题，进行及时修改完善）"
+    "remark": "前端已完成，项目阶段（现在处在给主管部门汇报阶段 根据主管部门提出的问题，进行及时修改完善）"
   }
 }
