@@ -2,13 +2,13 @@
   "base": {
     "name": "泸州信用",            
     "url": "http://192.168.1.6:8124/luzhouxinyong/html/home/index.html",         
-    "desc": "泸州信用网站开发，前期pc端开发",                        
+    "desc": "泸州信用网站2期开发",                        
     "mobile":false                       
   },
   "schedule": {
     "status": "开发中",                  
     "actualStartTime": "2017-09-28",    
-    "actualEndTime": "2017-10-19",      
+    "actualEndTime": "2017-11-15",      
     "estimatedStartTime": "2017-09-28", 
     "estimatedEndTime": "未定",   
     "process": 90,                      
@@ -19,8 +19,8 @@
     "demander": "泸州市发改委",                     
     "type":"合资公司",				            
     "manager":"苏伟杰",                  
-    "charge": "王杰",                  
-    "affiliate": ["杨微","李鹏飞","冯红阳","吉亚峰"]       
+    "charge": "吉亚峰",                  
+    "affiliate": ["杨微","李鹏飞","冯红阳"]       
   },
   "bug": {
     "total": 0,                     
@@ -28,6 +28,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": ""                  
+    "remark": "账户名（jiyafeng）,密码（123456）"                  
   }
 }
