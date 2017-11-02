@@ -11,7 +11,7 @@
     "actualEndTime": "2017-10-19",      
     "estimatedStartTime": "2017-09-28", 
     "estimatedEndTime": "未定",   
-    "process": 89,                      
+    "process": 90,                      
     "delay": false,                      
     "technology":["layui"]               
   },
@@ -19,8 +19,8 @@
     "demander": "泸州市发改委",                     
     "type":"合资公司",				            
     "manager":"苏伟杰",                  
-    "charge": "吉亚峰",                  
-    "affiliate": ["杨微","李鹏飞","冯红阳","王杰"]       
+    "charge": "王杰",                  
+    "affiliate": ["杨微","李鹏飞","冯红阳","吉亚峰"]       
   },
   "bug": {
     "total": 0,                     
