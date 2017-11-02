@@ -20,7 +20,7 @@
     "type":"合资公司",
     "manager":"苏伟杰",
     "charge": "王杰",
-    "affiliate": ["",""]
+    "affiliate": []
   },
   "bug": {
     "total": 0,
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": ""             
+    "remark": ""
   }
 }
