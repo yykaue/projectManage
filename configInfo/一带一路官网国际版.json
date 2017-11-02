@@ -18,8 +18,8 @@
     "demander": "",                     
     "type":"合资公司",				           
     "manager":"",                  
-    "charge": "李猛",                  
-    "affiliate": ["汝银娟","吕颖萍"]       
+    "charge": "汝银娟",                  
+    "affiliate": ["吕颖萍"]       
   },
   "bug": {
     "total": 0,                     
@@ -27,6 +27,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": ""                  
+    "remark": "目前静态页面开发中，后续将配置到CMS上"                  
   }
 }
