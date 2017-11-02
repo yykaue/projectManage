@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-11",
     "estimatedEndTime": "2017-10-30",
-    "process": 60,                      
+    "process": 63,                      
     "delay": false,
     "technology":["vuejs"]	
   },
@@ -20,7 +20,7 @@
     "type":"合资公司",
     "manager":"李静波",                  
     "charge": "胡杰",                  
-    "affiliate": ["郑梦丽","商业庆"]       
+    "affiliate": ["郑梦丽"]       
   },
   "bug": {
     "total": 0,                     
@@ -28,6 +28,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "该项目的PC端任务紧急，全体人员转到PC端开发，移动端暂停开发"
+    "remark": ""
   }
 }
