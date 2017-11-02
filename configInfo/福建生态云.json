@@ -2,7 +2,7 @@
   "base": {
     "name": "福建生态云",
     "url": "http://192.168.1.6:8124/ecology/index.html",
-    "desc": "福建生态云 一期，暂停开发，开发二期",
+    "desc": "一项目已并入至二期",
     "mobile": false
   },
   "schedule": {
@@ -11,7 +11,7 @@
     "actualEndTime": "2017-08-13",
     "estimatedStartTime": "2017-08-03",
     "estimatedEndTime": "2017-08-10",
-    "process": 70,
+    "process": 100,
     "delay": true,
     "technology": ["vue"]
   },
