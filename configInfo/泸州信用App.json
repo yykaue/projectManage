@@ -1,33 +1,33 @@
 {
   "base": {
-    "name": "ãòÖİĞÅÓÃApp",             //ÏîÄ¿Ãû³Æ(±ØÌî)
-    "url": "./luzhouxinyongApp/index.html",           //ÏîÄ¿url,xxxÎªÏîÄ¿ÎÄ¼ş¼ĞÃû³Æ(±ØÌî)
-    "desc": "ãòÖİĞÅÓÃApp¿ª·¢",                           //ÏîÄ¿ÃèÊö
-    "mobile":true                        //ÊÇ·ñÎªÒÆ¶¯¶ËÏÔÊ¾ true:ÊÇ£¬false:·ñ
+    "name": "æ³¸å·ä¿¡ç”¨App",
+    "url": "./luzhouxinyongApp/index.html",
+    "desc": "æ³¸å·ä¿¡ç”¨Appå¼€å‘",
+    "mobile":true
   },
   "schedule": {
-    "status": "¿ª·¢ÖĞ",                  //ÏîÄ¿×´Ì¬(¿ª·¢ÖĞ¡¢ÒÑÌá²â¡¢ÒÑ½áÊø¡¢ÒÑ¶³½á¡¢ÔİÍ£¿ª·¢)(±ØÌî)
-    "actualStartTime": "2017-10-11",    //Êµ¼Ê¿ªÊ¼Ê±¼ä(±ØÌî)
-    "actualEndTime": "Î´¶¨",      //Êµ¼Ê½áÊøÊ±¼ä(ÈôÎ´¶¨ÔòÌîĞ´Î´¶¨)
-    "estimatedStartTime": "2017-10-11", //Ô¤¼Æ¿ªÊ¼Ê±¼ä(±ØÌî)
-    "estimatedEndTime": "Î´¶¨",   //Ô¤¼Æ½áÊøÊ±¼ä(±ØÌî)
-    "process": 90,                      //ÏîÄ¿½ø¶È(±ØÌî)
-    "delay": false,                      //ÊÇ·ñÑÓÆÚ,true:ÊÇ,false:·ñ(±ØÌî)
-    "technology":["apicloud"]               //ÏîÄ¿Ê¹ÓÃ¼¼Êõ,Èç["jquery","html5","css3","°Ù¶ÈµØÍ¼","bootstrap","layui","vuejs","element-ui","mint-ui","threejs","d3","echart","gulp","webpack","less","sass","handlebar","nodejs","angularjs","reactjs","font-awesome","iconfont"]
+    "status": "å¼€å‘ä¸­",
+    "actualStartTime": "2017-10-11",
+    "actualEndTime": "æœªå®š",
+    "estimatedStartTime": "2017-10-11",
+    "estimatedEndTime": "æœªå®š",
+    "process": 90,
+    "delay": false,
+    "technology":["apicloud"]
   },
   "resources": {
-    "demander": "ãòÖİÊĞ·¢¸ÄÎ¯",                     //ĞèÇó·½(±ØÌî)
-    "type":"ºÏ×Ê¹«Ë¾",				            //ÏîÄ¿Àà±ğ(ºÏ×Ê¹«Ë¾¡¢¶ÀÁ¢×İ¶Ó¡¢×Ü²¿Æ½Ì¨¡¢ÄÚ²¿ÑĞ·¢Æ½Ì¨)(±ØÌî)
-    "manager":"ËÕÎ°½Ü",                  //ÏîÄ¿¾­Àí(±ØÌî)
-    "charge": "Íõ½Ü",                  //¸ºÔğÈË(Ç°¶Ë)(±ØÌî)
-    "affiliate": ["",""]       //²ÎÓëÈË
+    "demander": "æ³¸å·å¸‚å‘æ”¹å§”",
+    "type":"åˆèµ„å…¬å¸",
+    "manager":"è‹ä¼Ÿæ°",
+    "charge": "ç‹æ°",
+    "affiliate": ["",""]
   },
   "bug": {
-    "total": 0,                     //×ÜbugÊı Èô´¦ÓÚ¿ª·¢½×¶ÎÔòÌî0
-    "resolved": 0,                  //ÒÑ½â¾ö  Èô´¦ÓÚ¿ª·¢½×¶ÎÔòÌî0
-    "unsolved": 0                     //Î´½â¾ö  Èô´¦ÓÚ¿ª·¢½×¶ÎÔòÌî0
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
   },
   "others": {
-    "remark": ""                  //±¸×¢£¬ÈôÓĞµÇÂ¼Ò³Ãæ£¬ÕË»§ÃûºÍÃÜÂëÌîĞ´ÔÚ±¸×¢Àï£¬¸ñÊ½£ºÕË»§Ãû(aaa),ÃÜÂë(123456)
+    "remark": ""             
   }
 }
