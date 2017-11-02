@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "政务信息共享官网",           
-    "url": "",           
+    "url": "governmentAffairsWSite/index.html",           
     "desc": "政务信息管理系统",                          
     "mobile":false                       
   },
