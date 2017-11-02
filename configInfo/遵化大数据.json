@@ -6,7 +6,7 @@
     "mobile":false                       
   },
   "schedule": {
-    "status": "已提测",                  
+    "status": "开发中",                  
     "actualStartTime": "2017-05-12",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-05-02", 
@@ -23,11 +23,11 @@
     "affiliate": ["任传真"]       
   },
   "bug": {
-    "total": 102,                     
-    "resolved": 102,                  
+    "total": 106,                     
+    "resolved": 106,                  
     "unsolved": 0                     
   },
   "others": {
-    "remark": "企业端，政府端，消费端，运维端提测中，决策分析处于开发中"   
+    "remark": "决策分析处于开发中，政府端，消费端，运维端仍在提测中。"   
   }
 }
