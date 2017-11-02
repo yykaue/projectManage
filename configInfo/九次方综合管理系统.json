@@ -1,17 +1,17 @@
 ﻿{
   "base": {
-    "name": "新版CRM一期",             
+    "name": "新版CRM二期",             
     "url": "http://192.168.1.6:8124/jusfounManagementSystem/index.html",           
     "desc": "",                          
     "mobile":false                      
   },
   "schedule": {
-    "status": "已提测",                  
+    "status": "开发中",                  
     "actualStartTime": "2017-09-30",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-30", 
     "estimatedEndTime": "2017-12-30",   
-    "process": 97,
+    "process": 5,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"]              
   },
@@ -23,11 +23,11 @@
     "affiliate": ["杜万福","王斌彦","周志国"]
   },
   "bug": {
-    "total": 56,                     
-    "resolved": 56,                  
+    "total": 57,                     
+    "resolved": 57,                  
     "unsolved": 0                     
   },
   "others": {
-    "remark": "账户号(yyk@jusfoun.com),密码(111111),目前处于测试阶段,请别动数据!!!"                  
+    "remark": "一期已上线，现在一期基础上开发二期 账户号(yyk@jusfoun.com),密码(111111),目前测试人员在用,请别动数据!!!"                  
   }
 }
