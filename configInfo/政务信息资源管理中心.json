@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "政务信息资源管理中心",           
-    "url": "",           
+    "url": "http://192.168.1.6:8124/governmentAffairs/adminCenter/index.html",          
     "desc": "政务信息管理系统",                          
     "mobile":false                       
   },
@@ -20,7 +20,7 @@
     "type":"独立纵队",				      
     "manager":"王苏栋",                
     "charge": "李猛",                 
-    "affiliate": ["汝银娟","郭惠敏"]      
+    "affiliate": []      
   },
   "bug": {
     "total": 0, 
