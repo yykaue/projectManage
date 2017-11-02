@@ -9,7 +9,7 @@
     "status": "开发中",
     "actualStartTime": "2017-11-02",
     "actualEndTime": "未定",
-    "estimatedStartTime": "2017-11-02",
+    "estimatedStartTime": "2017-11-06",
     "estimatedEndTime": "2017-12-10",
     "process": 0,                    
     "delay": false,
@@ -28,6 +28,6 @@
     "unsolved": 0                
   },
   "others": {
-    "remark": "暂无"
+    "remark": "处于调研分析阶段,搭建框架，分析原型，UI图目前还在和客户商榷"
   }
 }
