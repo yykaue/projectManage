@@ -12,13 +12,13 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-10-23",
     "estimatedEndTime": "",
-    "process":40, 
+    "process":60, 
     "delay": false,
     "technology":["vue","element-ui","echarts"]
   },
   "resources": {
-    "demander": "",
-    "type":"金融",
+    "demander": "九次方大数据",
+    "type":"独立纵队",
     "manager":"",
     "charge": "张涛",
     "affiliate": [""]
