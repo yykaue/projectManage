@@ -5,12 +5,12 @@
     "desc": "暂无"
   },
   "schedule": {
-    "status": "已完成",
+    "status": "已提测",
     "actualStartTime": "2017-10-17",
-    "actualEndTime": "2017-11-1",
+    "actualEndTime": "",
     "estimatedStartTime": "2017-10-17",
     "estimatedEndTime": "2017-10-30",
-    "process": 100,
+    "process": 95,
     "delay": false,
     "technology":["vue"]
   },
@@ -27,6 +27,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "项目调整、权限系统样式修改、上线"
+    "remark": "项目调整、权限系统样式修改"
   }
 }
