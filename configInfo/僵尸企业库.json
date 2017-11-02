@@ -7,7 +7,7 @@
     "scene":true
   },
   "schedule": {
-    "status": "开发中",                 
+    "status": "暂停开发",                 
     "actualStartTime": "2017-10-09",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-10-09", 
@@ -21,7 +21,7 @@
     "type":"独立纵队",				            
     "manager":"",                  
     "charge": "杨杰",                  
-    "affiliate": ["邢玮"]       
+    "affiliate": [""]       
   },
   "bug": {
     "total": 0,                     
