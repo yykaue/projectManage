@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "天津河蟹溯源大数据平台",            
-    "url": "./tianjinCrabBigData/index.html",         
+    "url": "http://192.168.1.6:8124/tianjinCrabBigData/index.html",         
     "desc": "河蟹标准化生产与溯源大数据平台",
     "mobile":false
   },
