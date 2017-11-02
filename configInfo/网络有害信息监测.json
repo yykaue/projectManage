@@ -5,12 +5,12 @@
     "desc": "10.31版本系统开发"
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已提测",
     "actualStartTime": "2017-10-26",
-    "actualEndTime": "",
+    "actualEndTime": "2017-10-30",
     "estimatedStartTime": "2017-10-26",
     "estimatedEndTime": "2017-10-30",
-    "process": 50,                    
+    "process": 100,                    
     "delay": false,
     "technology":["jQuery","Layui"]
   },
@@ -22,8 +22,8 @@
     "affiliate": ["韩凯波"]
   },
   "bug": {
-    "total": 0,
-    "resolved": 0,
+    "total": 12,
+    "resolved": 12,
     "unsolved": 0                
   },
   "others": {
