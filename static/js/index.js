@@ -31,13 +31,15 @@ function getData1 (item,dataLen,index) {
     success:function (res) {
       dataLen2++;
       var jsonUrl= item;
-      renderData (res,jsonUrl);
       dataArr.push(res);
       if( dataLen == dataLen2) {
         getEchartData(dataArr);
         statusClick(dataArr);
         getPersonData(dataArr);
         keyword(dataArr);
+        dataArr.forEach(function(item){
+          renderData (item,item.base.url);
+        })
       }
     }
   });
