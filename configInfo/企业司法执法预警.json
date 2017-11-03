@@ -8,11 +8,11 @@
   },
   "schedule": {
     "status": "开发中",                 
-    "actualStartTime": "",    
+    "actualStartTime": "2017-10-30",    
     "actualEndTime": "",      
     "estimatedStartTime": "2017-10-30", 
-    "estimatedEndTime": "2017-11-30",   
-    "process": 18,                      
+    "estimatedEndTime": "",   
+    "process": 20,                      
     "delay": false,                     
     "technology":["vue","element-ui","echarts","iconfont"]              
   },
