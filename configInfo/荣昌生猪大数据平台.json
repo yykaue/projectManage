@@ -6,10 +6,10 @@
   },
   "schedule": {
     "status": "已完成",                  
-    "actualStartTime": "2017/10/17",    
+    "actualStartTime": "2017-10-17",    
     "actualEndTime": "未定",     
-    "estimatedStartTime": "2017/10/17", 
-    "estimatedEndTime": "2017/10/27",  
+    "estimatedStartTime": "2017-10-17", 
+    "estimatedEndTime": "2017-10-27",  
     "process": 100,                      
     "delay": false,                     
     "technology":["vue.js"]               
