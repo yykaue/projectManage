@@ -7,10 +7,10 @@
   },
   "schedule": {
     "status": "暂停开发",                  
-    "actualStartTime": "2017/08/10",    
+    "actualStartTime": "2017-08-10",    
     "actualEndTime": "未定",     
-    "estimatedStartTime": "2017/08/10", 
-    "estimatedEndTime": "2017/10/13",  
+    "estimatedStartTime": "2017-08-10", 
+    "estimatedEndTime": "2017-10-13",  
     "process": 90,                      
     "delay": false,                     
     "technology":["vue.js"]               
