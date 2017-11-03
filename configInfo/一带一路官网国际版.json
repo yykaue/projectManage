@@ -6,10 +6,10 @@
   },
   "schedule": {
     "status": "开发中",                  
-    "actualStartTime": "2017/11/03",    
+    "actualStartTime": "2017-11-03",    
     "actualEndTime": "未定",     
-    "estimatedStartTime": "2017/11/03", 
-    "estimatedEndTime": "2017/11/17",  
+    "estimatedStartTime": "2017-11-03", 
+    "estimatedEndTime": "2017-11-17",  
     "process": 0,                      
     "delay": false,                     
     "technology":[""]               
