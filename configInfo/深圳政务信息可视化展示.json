@@ -7,7 +7,7 @@
     "scene":false                         
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": "暂停开发",                  
     "actualStartTime": "2017-10-31",    
     "actualEndTime": "2017-11-30",      
     "estimatedStartTime": "2017-10-16", 
@@ -29,6 +29,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": ""                 
+    "remark": "客户需求有变更，项目暂停"                 
   }
 }
