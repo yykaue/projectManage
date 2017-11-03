@@ -90,8 +90,10 @@ body {
 .edit-btn i{
     font-size: 24px;
 }
-.edit-btn:hover {
+.edit-btn:hover,
+.edit-btn:focus {
     color: #BA383D;
+    text-decoration: none;
 }
 .list-wrapper {
     overflow: hidden;
