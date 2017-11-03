@@ -1376,22 +1376,6 @@ function keyword(data){
     "政务":["政务信息共享官网","政务信息资源管理中心","政务填报系统"],
     "泸州":["泸州信用","泸州信用App"]
   }
-  var keywordArr=[];
-  var apple=[],crab=[],scene=[],origins=[],government=[];
-  // data.forEach(function(item){
-  //   var name = item.base.name;
-  //   if(name.indexOf('苹果') > -1){
-  //     apple.push(item)
-  //   }else if (name.indexOf('河蟹') > -1){
-  //     crab.push(item)
-  //   }else if (name.indexOf('一带一路') > -1){
-  //     origins.push(item)
-  //   }else if (item.base.scene){
-  //     scene.push(item)
-  //   }else if (name.indexOf('政务')>-1){
-  //     government.push(item)
-  //   }
-  // })
   $('.keyword-list span').on('click',function(){
 
     $('#listWrapper').html('');
@@ -1413,28 +1397,6 @@ function keyword(data){
         }
       })
     })
-
-    // if(text == '苹果'){
-    //   apple.forEach(function(item,index){
-    //     renderData (item);
-    //   })
-    // }else if(text == '河蟹'){
-    //   crab.forEach(function(item,index){
-    //     renderData (item);
-    //   })
-    // }else if(text == '小场景'){
-    //   scene.forEach(function(item,index){
-    //     renderData (item);
-    //   })
-    // }else if(text == '一带一路'){
-    //   origins.forEach(function(item,index){
-    //     renderData (item);
-    //   })
-    // }else if(text == '政务'){
-    //   government.forEach(function(item,index){
-    //     renderData (item);
-    //   })
-    // }
   })
 }
 
