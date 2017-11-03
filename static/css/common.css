@@ -77,7 +77,21 @@ body {
     padding: 20px 0 20px 0;
 }
 .content-block {
-    margin-top: 70px;
+    position: relative;
+    margin-top: 100px;
+}
+.edit-btn {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    color: #bbb;
+    cursor: pointer;
+}
+.edit-btn i{
+    font-size: 24px;
+}
+.edit-btn:hover {
+    color: #BA383D;
 }
 .list-wrapper {
     overflow: hidden;

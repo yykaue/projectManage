@@ -25,7 +25,6 @@ function getData() {
 }
 // 获取个项目json数据
 function getData1 (item,dataLen,index) {
-
   $.ajax({
     type:'get',
     url:'https://jusfoun-fe.github.io/projectManage/configInfo/'+item+'?t='+(new Date()).valueOf(),
@@ -38,7 +37,7 @@ function getData1 (item,dataLen,index) {
         getEchartData(dataArr);
         statusClick(dataArr);
         getPersonData(dataArr);
-        keyword(dataArr)
+        keyword(dataArr);
       }
     }
   });
@@ -46,6 +45,9 @@ function getData1 (item,dataLen,index) {
 }
 //拼接html代码
 function renderData (res,jsonUrl)  {
+  if(!jsonUrl) {
+    jsonUrl = res.base.name+'.json'
+  }
 	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
   var oneMonth = monthDiff(res.schedule.actualStartTime);
   var num=0;
@@ -1367,42 +1369,72 @@ $('#force-modal').on('click',function(){
 
 // 关键词搜索
 function keyword(data){
-  var apple=[],crab=[],scene=[],origins=[];
-  data.forEach(function(item){
-    var name = item.base.name;
-    if(name.indexOf('苹果') > -1){
-      apple.push(item)
-    }else if (name.indexOf('河蟹') > -1){
-      crab.push(item)
-    }else if (name.indexOf('一带一路') > -1){
-      origins.push(item)
-    }else if (item.base.scene){
-      scene.push(item)
-    }
-  })
+  var keywordObj = {
+    "苹果":["苹果大数据","苹果大数据后台管理系统","苹果大数据大屏展示项目"],
+    "河蟹":["天津河蟹PC端","天津河蟹溯源大数据平台","天津河蟹移动端"],
+    "一带一路":["一带一路安易行","一带一路官网国际版","一带一路数字丝绸之路"],
+    "政务":["政务信息共享官网","政务信息资源管理中心","政务填报系统"],
+    "泸州":["泸州信用","泸州信用App"]
+  }
+  var keywordArr=[];
+  var apple=[],crab=[],scene=[],origins=[],government=[];
+  // data.forEach(function(item){
+  //   var name = item.base.name;
+  //   if(name.indexOf('苹果') > -1){
+  //     apple.push(item)
+  //   }else if (name.indexOf('河蟹') > -1){
+  //     crab.push(item)
+  //   }else if (name.indexOf('一带一路') > -1){
+  //     origins.push(item)
+  //   }else if (item.base.scene){
+  //     scene.push(item)
+  //   }else if (name.indexOf('政务')>-1){
+  //     government.push(item)
+  //   }
+  // })
   $('.keyword-list span').on('click',function(){
+
     $('#listWrapper').html('');
     var text = $(this).text();
     $('.status-list span').removeClass('active').eq(0).addClass('active');
     $('.type-list span').removeClass('active').eq(0).addClass('active');
     $(this).addClass('active').siblings().removeClass('active');
-    if(text == '苹果'){
-      apple.forEach(function(item,index){
-        renderData (item);
-      })
-    }else if(text == '河蟹'){
-      crab.forEach(function(item,index){
-        renderData (item);
-      })
-    }else if(text == '小场景'){
-      scene.forEach(function(item,index){
-        renderData (item);
-      })
-    }else if(text == '一带一路'){
-      origins.forEach(function(item,index){
-        renderData (item);
+    if(text == '小场景'){
+      data.forEach(function(item){
+        if(item.base.scene){
+          renderData (item);
+        }
       })
     }
+    data.forEach(function(item){
+      keywordObj[text].forEach(function(item1){
+        if(item1 == item.base.name ){
+          renderData (item);
+        }
+      })
+    })
+
+    // if(text == '苹果'){
+    //   apple.forEach(function(item,index){
+    //     renderData (item);
+    //   })
+    // }else if(text == '河蟹'){
+    //   crab.forEach(function(item,index){
+    //     renderData (item);
+    //   })
+    // }else if(text == '小场景'){
+    //   scene.forEach(function(item,index){
+    //     renderData (item);
+    //   })
+    // }else if(text == '一带一路'){
+    //   origins.forEach(function(item,index){
+    //     renderData (item);
+    //   })
+    // }else if(text == '政务'){
+    //   government.forEach(function(item,index){
+    //     renderData (item);
+    //   })
+    // }
   })
 }
 
