@@ -6,12 +6,12 @@
     "scene":false
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已提测",
     "actualStartTime": "2017-09-25",
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
     "estimatedEndTime": "2017-11-30",
-    "process": 70,                    
+    "process": 75,                    
     "delay": false,
     "technology":["vue","echarts","sass"]
   },
