@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-11",
     "estimatedEndTime": "2017-10-30",
-    "process": 73,                      
+    "process": 78,                      
     "delay": false,
     "technology":["vuejs"]	
   },
@@ -20,7 +20,7 @@
     "type":"合资公司",
     "manager":"李静波",                  
     "charge": "胡杰",                  
-    "affiliate": ["商业庆","杨勇冠"]       
+    "affiliate": ["商业庆"]       
   },
   "bug": {
     "total": 0,                     
