@@ -10,7 +10,7 @@
     "actualEndTime": "未定",     
     "estimatedStartTime": "2017-11-03", 
     "estimatedEndTime": "2017-11-17",  
-    "process": 0,                      
+    "process": 40,                      
     "delay": false,                     
     "technology":[""]               
   },
@@ -19,7 +19,7 @@
     "type":"合资公司",				           
     "manager":"",                  
     "charge": "汝银娟",                  
-    "affiliate": ["吕颖萍"]       
+    "affiliate": []       
   },
   "bug": {
     "total": 0,                     
