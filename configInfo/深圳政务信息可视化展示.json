@@ -14,7 +14,7 @@
     "estimatedEndTime": "2017-11-30",   
     "process": 5,                      
     "delay": false,                      
-    "technology":["jquery"]               
+    "technology":["jquery","vue","element"]               
   },
   "resources": {
     "demander": "粤数",                     
@@ -29,6 +29,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "客户需求有变更，项目暂停"                 
+    "remark": "客户需求有变更,后台管理-数据管理模块页面开发完成，等待联调"                 
   }
 }
