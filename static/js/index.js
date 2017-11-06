@@ -30,7 +30,6 @@ function getData1 (item,dataLen,index) {
     url:'https://jusfoun-fe.github.io/projectManage/configInfo/'+item+'?t='+(new Date()).valueOf(),
     success:function (res) {
       dataLen2++;
-      var jsonUrl= item;
       dataArr.push(res);
       if( dataLen == dataLen2) {
         getEchartData(dataArr);
@@ -38,7 +37,7 @@ function getData1 (item,dataLen,index) {
         getPersonData(dataArr);
         keyword(dataArr);
         dataArr.forEach(function(item){
-          renderData (item,item.base.url);
+          renderData (item);
         })
       }
     }
@@ -46,10 +45,8 @@ function getData1 (item,dataLen,index) {
 
 }
 //拼接html代码
-function renderData (res,jsonUrl)  {
-  if(!jsonUrl) {
-    jsonUrl = res.base.name+'.json'
-  }
+function renderData (res)  {
+  var jsonUrl = res.base.name+'.json'
 	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
   var oneMonth = monthDiff(res.schedule.actualStartTime);
   var num=0;
