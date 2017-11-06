@@ -46,14 +46,9 @@ function getData1 (item,dataLen,index) {
 }
 //拼接html代码
 function renderData (res)  {
-<<<<<<< HEAD
   var jsonUrl = res.base.name+'.json'
 	var processNum = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime,res.schedule.process,res.schedule.status);
-=======
- 
-	var jsonUrl = res.base.name+'.json'
-	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
->>>>>>> ba34d6667d271e94799628be06c135610814081b
+
   var oneMonth = monthDiff(res.schedule.actualStartTime);
   var num=0;
   if(res.resources.affiliate.length === 1 && !res.resources.affiliate[0]){
