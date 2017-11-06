@@ -47,7 +47,7 @@ function getData1 (item,dataLen,index) {
 //拼接html代码
 function renderData (res)  {
   var jsonUrl = res.base.name+'.json'
-	var process = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime);
+	var processNum = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime,res.schedule.process,res.schedule.status);
   var oneMonth = monthDiff(res.schedule.actualStartTime);
   var num=0;
   if(res.resources.affiliate.length === 1 && !res.resources.affiliate[0]){
@@ -92,7 +92,7 @@ function renderData (res)  {
             }else if (res.schedule.status == '即将启动') {
               html += '<span class="status  about-start col-lg-2 col-md-2  col-sm-2  col-xs-3"><i></i>'+res.schedule.status+'</span>'
             }
-            if((res.schedule.process + 20) < process && (process < 100)){
+            if(!processNum){
               html +='<div class="process-wrapper  col-lg-4 col-md-4 col-sm-4 col-xs-12 ">'
                 +'<div class="row">'
                 +'<span class="process-txt fl col-lg-5 col-md-5 col-sm-6 col-xs-4">进度：'+res.schedule.process+'%</span>'
@@ -173,6 +173,7 @@ function renderData (res)  {
                         'threejs':'icon-ThreeJs',
                         'd3':'icon-D',
                         'echart':'icon-echart',
+                        'echarts':'icon-echart',
                         'gulp':'icon-gulp',
                         'webpack':'icon-webpack1',
                         'less':'icon-less',
@@ -185,7 +186,7 @@ function renderData (res)  {
                         'angular':'icon-angularjs',
                         'font-awesome':'icon-font-awesome',
                         'awesome':'icon-font-awesome',
-                        'iconfont':'',
+                        'iconfont':'icon-i2',
                         'vue':'icon-vuejs',
                         'vue.js':'icon-vuejs',
                         'vuejs':'icon-vuejs',
@@ -194,7 +195,9 @@ function renderData (res)  {
                         'react':'icon-react',
                         'cms':'icon-cms',
                         'CMS':'icon-cms',
-                        'svg':'icon-svg1160608easyiconnet'
+                        'svg':'icon-svg1160608easyiconnet',
+                        'apicloud':'icon-cloud',
+                        'webgl':'icon-WebGL'
                       };
                         if(res.schedule.technology) {
                           res.schedule.technology.forEach(function (item) {
@@ -281,15 +284,41 @@ function clickArrow (e) {
 }
 
 //根据预计起止时间计算进度条
-function getProcess (start, end) {
+function getProcess (start, end, processNum,status) {
+  var flag =0;
 	var current = new Date().getTime();
 	var startTime = new Date(start).getTime();
 	var endTime = new Date(end).getTime();
-	if (current > endTime ){
-		return 100;
-	}else {
-		return ((current - startTime)/(endTime - startTime) * 100).toFixed(2);
-	}
+	var processE = parseFloat(((current - startTime)/(endTime - startTime) * 100).toFixed(2))
+  if(status == '开发中') {
+    if(end && end != '未定'){
+      if(processNum < 100){
+        if (current < endTime) {
+          if(processNum + 20 < processE){
+            return flag = 0;
+          }else {
+            return flag = 1;
+          }
+        }else {
+          return flag = 0;
+        }
+      }else {
+        return flag = 1;
+      }
+    }else {
+      return flag = 1;
+    }
+  }else {
+    return flag = 1;
+  }
+
+
+
+	// if (current > endTime && process < 100){
+	// 	return false;
+	// }else {
+	// 	return ((current - startTime)/(endTime - startTime) * 100).toFixed(2);
+	// }
 }
 // 近一个月的项目默认展开
 function monthDiff(time) {
@@ -840,8 +869,8 @@ function statusClick(dataArr){
         // 筛选出进度异常的数据
         var abnormalArr = [];
         dataArr.forEach(function(item){
-          var process = getProcess(item.schedule.estimatedStartTime,item.schedule.estimatedEndTime);
-          if ((item.schedule.process + 20) < process && (process < 100)){
+          var processAA = getProcess(item.schedule.estimatedStartTime,item.schedule.estimatedEndTime,item.schedule.process,item.schedule.status);
+          if (!processAA){
             abnormalArr.push(item)
           }
         })
