@@ -38,7 +38,7 @@ function getData1 (item,dataLen,index) {
         getPersonData(dataArr);
         keyword(dataArr);
         dataArr.forEach(function(item){
-          renderData (item,item.base.url);
+          renderData (item,jsonUrl);
         })
       }
     }
