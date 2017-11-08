@@ -7,9 +7,9 @@
   },
   "schedule": {
     "status": "即将启动",                  
-    "actualStartTime": "2017-11-8",  
+    "actualStartTime": "2017-11-6",  
     "actualEndTime": "",    
-    "estimatedStartTime": "2017-11-9",
+    "estimatedStartTime": "2017-11-6",
     "estimatedEndTime": "2017-11-30",  
     "process": 0,                     
     "delay": false,                   
