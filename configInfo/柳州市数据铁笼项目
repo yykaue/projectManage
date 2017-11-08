@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "柳州市数据铁笼项目",           
+    "url": "",           
+    "desc": "柳州市数据铁笼项目",                          
+    "mobile":false                       
+  },
+  "schedule": {
+    "status": "即将启动",                  
+    "actualStartTime": "2017-11-8",  
+    "actualEndTime": "",    
+    "estimatedStartTime": "2017-11-9",
+    "estimatedEndTime": "2017-11-30",  
+    "process": 0,                     
+    "delay": false,                   
+    "technology":["css3","jquery"] 
+  },
+  "resources": {
+    "demander": "栾新瑞", 
+    "type":"独立纵队",				      
+    "manager":"栾新瑞",                
+    "charge": "闫磊",                 
+    "affiliate": ["郭志敏","褚甜甜","温兴月"]      
+  },
+  "bug": {
+    "total": 0, 
+    "resolved": 0,
+    "unsolved": 0 
+  },
+  "others": {
+    "remark": ""     
+  }
+}
