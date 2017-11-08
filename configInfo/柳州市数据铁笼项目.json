@@ -6,14 +6,14 @@
     "mobile":false                       
   },
   "schedule": {
-    "status": "即将启动",                  
+    "status": "开发中",                  
     "actualStartTime": "2017-11-06",  
     "actualEndTime": "",    
     "estimatedStartTime": "2017-11-06",
     "estimatedEndTime": "2017-11-30",  
     "process": 0,                     
     "delay": false,                   
-    "technology":["css3","jquery"] 
+    "technology":["css3","vue"] 
   },
   "resources": {
     "demander": "栾新瑞", 
