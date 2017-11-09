@@ -12,7 +12,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-10-19", 
     "estimatedEndTime": "2017-10-30", 
-    "process":99,                      
+    "process":100,                      
     "delay": false,                     
     "technology":["vue","echarts"]            
   },
@@ -29,6 +29,6 @@
     "unsolved": 0           
   },
   "others": {
-    "remark": "原定两人开发，现在一人"     
+    "remark": ""     
   }
 }
