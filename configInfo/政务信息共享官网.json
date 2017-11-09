@@ -11,9 +11,9 @@
     "actualEndTime": "",    
     "estimatedStartTime": "2017-10-24",
     "estimatedEndTime": "2017-11-17",  
-    "process": 30,                     
+    "process": 60,                     
     "delay": false,                   
-    "technology":["css3","jquery"] 
+    "technology":["gulp","css3","echarts"] 
   },
   "resources": {
     "demander": "王苏栋", 
@@ -23,8 +23,8 @@
     "affiliate": ["魏阁","柳杨","郭惠敏"]      
   },
   "bug": {
-    "total": 0, 
-    "resolved": 0,
+    "total": 14, 
+    "resolved": 14,
     "unsolved": 0 
   }, 
   "others": {
