@@ -6,12 +6,12 @@
     "mobile":false                       
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": "已提测",                  
     "actualStartTime": "2017-10-24",  
     "actualEndTime": "",    
     "estimatedStartTime": "2017-10-24",
     "estimatedEndTime": "2017-11-17",  
-    "process": 60,                     
+    "process": 70,                     
     "delay": false,                   
     "technology":["gulp","css3","echarts"] 
   },
