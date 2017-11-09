@@ -5,11 +5,11 @@
     "desc": "便于管理苹果大数据前台页面的展示,监控苹果生产,销售等过程中的风险"
   },
   "schedule": {
-    "status": "暂停开发",
+    "status": "开发中",
     "actualStartTime": "2017-09-25",
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
-    "estimatedEndTime": "2017-10-30",
+    "estimatedEndTime": "2017-11-30",
     "process":70,                    
     "delay": false,
     "technology":["jquery","echarts"]
@@ -18,7 +18,7 @@
     "demander": "农业部信息中心",     
     "type":"独立纵队",			
     "manager":"陈乃赫",                 
-    "charge": "李鹏飞",                 
+    "charge": "邵金东",                 
     "affiliate": []
   },
   "bug": {
@@ -27,6 +27,6 @@
     "unsolved": 0                
   },
   "others": {
-    "remark": "暂停原因：因开发人员暂时全部投入到苹果大屏展示中所以苹果后台管理系统暂时停止开发"
+    "remark": "苹果大屏展示项目进入提测阶段,因此启动后台管理页面开发。"
   }
 }
