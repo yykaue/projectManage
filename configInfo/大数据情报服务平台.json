@@ -12,7 +12,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-05",
     "estimatedEndTime": "2017-11-30",
-    "process": 80,
+    "process": 90,
     "delay": true,
     "technology":["jQuery","Layui"]
   },
@@ -29,6 +29,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "延期原因：部分设计更改，功能优化和改善。项目进度，前端还有一个首页需要修改，目前还在等设计，其它就是配合后端工作。"
+    "remark": "延期原因：部分设计更改，功能优化和改善。项目进度，前端工作已基本完成，因为是静态页面，剩余工作就是配合后端进行调整和修改。"
   }
 }
