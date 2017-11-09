@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "新版CRM二期",
+    "url": "http://192.168.1.6:8124/jusfounManagementSystem/index.html",
+    "desc": "",                          
+    "mobile":false                      
+  },
+  "schedule": {
+    "status": "开发中",                  
+    "actualStartTime": "2017-09-30",    
+    "actualEndTime": "未定",      
+    "estimatedStartTime": "2017-09-30", 
+    "estimatedEndTime": "2017-12-30",   
+    "process": 75,
+    "delay": false,                      
+    "technology":["jquery","layui","echarts","gulp"]              
+  },
+  "resources": {
+    "demander": "",                     
+    "type":"内部研发平台",				            
+    "manager":"王远",                 
+    "charge": "杨羽珂",                  
+    "affiliate": ["杜万福","王斌彦"]
+  },
+  "bug": {
+    "total": 95,
+    "resolved": 95,
+    "unsolved": 0                     
+  },
+  "others": {
+    "remark": "一期已上线，现开发二期。帐号：yyk@jusfoun.com,密码：111111，现测试人员测试中，请勿动数据！！！"
+  }
+}
