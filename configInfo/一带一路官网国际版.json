@@ -10,7 +10,7 @@
     "actualEndTime": "未定",     
     "estimatedStartTime": "2017-11-03", 
     "estimatedEndTime": "2017-11-17",  
-    "process": 40,                      
+    "process": 70,                      
     "delay": false,                     
     "technology":[""]               
   },
@@ -27,6 +27,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "目前静态页面开发中，后续将配置到CMS上"                  
+    "remark": "将页面配置到CMS上"                  
   }
 }
