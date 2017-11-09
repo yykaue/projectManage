@@ -11,7 +11,7 @@
     "actualEndTime": "",    
     "estimatedStartTime": "2017-10-30",
     "estimatedEndTime": "2017-11-13",  
-    "process": 0,                     
+    "process": 30,                     
     "delay": false,                   
     "technology":["css3","jquery"] 
   },
