@@ -225,6 +225,11 @@
       "name":"一带一路官网国际版",
       "url":"一带一路官网国际版.json", 
       "actualStartTime": "2017/11/02"
+    }, 
+    {
+      "name":"呼市电商二期",
+      "url":"呼市电商二期.json", 
+      "actualStartTime": "2017/11/08"
     }
   ]
 }
