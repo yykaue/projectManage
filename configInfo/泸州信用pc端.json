@@ -1,6 +1,6 @@
 ﻿{
   "base": {
-    "name": "泸州信用",            
+    "name": "泸州信用pc端",            
     "url": "http://192.168.1.6:8124/luzhouxinyong/html/home/index.html",         
     "desc": "泸州信用网站2期开发",                        
     "mobile":false                       
