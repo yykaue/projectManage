@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-11",
     "estimatedEndTime": "2017-11-30",
-    "process": 65,                      
+    "process": 68,                      
     "delay": false,
     "technology":["vuejs"]	
   },
@@ -28,6 +28,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": ""
+    "remark": "服务端连接的后台同事的电脑，所以可能会不稳定"
   }
 }
