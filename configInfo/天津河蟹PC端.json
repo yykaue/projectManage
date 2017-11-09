@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-25",
     "estimatedEndTime": "2017-11-19",
-    "process": 82,                      
+    "process": 85,                      
     "delay": false,
     "technology":["vuejs"]	
   },
@@ -28,6 +28,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "由于前期人员少，项目时间短，项目页面量比较大，所以延期"
+    "remark": "用户名admin,密码123456,由于服务器是连的后台同事的电脑，可能会不稳定"
   }
 }
