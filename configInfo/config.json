@@ -230,6 +230,11 @@
       "name":"新版CRM二期",
       "url":"新版CRM二期.json", 
       "actualStartTime": "2017/09/30"
+    }, 
+    {
+      "name":"江苏金融大数据平台",
+      "url":"江苏金融大数据平台.json", 
+      "actualStartTime": "2017/11/10"
     }
   ]
 }
