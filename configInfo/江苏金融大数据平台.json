@@ -1,0 +1,32 @@
+{
+  "base": {
+    "name": "江苏金融大数据平台",
+    "url": "",
+    "desc": "暂无"
+  },
+  "schedule": {
+    "status": "开发中",
+    "actualStartTime": "2017-11-10",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-11-10",
+    "estimatedEndTime": "",
+    "process": 0,
+    "delay": false,
+    "technology":["vue"]
+  },
+  "resources": {
+    "demander": "金融",
+    "type":"独立纵队",
+    "manager":"樊利安",
+    "charge": "任新杰",
+    "affiliate": ["颜庭光","吕颖萍","韩凯波","徐媛媛","闫磊","褚甜甜","郭志敏","温兴月"]
+  },
+  "bug": {
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": ""
+  }
+}
