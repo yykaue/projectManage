@@ -6,7 +6,7 @@
     "mobile":true                        
   },
   "schedule": {
-    "status": "即将启动",                  
+    "status": "开发中",                  
     "actualStartTime": "2017-09-18",    
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-18", 
@@ -20,7 +20,7 @@
     "type":"内部研发平台",				            
     "manager":"崔志华",                  
     "charge": "冯彦文",                  
-    "affiliate": [""]       
+    "affiliate": ["王斌彦","杨勇冠"]       
   },
   "bug": {
     "total": 0,                     
