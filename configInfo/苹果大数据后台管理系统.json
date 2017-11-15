@@ -10,7 +10,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
     "estimatedEndTime": "2017-11-30",
-    "process":70,                    
+    "process":85,                    
     "delay": false,
     "technology":["jquery","echarts"]
   },
@@ -27,6 +27,6 @@
     "unsolved": 0                
   },
   "others": {
-    "remark": "苹果大屏展示项目进入提测阶段,因此启动后台管理页面开发。"
+    "remark": "该项目10月15号因苹果大屏展示项目紧急开发,项目组所有前后端人投入苹果大屏展示项目,因此暂停开发,11月10日大屏项目进入提测阶段,因此重新启动后台管理页面开发。"
   }
 }
