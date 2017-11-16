@@ -6,7 +6,7 @@
     "mobile":true                    
   },
   "schedule": {
-    "status": "已提测",                 
+    "status": "暂停开发",                 
     "actualStartTime": "2017-05-08",
     "actualEndTime": "未定",    
     "estimatedStartTime": "2017-05-08", 
