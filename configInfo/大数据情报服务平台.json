@@ -12,7 +12,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-05",
     "estimatedEndTime": "2017-11-30",
-    "process": 90,
+    "process": 95,
     "delay": true,
     "technology":["jQuery","Layui"]
   },
