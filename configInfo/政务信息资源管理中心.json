@@ -6,9 +6,9 @@
     "mobile":false                       
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": " 已完成",                  
     "actualStartTime": "2017-10-25",  
-    "actualEndTime": "",    
+    "actualEndTime": "2017-10-31",    
     "estimatedStartTime": "2017-10-25",
     "estimatedEndTime": "2017-10-31",  
     "process": 100,                     
