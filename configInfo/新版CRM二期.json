@@ -6,12 +6,12 @@
     "mobile":false                      
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": "已提测",                  
     "actualStartTime": "2017-09-30",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-30", 
     "estimatedEndTime": "2017-12-30",   
-    "process": 75,
+    "process": 90,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"]              
   },
@@ -20,11 +20,11 @@
     "type":"内部研发平台",				            
     "manager":"王远",                 
     "charge": "杨羽珂",                  
-    "affiliate": ["杜万福","王斌彦"]
+    "affiliate": ["杜万福"]
   },
   "bug": {
-    "total": 95,
-    "resolved": 95,
+    "total": 118,
+    "resolved": 118,
     "unsolved": 0                     
   },
   "others": {
