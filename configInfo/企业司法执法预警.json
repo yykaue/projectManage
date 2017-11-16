@@ -7,14 +7,14 @@
     "scene":true
   },
   "schedule": {
-    "status": "开发中",                 
+    "status": "暂停开发",                 
     "actualStartTime": "2017-10-30",    
     "actualEndTime": "",      
     "estimatedStartTime": "2017-10-30", 
     "estimatedEndTime": "",   
-    "process": 67,                      
+    "process": 75,                      
     "delay": false,                     
-    "technology":["vue","element-ui","echarts","iconfont"]              
+    "technology":["vue","element-ui","echarts"]              
   },
   "resources": {
     "demander": "九次放大数据",            
@@ -29,6 +29,6 @@
     "unsolved": 0                    
   },
   "others": {
-    "remark": "可视化图表差一个未提供（本周末可完成），后台数据暂无整理，无法进行联调，正在开发新增需求"               
+    "remark": "前端已开发完成，接口已定义好，后台数据未整理完毕，无法进行联调，项目开发暂停中"               
   }
 }
