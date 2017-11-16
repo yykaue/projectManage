@@ -10,7 +10,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-11-10",
     "estimatedEndTime": "2017-11-30",
-    "process": 0,
+    "process": 20,
     "delay": false,
     "technology":["vue"]
   },
@@ -27,6 +27,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": ""
+    "remark": "被投企业风险预警已完成；吕颖萍负责火炬中心；韩凯波负责产业链；徐媛媛负责新三板；闫磊负责全球上市企业公司"
   }
 }
