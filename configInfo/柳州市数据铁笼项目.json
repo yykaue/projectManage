@@ -6,11 +6,11 @@
     "mobile":false                       
   },
   "schedule": {
-    "status": "即将启动",                  
-    "actualStartTime": "2017-11-06",  
+    "status": "开发中",                  
+    "actualStartTime": "2017-11-17",  
     "actualEndTime": "",    
     "estimatedStartTime": "2017-11-06",
-    "estimatedEndTime": "2017-11-30",  
+    "estimatedEndTime": "",  
     "process": 0,                     
     "delay": false,                   
     "technology":["css3","vue"] 
@@ -28,6 +28,6 @@
     "unsolved": 0 
   },
   "others": {
-    "remark": "产品业务重新梳理，暂停开发"     
+    "remark": "产品业务重新梳理，预计结束时间没定，等项目经理回来了决定。"     
   }
 }
