@@ -1,6 +1,6 @@
 ﻿{
   "base": {
-    "name": "一带一路数字丝绸之路（后台管理）",             
+    "name": "一带一路数字丝绸之路",             
     "url": "http://192.168.1.6:8124/digitalSilkRoad/index.html",           
     "desc": "",                           
     "mobile":true                        
@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-18", 
     "estimatedEndTime": "2017-12-30",   
-    "process": 10,                     
+    "process": 20,                     
     "delay": false,                      
     "technology":["vue","element-ui"]               
   },
