@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "政务信息开发门户",           
+    "url": "http://192.168.1.6:8124/governmentAffairs/webSite/index.html",           
+    "desc": "政务信息开发门户",                          
+    "mobile":false                       
+  },
+  "schedule": {
+    "status": "开发中",                  
+    "actualStartTime": "2017-11-13",  
+    "actualEndTime": "",    
+    "estimatedStartTime": "2017-11-13",
+    "estimatedEndTime": "2017-11-30",  
+    "process": 40,                     
+    "delay": false,                   
+    "technology":["gulp","css3","echarts"] 
+  },
+  "resources": {
+    "demander": "王苏栋", 
+    "type":"独立纵队",				      
+    "manager":"王苏栋",                
+    "charge": "李猛",                 
+    "affiliate": ["魏阁","郭惠敏","柳杨","汝银娟"]      
+  },
+  "bug": {
+    "total": 0, 
+    "resolved": 0,
+    "unsolved": 0 
+  }, 
+  "others": {
+    "remark": ""     
+  }
+}
