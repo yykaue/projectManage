@@ -6,7 +6,7 @@
     "mobile":true
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已完成",
     "actualStartTime": "2017-09-21",
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-15",
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "前端已完毕，现阶段配合后端研发人员修改新需求"
+    "remark": "前端已完毕，本周项目经理到岗，后台研发和项目经理与客户研讨之后再做决定"
   }
 }
