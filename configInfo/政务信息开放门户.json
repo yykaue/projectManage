@@ -1,8 +1,8 @@
 {
   "base": {
-    "name": "政务信息开发门户",           
+    "name": "政务信息开放门户",           
     "url": "http://192.168.1.6:8124/governmentAffairs/webSite/index.html",           
-    "desc": "政务信息开发门户",                          
+    "desc": "政务信息开放门户",                          
     "mobile":false                       
   },
   "schedule": {
