@@ -1,17 +1,17 @@
 ﻿{
   "base": {
     "name": "泸州信用pc端",            
-    "url": "http://192.168.1.6:8124/luzhouxinyong/html/home/index.html",         
+    "url": "http://192.168.1.6:8124/luzhouxinyong/index.html",         
     "desc": "泸州信用网站2期开发",                        
     "mobile":false                       
   },
   "schedule": {
     "status": "开发中",                  
     "actualStartTime": "2017-09-28",    
-    "actualEndTime": "2017-11-15",      
+    "actualEndTime": "2017-11-20",      
     "estimatedStartTime": "2017-09-28", 
     "estimatedEndTime": "未定",   
-    "process": 92,                      
+    "process": 95,                      
     "delay": false,                      
     "technology":["layui"]               
   },
