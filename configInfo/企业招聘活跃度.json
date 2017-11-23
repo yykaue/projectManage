@@ -1,0 +1,34 @@
+{
+  "base": {
+    "name": "企业招聘活跃度",
+    "url": "",
+    "desc": "",               
+    "mobile":false,
+    "scene":true
+  },
+  "schedule": {
+    "status": "开发中",
+    "actualStartTime": "2017-11-23",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-11-23",
+    "estimatedEndTime": "",
+    "process":5, 
+    "delay": false,
+    "technology":["vue","element-ui","echarts"]
+  },
+  "resources": {
+    "demander": "九次方大数据",
+    "type":"独立纵队",
+    "manager":"",
+    "charge": "杨微",
+    "affiliate": [""]
+  },
+  "bug": {
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": ""
+  }
+}
