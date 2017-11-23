@@ -20,12 +20,12 @@
     "type":"合资公司",				            
     "manager":"苏伟杰",                  
     "charge": "吉亚峰",                  
-    "affiliate": ["杨微","李鹏飞","冯红阳"]       
+    "affiliate": ["杨微","李鹏飞","冯红阳","王杰"]       
   },
   "bug": {
-    "total": 0,                     
-    "resolved": 0,                  
-    "unsolved": 0                     
+    "total": 140,                     
+    "resolved": 138,                  
+    "unsolved": 2                     
   },
   "others": {
     "remark": "账户名（jiyafeng）,密码（123456）"                  
