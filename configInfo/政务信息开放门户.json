@@ -11,7 +11,7 @@
     "actualEndTime": "",    
     "estimatedStartTime": "2017-11-13",
     "estimatedEndTime": "2017-11-30",  
-    "process": 40,                     
+    "process": 80,                     
     "delay": false,                   
     "technology":["gulp","css3","echarts"] 
   },
@@ -20,7 +20,7 @@
     "type":"独立纵队",				      
     "manager":"王苏栋",                
     "charge": "李猛",                 
-    "affiliate": ["魏阁","郭惠敏","柳杨","汝银娟"]      
+    "affiliate": ["魏阁","郭惠敏"]      
   },
   "bug": {
     "total": 0, 
