@@ -1,12 +1,12 @@
 ﻿{
   "base": {
-    "name": "丽江旅游大数据平台",
+    "name": "丽江旅游大数据平台APP",
     "url": "http://192.168.1.6:8124/ljTourismBigData/html/index.html",
     "desc": "丽江旅游大数据平台风险预警平台APP",
     "mobile":true
   },
   "schedule": {
-    "status": "已完成",
+    "status": "已冻结",
     "actualStartTime": "2017-09-27",
     "actualEndTime": "2017-09-30",
     "estimatedStartTime": "2017-09-27",
