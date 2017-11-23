@@ -7,12 +7,12 @@
   "schedule": {
     "status": "已完成",                  
     "actualStartTime": "2017-10-17",    
-    "actualEndTime": "未定",     
+    "actualEndTime": "2017-10-28",     
     "estimatedStartTime": "2017-10-17", 
     "estimatedEndTime": "2017-10-27",  
     "process": 100,                      
     "delay": false,                     
-    "technology":["vue.js"]               
+    "technology":[]               
   },
   "resources": {
     "demander": "",                     
