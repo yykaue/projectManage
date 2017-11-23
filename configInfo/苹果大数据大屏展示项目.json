@@ -11,7 +11,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
     "estimatedEndTime": "2017-11-30",
-    "process": 90,                    
+    "process": 92,                    
     "delay": false,
     "technology":["vue","echarts","sass"]
   },
@@ -23,8 +23,8 @@
     "affiliate": ["陈胜","彭庆凯","魏彬"]
   },
   "bug": {
-    "total": 25,                
-    "resolved": 25,             
+    "total": 47,                
+    "resolved": 47,             
     "unsolved": 0                
   },
   "others": {
