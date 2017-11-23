@@ -6,12 +6,12 @@
     "mobile":false
   },
   "schedule": {
-    "status": "已完成",
+    "status": "开发中",
     "actualStartTime": "2017-02",
     "actualEndTime": "",
     "estimatedStartTime": "2017-02",
     "estimatedEndTime": "2017-10",
-    "process": 100,
+    "process": 50,
     "delay": false,
     "technology":["layer弹层","水印效果","jQuery"]
   },
@@ -23,11 +23,11 @@
     "affiliate": []
   },
   "bug": {
-    "total": 44,
-    "resolved": 44,
+    "total": 49,
+    "resolved": 49,
     "unsolved": 0
   },
   "others": {
-    "remark": "这个是测试地址，只有在公司内网可以进入，正式地址在公安内部网，进不到网页中，账户名(zhidui),密码(123456)"                 
+    "remark": "这个是测试地址，只有在公司内网可以进入，正式地址在公安内部网，进不到网页中，账户名(zhidui),密码(123456)，二期新需求制作中，在一期的代码上改"                 
   }
 }
