@@ -8,7 +8,7 @@
   "schedule": {
     "status": "已完成",
     "actualStartTime": "2017-07-24",
-    "actualEndTime": "",
+    "actualEndTime": "2017-11-15",
     "estimatedStartTime": "2017-07-24",
     "estimatedEndTime": "2017-10-30",
     "process": 100,
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "前端处于已完成，项目阶段（项目处于招商阶段，偶尔配合后台研发联调）"
+    "remark": "已完成，现进行二期"
   }
 }
