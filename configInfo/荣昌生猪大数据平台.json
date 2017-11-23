@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "荣昌生猪大数据平台",             
-    "url": "",           
+    "url": "http://192.168.1.6:8124/rcszBigData/html/index.html",           
     "desc": ""                                         
   },
   "schedule": {
