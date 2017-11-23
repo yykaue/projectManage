@@ -12,7 +12,7 @@
     "actualEndTime": "2017-11-30",      
     "estimatedStartTime": "2017-10-16", 
     "estimatedEndTime": "2017-11-30",   
-    "process": 10,                      
+    "process": 15,                      
     "delay": false,                      
     "technology":["jquery","vue","element"]               
   },
@@ -29,6 +29,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "后台管理模块：11.16拿到新的原型，页面部分字段需要修改，还处于页面开发阶段，还需进行接口制作、前后联调。企业专题模块：由于是在已有代码上修改，且实用技术为anglarjs,还未进行熟悉代码。"                 
+    "remark": "后台管理模块：目前在进行前后台接口联调，进度缓慢。企业专题模块：新增页面部分字段11.23刚确定，还未进行接口联调。"                 
   }
 }
