@@ -55,6 +55,11 @@
       "url":"一带一路数字丝绸之路.json",
       "actualStartTime": "2017/09/18"
     },
+      {
+      "name":"数字丝绸之路后台管理",
+      "url":"数字丝绸之路后台管理.json",
+      "actualStartTime": "2017/11/13"
+    },
     {
       "name":"福建生态云(二期)",
       "url":"福建生态云 二期.json",
