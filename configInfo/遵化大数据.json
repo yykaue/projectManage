@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-05-02", 
     "estimatedEndTime": "2017-11-30",   
-    "process": 88,                      
+    "process": 90,                      
     "delay": false,                     
     "technology":["layui","gulp"]               
   },
@@ -23,8 +23,8 @@
     "affiliate": ["任传真"]       
   },
   "bug": {
-    "total": 120,                     
-    "resolved": 120,                  
+    "total": 129,                     
+    "resolved": 129,                  
     "unsolved": 0                     
   },
   "others": {
