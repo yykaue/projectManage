@@ -11,8 +11,8 @@
     "actualStartTime": "2017-09-05",
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-05",
-    "estimatedEndTime": "2017-11-30",
-    "process": 95,
+    "estimatedEndTime": "2017-12-10",
+    "process": 40,
     "delay": true,
     "technology":["jQuery","Layui"]
   },
@@ -21,7 +21,7 @@
     "type":"总部平台",
     "manager":"何毅容",
     "charge": "李鹏飞",
-    "affiliate": ["杨微"] 
+    "affiliate": [] 
   },
   "bug": {
     "total":0 ,
@@ -29,6 +29,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "延期原因：部分设计更改，功能优化和改善。项目进度，前端工作已基本完成，因为是静态页面，剩余工作就是配合后端进行调整和修改。"
+    "remark": "v2.1版本重新开发，以原型评估与V2.0版本相似度百分40%左右"
   }
 }
