@@ -10,7 +10,7 @@
     "actualEndTime": "未定",     
     "estimatedStartTime": "2017-11-03", 
     "estimatedEndTime": "2017-12-17",  
-    "process": 75,                      
+    "process": 90,                      
     "delay": false,                     
     "technology":[""]               
   },
@@ -27,6 +27,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "将页面配置到CMS上"                  
+    "remark": "已经将页面配置到CMS上了，等域名备案解析之后就可以上线了"                  
   }
 }
