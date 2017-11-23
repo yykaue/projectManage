@@ -11,7 +11,7 @@
     "actualEndTime": "",    
     "estimatedStartTime": "2017-11-06",
     "estimatedEndTime": "",  
-    "process": 0,                     
+    "process": 15,                     
     "delay": false,                   
     "technology":["css3","vue"] 
   },
@@ -20,7 +20,7 @@
     "type":"独立纵队",				      
     "manager":"栾新瑞",                
     "charge": "闫磊",                 
-    "affiliate": ["郭志敏","褚甜甜","温兴月"]      
+    "affiliate": ["郭志敏","褚甜甜","温兴月","李耀"]      
   },
   "bug": {
     "total": 0, 
