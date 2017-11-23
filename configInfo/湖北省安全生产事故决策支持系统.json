@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "湖北省安全生产事故决策支持系统",
+    "url": "",
+    "desc": "",
+    "mobile":false
+  },
+  "schedule": {
+    "status": "开发中",
+    "actualStartTime": "2017-11-20",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-11-20",
+    "estimatedEndTime": "2017-11-30",
+    "process": 10,
+    "delay": false,
+    "technology":["VUE"]
+  },
+  "resources": {
+    "demander": "",
+    "type":"",
+    "manager":"徐媛媛",
+    "charge": "",
+    "affiliate": ["邹非凡"]
+  },
+  "bug": { 
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": ""
+  }
+}
