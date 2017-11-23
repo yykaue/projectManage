@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "天津河蟹PC端",            
-    "url": "./tianjinCrabPC/index.html",         
+    "url": "http://192.168.1.6:8124/tianjinCrabPC/index.html",         
     "desc": "河蟹养殖追溯",
     "mobile":false
   },
@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-25",
     "estimatedEndTime": "2017-11-19",
-    "process": 90,                      
+    "process": 92,                      
     "delay": false,
     "technology":["vuejs"]	
   },
