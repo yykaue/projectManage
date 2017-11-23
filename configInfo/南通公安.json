@@ -10,7 +10,7 @@
     "actualStartTime": "2017-02",
     "actualEndTime": "",
     "estimatedStartTime": "2017-02",
-    "estimatedEndTime": "2017-10",
+    "estimatedEndTime": "未定",
     "process": 50,
     "delay": false,
     "technology":["layer弹层","水印效果","jQuery"]
