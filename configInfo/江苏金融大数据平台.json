@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "江苏金融大数据平台",
-    "url": "./JS-Finance/index.html",
+    "url": "http://192.168.1.6:8124/JS-Finance/index.html",
     "desc": "暂无"
   },
   "schedule": {
