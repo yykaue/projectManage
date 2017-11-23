@@ -10,8 +10,8 @@
     "actualStartTime": "2017-09-30",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-30", 
-    "estimatedEndTime": "2017-12-30",   
-    "process": 90,
+    "estimatedEndTime": "2017-12-19",   
+    "process": 95,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"]              
   },
@@ -23,8 +23,8 @@
     "affiliate": ["杜万福"]
   },
   "bug": {
-    "total": 118,
-    "resolved": 118,
+    "total": 144,
+    "resolved": 144,
     "unsolved": 0                     
   },
   "others": {
