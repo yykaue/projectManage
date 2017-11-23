@@ -49,7 +49,7 @@ function renderData (res)  {
   var jsonUrl = res.base.name+'.json'
 	var processNum = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime,res.schedule.process,res.schedule.status);
 
-  var oneMonth = monthDiff(res.schedule.actualStartTime);
+  var delay = monthDiff(res.schedule.estimatedEndTime,res.schedule.process);
   var num=0;
   if(res.resources.affiliate.length === 1 && !res.resources.affiliate[0]){
     num = 1
@@ -61,7 +61,7 @@ function renderData (res)  {
   var html = '<li class="list-li">'
               +'<span class="down " onclick="clickArrow(this)"> <i></i></span>'
               +'<a class="icon iconfont icon-github1 edit-json" href="https://github.com/jusfoun-FE/projectManage/edit/master/configInfo/'+jsonUrl+'" title="编辑" target="_blank"> <i></i></a>';
-              if(res.schedule.delay){
+              if(!delay){
                 html += '<span class="delay"></span><i class="delay-txt">延期</i>'
               }
               if(res.base.url){
@@ -321,22 +321,21 @@ function getProcess (start, end, processNum,status) {
 	// 	return ((current - startTime)/(endTime - startTime) * 100).toFixed(2);
 	// }
 }
-// 近一个月的项目默认展开
-function monthDiff(time) {
+// 判断今天日期是否超过预计结束时间，增加延期标志
+function monthDiff(time,process) {
   var today = new Date();
-  var year = today.getFullYear();
-  var month = today.getMonth();
-  var day = today.getDate();
-  if(month == 0){
-    year = year -1;
-    month = 12;
-  }
-  var prevMonth = year+ '-'+month+'-'+day;
-  var prevMonthNum = new Date(prevMonth).getTime();
+  var todayNum = new Date(today).getTime();
   var timeNum = new Date(time).getTime();
-  if(timeNum > prevMonthNum){
+  if(process < 100){
+    if(timeNum < todayNum){
+      return false;
+    }else {
+      return true;
+    }
+  }else {
     return true;
-  }else return false;
+  }
+
 }
 // 获取echart所需数据
 function getEchartData(data){
