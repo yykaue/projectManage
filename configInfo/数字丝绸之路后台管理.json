@@ -3,7 +3,7 @@
     "name": "数字丝绸之路后台管理",             
     "url": "http://192.168.1.6:8124/digitalSilkRoadPC/index.html",           
     "desc": "",                           
-    "mobile":true                        
+    "mobile":false                       
   },
   "schedule": {
     "status": "开发中",                  
