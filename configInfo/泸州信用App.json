@@ -10,7 +10,7 @@
     "actualStartTime": "2017-10-11",
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-10-11",
-    "estimatedEndTime": "未定",
+    "estimatedEndTime": "2017-11-27",
     "process": 100,
     "delay": false,
     "technology":["apicloud"]
@@ -23,7 +23,7 @@
     "affiliate": []
   },
   "bug": {
-    "total": 0,
+    "total": 25,
     "resolved": 0,
     "unsolved": 0
   },
