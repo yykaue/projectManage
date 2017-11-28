@@ -5,7 +5,7 @@
     "desc": "便于管理苹果大数据前台页面的展示,监控苹果生产,销售等过程中的风险"
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已提测",
     "actualStartTime": "2017-09-25",
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
@@ -19,11 +19,11 @@
     "type":"独立纵队",			
     "manager":"陈乃赫",                 
     "charge": "邵金东",                 
-    "affiliate": []
+    "affiliate": ['彭庆凯']
   },
   "bug": {
-    "total": 4,                
-    "resolved": 4,             
+    "total": 7,                
+    "resolved": 7,             
     "unsolved": 0                
   },
   "others": {
