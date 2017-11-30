@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-05-02", 
     "estimatedEndTime": "2017-11-30",   
-    "process": 90,                      
+    "process": 98,                      
     "delay": false,                     
     "technology":["layui","gulp"]               
   },
@@ -20,14 +20,14 @@
     "type":"合资公司",				           
     "manager":"姚文龙",                 
     "charge": "杨杰",                  
-    "affiliate": ["任传真"]       
+    "affiliate": ["任传真","王帅"]       
   },
   "bug": {
-    "total": 129,                     
-    "resolved": 129,                  
-    "unsolved": 0                     
+    "total": 147,                     
+    "resolved": 146,                  
+    "unsolved": 1                     
   },
   "others": {
-    "remark": "决策分析和后台联调，政府端，消费端，运维端已经停测。"   
+    "remark": "还有一个bug需要可视化支持，预计今天完成。"   
   }
 }
