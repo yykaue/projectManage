@@ -8,10 +8,10 @@
   "schedule": {
     "status": "开发中",
     "actualStartTime": "2017-11-09",
-    "actualEndTime": "2017-11-27",
+    "actualEndTime": ,
     "estimatedStartTime": "2017-11-08",
-    "estimatedEndTime": "",
-    "process": 90,
+    "estimatedEndTime": "2017-12-30",
+    "process": 20,
     "delay": false,
     "technology":["jQuery","handlebars"]
   },
@@ -23,11 +23,11 @@
     "affiliate": [""]
   },
   "bug": {
-    "total": 0,
-    "resolved": 0,
+    "total": 5,
+    "resolved": 5,
     "unsolved": 0
   },
   "others": {
-    "remark": "呼市电商二期增加竞价功能"
+    "remark": "呼市电商二期增加竞价功能(开发测试同步进行)"
   }
 }
