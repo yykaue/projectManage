@@ -10,7 +10,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
     "estimatedEndTime": "2017-11-30",
-    "process":88,                    
+    "process":92,                    
     "delay": false,
     "technology":["jquery","echarts"]
   },
@@ -22,11 +22,11 @@
     "affiliate": ["彭庆凯"]
   },
   "bug": {
-    "total": 7,                
-    "resolved": 7,             
+    "total": 8,                
+    "resolved": 8,             
     "unsolved": 0                
   },
   "others": {
-    "remark": "该项目10月15号因苹果大屏展示项目紧急开发,项目组所有前后端人投入苹果大屏展示项目,因此暂停开发,11月10日大屏项目进入提测阶段,因此重新启动后台管理页面开发。"
+    "remark": "该项目基本完成，由于大屏展示项目修改频繁且增加新需求可能会造成延期完成。"
   }
 }
