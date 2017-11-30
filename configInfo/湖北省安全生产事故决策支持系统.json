@@ -11,7 +11,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-11-20",
     "estimatedEndTime": "2017-11-30",
-    "process": 10,
+    "process": 70,
     "delay": false,
     "technology":["VUE"]
   },
