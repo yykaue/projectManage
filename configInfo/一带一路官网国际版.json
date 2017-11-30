@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "一带一路官网国际版",             
-    "url": "",           
+    "url": "http://www.bigdatasr.com/",           
     "desc": ""                                         
   },
   "schedule": {
@@ -27,6 +27,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "已经将页面配置到CMS上了，等域名备案解析之后就可以上线了"                  
+    "remark": "已上线，最近还有需要修改的新需求"                  
   }
 }
