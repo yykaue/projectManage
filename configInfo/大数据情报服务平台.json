@@ -12,7 +12,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-05",
     "estimatedEndTime": "2017-12-10",
-    "process": 40,
+    "process": 70,
     "delay": true,
     "technology":["jQuery","Layui"]
   },
@@ -21,7 +21,7 @@
     "type":"总部平台",
     "manager":"何毅容",
     "charge": "李鹏飞",
-    "affiliate": [] 
+    "affiliate": ["柳杨"] 
   },
   "bug": {
     "total":0 ,
@@ -29,6 +29,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "v2.1版本重新开发，以原型评估与V2.0版本相似度百分40%左右"
+    "remark": ""
   }
 }
