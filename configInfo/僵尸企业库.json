@@ -7,12 +7,12 @@
     "scene":true
   },
   "schedule": {
-    "status": "开发中",                 
+    "status": "已完成",                 
     "actualStartTime": "2017-10-09",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-10-09", 
     "estimatedEndTime": "2017-10-31",   
-    "process": 85,                      
+    "process": 100,                      
     "delay": false,                     
     "technology":["vue","element-ui","echarts","iconfont"]              
   },
@@ -29,6 +29,6 @@
     "unsolved": 0                    
   },
   "others": {
-    "remark": "图表镶嵌，联调数据"               
+    "remark": ""               
   }
 }
