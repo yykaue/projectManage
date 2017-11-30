@@ -10,7 +10,7 @@
     "actualStartTime": "2017-10-24",  
     "actualEndTime": "",    
     "estimatedStartTime": "2017-10-24",
-    "estimatedEndTime": "2017-11-24",  
+    "estimatedEndTime": "2017-12-15",  
     "process": 90,                     
     "delay": false,                   
     "technology":["gulp","css3","echarts"] 
