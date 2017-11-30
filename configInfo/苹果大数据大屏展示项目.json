@@ -11,7 +11,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
     "estimatedEndTime": "2017-11-30",
-    "process": 92,                    
+    "process": 95,                    
     "delay": false,
     "technology":["vue","echarts","sass"]
   },
@@ -23,11 +23,11 @@
     "affiliate": ["陈胜","彭庆凯","魏彬"]
   },
   "bug": {
-    "total": 47,                
-    "resolved": 47,             
+    "total": 53,                
+    "resolved": 53,             
     "unsolved": 0                
   },
   "others": {
-    "remark": "暂无"
+    "remark": "目前项目基本完成,每周给客户演示,按客户要求进行修改,近期生产和流通各需要增加一个页面,由于建模没造数据,后台没法写接口,有可能造成项目延期。"
   }
 }
