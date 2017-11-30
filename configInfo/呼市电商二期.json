@@ -8,7 +8,7 @@
   "schedule": {
     "status": "开发中",
     "actualStartTime": "2017-11-09",
-    "actualEndTime": ,
+    "actualEndTime": "",
     "estimatedStartTime": "2017-11-08",
     "estimatedEndTime": "2017-12-30",
     "process": 20,
