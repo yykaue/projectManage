@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "", 
     "estimatedEndTime": "",   
-    "process":"",                      
+    "process":0,                      
     "delay": false,                     
     "technology":[]              
   },
