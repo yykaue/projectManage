@@ -325,7 +325,8 @@ function getProcess (start, end, processNum,status) {
 function monthDiff(time,process) {
   var today = new Date();
   var todayNum = new Date(today).getTime();
-  var timeNum = new Date(time).getTime();
+
+  var timeNum = new Date(time).getTime() +24*60*60*1000;
   if(process < 100){
     if(timeNum < todayNum){
       return false;
