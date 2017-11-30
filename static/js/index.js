@@ -19,6 +19,9 @@ function getData() {
         getData1(item.url,dataLen,index)
       });
 
+    },
+    error:function(XMLHttpRequest, textStatus, errorThrown){
+      console.log(textStatus, errorThrown)
     }
   });
 
@@ -40,6 +43,9 @@ function getData1 (item,dataLen,index) {
           renderData (item);
         })
       }
+    },
+    error:function(XMLHttpRequest, textStatus, errorThrown){
+      console.log(textStatus, errorThrown)
     }
   });
 
