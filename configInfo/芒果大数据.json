@@ -1,0 +1,33 @@
+{
+  "base": {
+    "name": "芒果大数据",            
+    "url": "",          
+    "desc": "",                          
+    "mobile":false                       
+  },
+  "schedule": {
+    "status": "即将启动",                 
+    "actualStartTime": "",    
+    "actualEndTime": "未定",      
+    "estimatedStartTime": "", 
+    "estimatedEndTime": "",   
+    "process":"",                      
+    "delay": false,                     
+    "technology":[]              
+  },
+  "resources": {
+    "demander": "农业部需求中心",            
+    "type":"独立纵队",				            
+    "manager":"",                  
+    "charge": "杨杰",                  
+    "affiliate": []       
+  },
+  "bug": {
+    "total": 0,                     
+    "resolved": 0,                 
+    "unsolved": 0                    
+  },
+  "others": {
+    "remark": ""               
+  }
+}
