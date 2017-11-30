@@ -328,7 +328,7 @@ function monthDiff(time,process) {
 
   var timeNum = new Date(time).getTime() +24*60*60*1000;
   if(process < 100){
-    if(timeNum < todayNum){
+    if(timeNum <= todayNum){
       return false;
     }else {
       return true;
