@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-11",
     "estimatedEndTime": "2017-11-30",
-    "process": 76,                      
+    "process": 90,                      
     "delay": false,
     "technology":["vuejs"]	
   },
