@@ -1,0 +1,34 @@
+{
+  "base": {
+    "name": "企业高管朋友圈", 
+    "url": "http://192.168.1.6:8123",
+    "desc": "企业高管朋友圈",               
+    "mobile":false,
+    "scene":true
+  },
+  "schedule": {
+    "status": "开发中",    
+    "actualStartTime": "2017-12-14", 
+    "actualEndTime": "未定",
+    "estimatedStartTime": "未定", 
+    "estimatedEndTime": "未定", 
+    "process":0,                      
+    "delay": false,                     
+    "technology":["vue","echarts"]            
+  },
+  "resources": {
+    "demander": "九次方大数据",   
+    "type":"独立纵队",				       
+    "manager":"",            
+    "charge": "冯彦文",        
+    "affiliate": [""]    
+  },
+  "bug": {
+    "total": 0,            
+    "resolved": 0,         
+    "unsolved": 0           
+  },
+  "others": {
+    "remark": ""     
+  }
+}
