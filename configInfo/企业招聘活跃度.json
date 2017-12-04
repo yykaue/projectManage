@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "企业招聘活跃度",
-    "url": "",
+    "url": "http://192.168.1.6:8124/recruitActivity/index.html",
     "desc": "",               
     "mobile":false,
     "scene":true
