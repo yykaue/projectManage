@@ -25,7 +25,7 @@
   "bug": {
     "total": 0,                     
     "resolved": 0,                  
-    "unsolved": 0                     
+    "unsolved": 3                     
   },
   "others": {
     "remark": "用户名visitor,密码123456,由于服务器是连的后台同事的电脑，可能会不稳定，请不要修改系统管理的数据"
