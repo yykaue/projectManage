@@ -8,10 +8,10 @@
   "schedule": {
     "status": "开发中",                  
     "actualStartTime": "2017-09-28",    
-    "actualEndTime": "2017-12-15",      
+    "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-28", 
-    "estimatedEndTime": "未定",   
-    "process": 98,                      
+    "estimatedEndTime": "2017-12-15",   
+    "process": 95,                      
     "delay": false,                      
     "technology":["layui"]               
   },
@@ -20,12 +20,12 @@
     "type":"合资公司",				            
     "manager":"苏伟杰",                  
     "charge": "吉亚峰",                  
-    "affiliate": []       
+    "affiliate": ['杨勇冠','冯红阳','杨微','任传真','杨杰','王杰','王斌彦']       
   },
   "bug": {
-    "total": 298,                     
-    "resolved": 298,                  
-    "unsolved": 0                     
+    "total": 274,                     
+    "resolved": 266,                  
+    "unsolved": 8                     
   },
   "others": {
     "remark": "账户名（jiyafeng）,密码（123456）"                  
