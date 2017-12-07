@@ -12,7 +12,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "未定", 
     "estimatedEndTime": "未定", 
-    "process":0,                      
+    "process":10,                      
     "delay": false,                     
     "technology":["vue","echarts"]            
   },
