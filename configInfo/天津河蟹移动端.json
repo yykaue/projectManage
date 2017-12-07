@@ -6,7 +6,7 @@
     "mobile":true
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": "已提测",                  
     "actualStartTime": "2017-09-11",
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-11",
@@ -25,7 +25,7 @@
   "bug": {
     "total": 0,                     
     "resolved": 0,                  
-    "unsolved": 0                     
+    "unsolved": 15                     
   },
   "others": {
     "remark": "用户名:visitor,密码:123456,服务端连接的后台同事的电脑，所以可能会不稳定"
