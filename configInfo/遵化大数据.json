@@ -10,8 +10,8 @@
     "actualStartTime": "2017-05-12",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-05-02", 
-    "estimatedEndTime": "2017-11-30",   
-    "process": 100,                      
+    "estimatedEndTime": "2018-01-15",   
+    "process": 95,                      
     "delay": false,                     
     "technology":["layui","gulp"]               
   },
@@ -28,6 +28,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": ""   
+    "remark": "项目新需求调整，需求量不大。bug修改"   
   }
 }
