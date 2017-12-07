@@ -9,10 +9,10 @@
   "schedule": {
     "status": "开发中",                  
     "actualStartTime": "2017-10-31",    
-    "actualEndTime": "2017-11-30",      
+    "actualEndTime": "2017-12-15",      
     "estimatedStartTime": "2017-10-16", 
-    "estimatedEndTime": "2017-12-04",   
-    "process": 80,                      
+    "estimatedEndTime": "2017-12-15",   
+    "process": 90,                      
     "delay": false,                      
     "technology":["jquery","vue","element"]               
   },
@@ -24,11 +24,11 @@
     "affiliate": ["林源"]       
   },
   "bug": {
-    "total": 0,                     
-    "resolved": 0,                  
+    "total": 5,                     
+    "resolved": 5,                  
     "unsolved": 0                     
   },
   "others": {
-    "remark": "后台管理模块：部分功能暂时不做。企业专题：可视化图表还有两个未提供，后台数据还未整理好，还需要根据数据效果进行调整"                 
+    "remark": "后台管理模块：已提测。企业专题：部分图表正在进行前后联调"                 
   }
 }
