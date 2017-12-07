@@ -6,12 +6,12 @@
     "mobile":false                       
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": "已提测",                  
     "actualStartTime": "2017-11-13",  
     "actualEndTime": "",    
     "estimatedStartTime": "2017-11-13",
     "estimatedEndTime": "2017-12-15",  
-    "process": 80,                     
+    "process": 85,                     
     "delay": false,                   
     "technology":["gulp","css3","echarts"] 
   },
@@ -23,8 +23,8 @@
     "affiliate": ["魏阁","郭惠敏"]      
   },
   "bug": {
-    "total": 0, 
-    "resolved": 0,
+    "total": 7, 
+    "resolved": 7,
     "unsolved": 0 
   }, 
   "others": {
