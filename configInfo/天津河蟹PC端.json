@@ -10,7 +10,7 @@
     "actualStartTime": "2017-09-25",
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-25",
-    "estimatedEndTime": "2017-11-19",
+    "estimatedEndTime": "2017-12-31",
     "process": 95,                      
     "delay": false,
     "technology":["vuejs"]	
@@ -23,11 +23,11 @@
     "affiliate": ["商业庆"]       
   },
   "bug": {
-    "total": 0,                     
-    "resolved": 0,                  
+    "total": 3,                     
+    "resolved": 3,                  
     "unsolved": 3                     
   },
   "others": {
-    "remark": "用户名visitor,密码123456,由于服务器是连的后台同事的电脑，可能会不稳定，请不要修改系统管理的数据"
+    "remark": "用户名visitor,密码123456,由于服务器是连的后台同事的电脑，可能会不稳定，请不要修改系统管理的数据，由于3个端的BUG都提在一起没办法区分PC和移动，目前只能统计未改的BUG"
   }
 }
