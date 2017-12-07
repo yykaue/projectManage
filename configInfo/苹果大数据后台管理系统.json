@@ -9,8 +9,8 @@
     "actualStartTime": "2017-09-25",
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-09-25",
-    "estimatedEndTime": "2017-11-30",
-    "process":92,                    
+    "estimatedEndTime": "2018-1-30",
+    "process":98,                    
     "delay": false,
     "technology":["jquery","echarts"]
   },
@@ -22,11 +22,11 @@
     "affiliate": ["彭庆凯"]
   },
   "bug": {
-    "total": 8,                
-    "resolved": 8,             
+    "total": 14,                
+    "resolved": 14,             
     "unsolved": 0                
   },
   "others": {
-    "remark": "该项目基本完成，由于大屏展示项目修改频繁且增加新需求可能会造成延期完成。"
+    "remark": "该项目基本完成，后期无开发任务,只做项目维护到2018年1月31日。"
   }
 }
