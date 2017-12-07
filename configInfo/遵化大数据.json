@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-05-02", 
     "estimatedEndTime": "2017-11-30",   
-    "process": 98,                      
+    "process": 100,                      
     "delay": false,                     
     "technology":["layui","gulp"]               
   },
@@ -23,11 +23,11 @@
     "affiliate": ["任传真","王帅"]       
   },
   "bug": {
-    "total": 147,                     
-    "resolved": 146,                  
-    "unsolved": 1                     
+    "total": 167,                     
+    "resolved": 167,                  
+    "unsolved": 0                     
   },
   "others": {
-    "remark": "还有一个bug需要可视化支持，预计今天完成。"   
+    "remark": ""   
   }
 }
