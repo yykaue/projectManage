@@ -10,8 +10,8 @@
     "actualStartTime": "2017-09-30",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-30", 
-    "estimatedEndTime": "2017-12-19",   
-    "process": 97,
+    "estimatedEndTime": "2017-12-18",   
+    "process": 90,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"]              
   },
@@ -23,11 +23,11 @@
     "affiliate": ["杜万福"]
   },
   "bug": {
-    "total": 178,
-    "resolved": 178,
+    "total": 182,
+    "resolved": 182,
     "unsolved": 0                     
   },
   "others": {
-    "remark": "一期已上线，现开发二期。帐号：yyk@jusfoun.com,密码：111111，现测试人员测试中，请勿动数据！！！"
+    "remark": "二期已上线，但后期会有新需求，项目需要支持到18号。入口是portal。"
   }
 }
