@@ -11,14 +11,14 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-11-20",
     "estimatedEndTime": "2017-11-30",
-    "process": 70,
+    "process": 90,
     "delay": false,
     "technology":["VUE"]
   },
   "resources": {
     "demander": "",
     "type":"",
-    "manager":"胡署",
+    "manager":"胡曙",
     "charge": "徐媛媛",
     "affiliate": ["邹非凡"]
   },
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": ""
+    "remark": "项目经理根据客户反馈，在整理修改问题，下周进行进一步开发"
   }
 }
