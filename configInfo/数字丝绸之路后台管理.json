@@ -6,7 +6,7 @@
     "mobile":false                       
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": "暂停开发",                  
     "actualStartTime": "2017-11-13",    
     "actualEndTime": "",      
     "estimatedStartTime": "2017-11-13", 
