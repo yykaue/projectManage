@@ -13,7 +13,10 @@
     "estimatedEndTime": "2018-01-31",
     "process": 95,                    
     "delay": false,
-    "technology":["vue","echarts","sass"]
+    "technology":["vue","echarts","sass"],
+    "pages":74,                           
+    "score":"暂无",                      
+    "scoreUrl":"" 
   },
   "resources": {
     "demander": "农业部信息中心",     
