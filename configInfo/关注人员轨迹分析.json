@@ -12,7 +12,10 @@
     "estimatedEndTime": "",
     "process": 100,                    
     "delay": false,
-    "technology":["jQuery"]
+    "technology":["jQuery"],
+    "pages":6,
+    "score":"暂无",
+    "scoreUrl":""    
   },
   "resources": {
     "demander": "贵州警局",
