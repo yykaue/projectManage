@@ -3,8 +3,23 @@ $(function () {
   dataArr =[];
   dataLen = 0,dataLen2 = 0;
   flag = false;
-  getData();
+  //getData();
+  getInitData();
 });
+function getInitData(){
+  $.getJSON('static/output.json',function(res){
+    dataArr = res;
+    getEchartData(dataArr);
+    statusClick(dataArr);
+    getPersonData(dataArr);
+    keyword(dataArr);
+    dataArr.forEach(function(item){
+      renderData (item);
+    })
+  })
+}
+
+
 // 获取最外层json数据
 function getData() {
   $.ajax({
