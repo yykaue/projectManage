@@ -147,17 +147,16 @@ function renderData (res)  {
                     +'<li class="col-lg-3 col-md-3  col-sm-3  col-xs-12">'
                       +'<ul class="row details-ul">'
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
-                            +'<span class="l-title">bug总数：</span>'
-                            +'<span class="r-con">'+res.bug.total+'</span>'
+                            +'<span class="l-title">bug统计：</span>'
+                            +'<a class="r-con bug" title="bug总数">'+res.bug.total+'/</a>'
+                            +'<a class="r-con bug" title="已解决">'+res.bug.resolved+'/</a>'
+                            +'<a class="r-con bug" title="未解决">'+res.bug.unsolved+'</a>'
                           +'</li>'
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
-                            +'<span class="l-title">已解决：</span>'
-                            +'<span class="r-con">'+res.bug.resolved+'</span>'
+                            +'<span class="l-title">页面数：</span>'
+                            +'<span class="r-con">'+res.schedule.pages+'</span>'
                           +'</li>'
-                          +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
-                            +'<span class="l-title">未解决：</span>'
-                            +'<span class="r-con">'+res.bug.unsolved+'</span>'
-                          +'</li>'
+
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
                             +'<span class="l-title">使用技术：</span>'
                             +'<span class="r-con tech-wrapper">';
@@ -211,10 +210,20 @@ function renderData (res)  {
                             html +='<a class="tech-icon iconfont '+icons[item.toLowerCase()]+'" title="'+item+'"></a>';
                           })
                         }
-
-
                         html+='</span>'
-                          +'</li>';
+                          +'</li>'
+                          +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">';
+
+                        if(!res.base.scene){
+                          if(res.schedule.score == '暂无'){
+                            html+='<span class="l-title">项目评分：</span>'
+                              +'<span class="r-con">'+res.schedule.score+'</span>'
+                          }else {
+                            html+='<span class="l-title">项目评分：</span>'
+                              +'<a class="r-con" href="'+res.schedule.scoreUrl+'">'+res.schedule.score+'</a>'
+                          }
+                        }
+                          html+='</li>';
 
 
             html +='</ul>'

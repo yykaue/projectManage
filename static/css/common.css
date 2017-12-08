@@ -551,6 +551,9 @@ body {
 .keyword {
     padding: 10px 0 0 0;
 }
+a.bug:hover {
+    color: #555;
+}
 @media (min-width: 1200px) {
     .chart-block {
         border-bottom: 1px solid #e5e5e5;
