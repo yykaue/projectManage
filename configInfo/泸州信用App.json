@@ -8,9 +8,9 @@
   "schedule": {
     "status": "已提测",
     "actualStartTime": "2017-10-11",
-    "actualEndTime": "2017-12-15",
+    "actualEndTime": "未定",
     "estimatedStartTime": "2017-10-11",
-    "estimatedEndTime": "2017-11-27",
+    "estimatedEndTime": "2017-12-15",
     "process": 100,
     "delay": false,
     "technology":["apicloud"]
