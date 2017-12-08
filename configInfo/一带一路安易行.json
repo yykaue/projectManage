@@ -11,10 +11,10 @@
     "actualEndTime": "未定",    
     "estimatedStartTime": "2017-05-08", 
     "estimatedEndTime": "2017-11-20",   
-    "process": 95,                     
+    "process": 99,                     
     "delay": false,                      
     "technology":["vue","mint-ui","webSocket"],
-    "pages":3,                           
+    "pages":48,                           
     "score":"暂无",                      
     "scoreUrl":""      
   },
