@@ -10,9 +10,12 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-08-20",
     "estimatedEndTime": "2017-09-20",
-    "process": 90,
+    "process": 100,
     "delay": false,
-    "technology":["vue","echarts","sass","moment"]
+    "technology":["vue","echarts","sass","moment"],
+    "pages":50,                           
+    "score":"暂无",                      
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "金融",
