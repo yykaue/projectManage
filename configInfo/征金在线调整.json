@@ -12,7 +12,10 @@
     "estimatedEndTime": "",
     "process": 100,
     "delay": false,
-    "technology":["Omi"]
+    "technology":["Omi"],
+    "pages": 9,
+    "score":"暂无",
+    "scoreUrl":""
   },
   "resources": {
     "demander": "金融",
