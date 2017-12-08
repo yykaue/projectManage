@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-10-25",   
     "process": 100,                      
     "delay": false,                     
-    "technology":["vue"]               
+    "technology":["vue"],
+    "pages":8,                           
+    "score":"暂无",                      
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "",                    
