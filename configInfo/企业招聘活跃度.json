@@ -14,7 +14,10 @@
     "estimatedEndTime": "",
     "process":50, 
     "delay": false,
-    "technology":["vue","element-ui","echarts"]
+    "technology":["vue","element-ui","echarts"],
+    "page":4,
+    "score":"暂无",
+    "scoreUrl":""
   },
   "resources": {
     "demander": "九次方大数据",
