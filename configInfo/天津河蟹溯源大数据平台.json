@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-12-31",
     "process": 90,                      
     "delay": false,
-    "technology":["vuejs"]	
+    "technology":["vuejs"],
+    "pages":10,
+    "score":"暂无",
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "",
