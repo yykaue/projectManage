@@ -14,6 +14,9 @@
     "estimatedEndTime": "",
     "process":30, 
     "delay": false,
+    "pages":12,
+    "score":"暂无",
+    "scoreUrl":"",
     "technology":["vue","element-ui","echarts"]
   },
   "resources": {
