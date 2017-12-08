@@ -13,7 +13,10 @@
     "estimatedEndTime": "2018-01-15",   
     "process": 95,                      
     "delay": false,                     
-    "technology":["layui","gulp"]               
+    "technology":["layui","gulp"],
+    "pages":320,                           
+    "score":"暂无",                      
+    "scoreUrl":""
   },
   "resources": {
     "demander": "河北溯源大数据信息技术有限公司",                    
