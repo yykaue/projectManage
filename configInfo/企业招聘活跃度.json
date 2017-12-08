@@ -15,7 +15,7 @@
     "process":50, 
     "delay": false,
     "technology":["vue","element-ui","echarts"],
-    "page":4,
+    "pages":4,
     "score":"暂无",
     "scoreUrl":""
   },
