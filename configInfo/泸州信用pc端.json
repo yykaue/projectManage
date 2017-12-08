@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-12-15",   
     "process": 95,                      
     "delay": false,                      
-    "technology":["layui"]               
+    "technology":["layui"],
+    "pages":109,                           
+    "score":"暂无",                      
+    "scoreUrl":""
   },
   "resources": {
     "demander": "泸州市发改委",                     
