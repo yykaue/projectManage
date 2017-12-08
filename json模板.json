@@ -15,8 +15,8 @@
     "process": 50,                      //项目进度(必填)
     "delay": false,                      //是否延期,true:是,false:否(必填)
     "technology":["a","b"],               //项目使用技术,如["jquery","html5","css3","百度地图","bootstrap","layui","vuejs","element-ui","mint-ui","threejs","d3","echart","gulp","webpack","less","sass","handlebar","nodejs","angularjs","reactjs","font-awesome","iconfont"]
-    "pageNum":0,                           //页面数量。以原型为准
-    "score":0,                            //项目经理评分
+    "pages":0,                           //页面数量。以原型为准，已完成项目以完成页面量为准
+    "score":"暂无",                       //项目经理评分
     "scoreUrl":""                         //该项目对应的问卷调查链接
   },
   "resources": {
