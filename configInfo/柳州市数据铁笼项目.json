@@ -13,7 +13,10 @@
     "estimatedEndTime": "",  
     "process": 45,                     
     "delay": false,                   
-    "technology":["css3","vue"] 
+    "technology":["css3","vue"],
+    "pages":53,
+    "score":"暂无",
+    "scoreUrl":""
   },
   "resources": {
     "demander": "栾新瑞", 
