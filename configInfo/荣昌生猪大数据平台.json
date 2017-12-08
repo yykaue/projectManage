@@ -12,7 +12,10 @@
     "estimatedEndTime": "2017-10-27",  
     "process": 100,                      
     "delay": false,                     
-    "technology":[]               
+    "technology":[],
+    "pages":6,                           
+    "score":"暂无",                      
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "",                     
