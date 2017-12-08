@@ -15,6 +15,7 @@
     "delay": false, 
      "pages":11,
     "score":"暂无",
+    "scoreUrl":"",
     "technology":["css3","jquery"] 
   },
   "resources": {
