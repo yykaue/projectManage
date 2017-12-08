@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-10-15",
     "process": 100, 
     "delay": false,
-    "technology":["jQuery","sass"]
+    "technology":["jQuery","sass"],
+    "pages":20,                           
+    "score":"暂无",                      
+    "scoreUrl":""   
   },
   "resources": {
     "demander": "",
