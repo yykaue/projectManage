@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-12-15",
     "process": 90,
     "delay": false,
-    "technology":["VUE"]
+    "technology":["VUE"],
+    "pages": 9,
+    "score":"暂无",
+    "scoreUrl":""
   },
   "resources": {
     "demander": "",
