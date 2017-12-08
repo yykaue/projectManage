@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-10-13",  
     "process": 90,                      
     "delay": false,                     
-    "technology":["vue.js"]               
+    "technology":["vue.js"],
+    "pages":14,                           
+    "score":"暂无",                      
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "",                     
