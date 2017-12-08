@@ -12,7 +12,10 @@
     "estimatedEndTime": "2017-10-30",
     "process": 100,                    
     "delay": false,
-    "technology":["jQuery","Layui"]
+    "technology":["jQuery","Layui"],
+    "pages":20,
+    "score":"暂无",
+    "scoreUrl":""    
   },
   "resources": {
     "demander": "全国扫黄打非工作小组办公室",
