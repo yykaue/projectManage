@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-10-17",
     "process": 100,
     "delay": false,
-    "technology":["Media Query"]
+    "technology":["Media Query"],
+     "pages":2,                           
+    "score":"暂无",                      
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "九次方",
