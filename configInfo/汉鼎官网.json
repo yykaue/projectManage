@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-10-13",
     "process": 100,
     "delay": false,
-    "technology":["CMS"]
+    "technology":["CMS"],
+     "pages":14,                           
+    "score":"暂无",                      
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "",
