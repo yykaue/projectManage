@@ -13,7 +13,9 @@
     "estimatedEndTime": "2017-11-27",
     "process": 100,
     "delay": false,
-    "technology":["apicloud"]
+    "technology":["apicloud"],
+    "pages":35, 
+    "score":"暂无",
   },
   "resources": {
     "demander": "泸州市发改委",
