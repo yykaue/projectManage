@@ -12,7 +12,10 @@
     "estimatedEndTime": "2017-09-15",
     "process": 100,                    
     "delay": false,
-    "technology":["jquery","echarts","sass"]
+    "technology":["jquery","echarts","sass"],
+    "pages":19,                           
+    "score":"暂无",                      
+    "scoreUrl":""   
   },
   "resources": {
     "demander": "农业部信息中心",     
