@@ -13,7 +13,7 @@
     "estimatedEndTime": "2018-12-30",   
     "process":0,                      
     "delay": false,                     
-    "technology":[],
+    "technology":[""],
     "pages":0,                           
     "score":"暂无",                      
     "scoreUrl":""
