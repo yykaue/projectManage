@@ -14,7 +14,10 @@
     "estimatedEndTime": "",   
     "process": 100,                      
     "delay": false,                     
-    "technology":["vue","element-ui","echarts"]              
+    "technology":["vue","element-ui","echarts"],
+    "pages":2,
+    "score":"暂无",
+    "scoreUrl":""
   },
   "resources": {
     "demander": "九次放大数据",            
