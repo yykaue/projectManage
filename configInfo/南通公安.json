@@ -13,7 +13,10 @@
     "estimatedEndTime": "未定",
     "process": 90,
     "delay": false,
-    "technology":["layer弹层","水印效果","jQuery"]
+    "technology":["layer弹层","水印效果","jQuery"],
+    "pages":0,                           
+    "score":"暂无",                      
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "九次方",
