@@ -6,14 +6,17 @@
     "mobile": false
   },
   "schedule": {
-    "status": "暂停开发",
+    "status": "已完成",
     "actualStartTime": "2017-08-03",
     "actualEndTime": "2017-08-13",
     "estimatedStartTime": "2017-08-03",
     "estimatedEndTime": "2017-08-10",
     "process": 100,
     "delay": true,
-    "technology": ["vue"]
+    "technology": ["vue"],
+    "pages": 5,
+    "score": "暂无",
+    "scoreUrl": ""
   },
   "resources": {
     "demander": "福建星元次方",
