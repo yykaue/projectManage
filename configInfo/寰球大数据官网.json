@@ -12,7 +12,9 @@
     "estimatedStartTime": "2017-10-30",
     "estimatedEndTime": "2017-11-13",  
     "process": 100,                     
-    "delay": false,                   
+    "delay": false, 
+     "pages":11,
+    "score":"暂无",
     "technology":["css3","jquery"] 
   },
   "resources": {
