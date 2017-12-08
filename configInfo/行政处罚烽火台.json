@@ -16,6 +16,7 @@
     "delay": false,
      "pages":6,
     "score":"暂无",
+    "scoreUrl":"",
     "technology":["vue","element-ui","echarts"]
   },
   "resources": {
