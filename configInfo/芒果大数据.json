@@ -13,7 +13,10 @@
     "estimatedEndTime": "2018-12-30",   
     "process":0,                      
     "delay": false,                     
-    "technology":[]              
+    "technology":[],
+    "pages":0,                           
+    "score":"暂无",                      
+    "scoreUrl":""
   },
   "resources": {
     "demander": "农业部需求中心",            
