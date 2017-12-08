@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-12-1",   
     "process": 70,                     
     "delay": false,                      
-    "technology":["vue","element-ui"]               
+    "technology":["vue","element-ui"],
+    "pages":64,                           
+    "score":"暂无",                      
+    "scoreUrl":""   
   },
   "resources": {
     "demander": "九次方大数据",                    
