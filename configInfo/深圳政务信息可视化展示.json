@@ -14,7 +14,10 @@
     "estimatedEndTime": "2017-12-15",   
     "process": 90,                      
     "delay": false,                      
-    "technology":["jquery","vue","element"]               
+    "technology":["jquery","vue","element"],
+    "pages":124,
+    "score":"暂无",
+    "scoreUrl":""
   },
   "resources": {
     "demander": "粤数",                     
