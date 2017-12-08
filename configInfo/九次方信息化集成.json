@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-12-18",   
     "process": 90,
     "delay": false,                      
-    "technology":["jquery","layui","echarts","gulp"]              
+    "technology":["jquery","layui","echarts","gulp"],
+    "pages":90,
+    "score":"暂无",
+    "scoreUrl":""
   },
   "resources": {
     "demander": "",                     
