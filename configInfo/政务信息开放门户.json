@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-12-15",  
     "process": 90,                     
     "delay": false,                   
-    "technology":["gulp","css3","echarts"] 
+    "technology":["gulp","css3","echarts"],
+    "pages":14,                           
+    "score":"暂无",                      
+    "scoreUrl":""  
   },
   "resources": {
     "demander": "王苏栋", 
