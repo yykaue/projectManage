@@ -13,7 +13,7 @@
     "estimatedEndTime": "2017-12-30",
     "process": 20,
     "delay": false,
-    "technology":["jQuery","handlebars"]
+    "technology":["jQuery","handlebars"],
     "pages":0,                           
     "score":"暂无",                      
     "scoreUrl":""
