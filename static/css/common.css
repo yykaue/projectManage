@@ -483,7 +483,7 @@ body {
 }
 .condition-list span {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
     cursor: pointer;
     color: #777;
 
@@ -554,112 +554,159 @@ body {
 a.bug:hover {
     color: #555;
 }
+
+/*星星*/
+.star {
+    margin-right:5px;
+}
+.star img {
+    width: 15px;
+    height: 15px;
+    margin: 7px 2px 0 0;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+    opacity:0;
+    transition: all 0.3s;
+}
+.mask.active {
+    transition: all 0.3s;
+    opacity:1;
+    z-index: 100000;
+}
+.mask-wrapper {
+    position: relative;
+    margin: 80px auto 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+}
+
 @media (min-width: 1200px) {
-    .chart-block {
-        border-bottom: 1px solid #e5e5e5;
-        border-right: none;
-    }
-    .modal-lg {
-        width: 900px;
-        margin-top: 90px;
-    }
+.chart-block {
+    border-bottom: 1px solid #e5e5e5;
+    border-right: none;
+}
+.modal-lg {
+    width: 900px;
+    margin-top: 90px;
+}
+.mask-wrapper{
+    width: 1100px;
+    height: 800px;
+    overflow-y:auto;
+}
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-    .no-right-border {
-        border-right: none;
-    }
-    .no-bottom-border {
-        border-bottom: none;
-    }
-
+.no-right-border {
+    border-right: none;
+}
+.no-bottom-border {
+    border-bottom: none;
+}
+.mask-wrapper{
+    width: 1000px;
+}
 }
 @media (min-width: 768px) and (max-width:991px) {
 
-    .list {
-        margin-top: 20px;
+.list {
+    margin-top: 20px;
 
-    }
-    .chart-wrapper {
-        padding: 0 15px;
-        border: none;
-        background: none;
-    }
+}
+.chart-wrapper {
+    padding: 0 15px;
+    border: none;
+    background: none;
+}
+.modal-dialog1{
+    width: 800px;
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 rgba(0,0,0,0.5);
+}
 
 }
 @media  (max-width:768px) {
-    .container>.navbar-header {
-        margin-left: 20px;
-        font-size: 18px;
-    }
-    .header-small .nav li a {
-        padding: 10px 30px;
-    }
-    .list>li {
-        padding: 0 15px;
-    }
-    .title-wrapper {
-        border: none;
-    }
-    .title-txt {
-        min-width: 210px;
-        font-size: 14px;
-    }
-    a.title-txt:visited,
-    a.title-txt:link,
-    a.title-txt:active {
-        color: #333;
-        text-decoration: none;
-    }
-    .title-txt i {
-        top: 1px;
-        left: -22px;
-        width:16px;
-        height: 16px;
-    }
-    .title-txt .num {
-        font-size: 13px;
-    }
-    .process-wrapper {
-        padding: 0 46px 0 10px;
-        border-top: 1px solid #e5e5e5;
-    }
-    .details-wrapper {
-        margin-top: 0;
-    }
-    .details li {
-        padding: 0;
-    }
-    .chart-title {
-        position:relative;
-        font-size: 16px;
+.container>.navbar-header {
+    margin-left: 20px;
+    font-size: 18px;
+}
+.header-small .nav li a {
+    padding: 10px 30px;
+}
+.list>li {
+    padding: 0 15px;
+}
+.title-wrapper {
+    border: none;
+}
+.title-txt {
+    min-width: 210px;
+    font-size: 14px;
+}
+a.title-txt:visited,
+a.title-txt:link,
+a.title-txt:active {
+    color: #333;
+    text-decoration: none;
+}
+.title-txt i {
+    top: 1px;
+    left: -22px;
+    width:16px;
+    height: 16px;
+}
+.title-txt .num {
+    font-size: 13px;
+}
+.process-wrapper {
+    padding: 0 46px 0 10px;
+    border-top: 1px solid #e5e5e5;
+}
+.details-wrapper {
+    margin-top: 0;
+}
+.details li {
+    padding: 0;
+}
+.chart-title {
+    position:relative;
+    font-size: 16px;
 
-    }
-    .status{
-        margin-right: 0;
-        font-size: 12px;
-    }
-    .tech-icon {
-        margin: 7px 5px 0 5px;
-    }
-    .chart-block {
-        border-right: none;
-    }
-    .condition-wrapper  li {
-        line-height: 30px;
-        font-size: 14px;
-    }
-    .condition-title {
-        margin-left: 10px;
-    }
-    .condition-list {
-        margin-left: 82px;
-    }
-    .down,
-    .edit-json {
-        top: 55px;
-    }
-    .icon-relation {
-        display: none;
-    }
+}
+.status{
+    margin-right: 0;
+    font-size: 12px;
+}
+.tech-icon {
+    margin: 7px 5px 0 5px;
+}
+.chart-block {
+    border-right: none;
+}
+.condition-wrapper  li {
+    line-height: 30px;
+    font-size: 14px;
+}
+.condition-title {
+    margin-left: 10px;
+}
+.condition-list {
+    margin-left: 82px;
+}
+.down,
+.edit-json {
+    top: 55px;
+}
+.icon-relation {
+    display: none;
+}
+
 }
 

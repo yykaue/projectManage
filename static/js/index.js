@@ -13,8 +13,8 @@ function getInitData(){
     statusClick(dataArr);
     getPersonData(dataArr);
     keyword(dataArr);
-    dataArr.forEach(function(item){
-      renderData (item);
+    dataArr.forEach(function(item,index){
+      renderData (item,index);
     })
   })
 }
@@ -66,7 +66,7 @@ function getData1 (item,dataLen,index) {
 
 }
 //拼接html代码
-function renderData (res)  {
+function renderData (res,index)  {
   var jsonUrl = res.base.name+'.json'
 	var processNum = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime,res.schedule.process,res.schedule.status);
 
@@ -133,7 +133,7 @@ function renderData (res)  {
                     html +='<div class="details-wrapper clearfix">'
 
             html +='<ul class="details clearfix row">'
-                    +'<li class="col-lg-5 col-md-5  col-sm-5 col-xs-12">'
+                    +'<li class="col-lg-4 col-md-5  col-sm-5 col-xs-12">'
                       +'<ul class="row details-ul">'
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
                             +'<span class="l-title">负责人：</span>'
@@ -159,7 +159,7 @@ function renderData (res)  {
 
                       +'</ul>'
                     +'</li>'
-                    +'<li class="col-lg-3 col-md-3  col-sm-3  col-xs-12">'
+                    +'<li class="col-lg-4 col-md-3  col-sm-3  col-xs-12">'
                       +'<ul class="row details-ul">'
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
                             +'<span class="l-title">bug统计：</span>'
@@ -228,16 +228,19 @@ function renderData (res)  {
                         html+='</span>'
                           +'</li>'
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">';
-
+                        $.fn.raty.defaults.path = 'static/raty/lib/img';
                         if(!res.base.scene){
                           if(res.schedule.score == '暂无'){
                             html+='<span class="l-title">项目评分：</span>'
                               +'<span class="r-con">'+res.schedule.score+'</span>'
                           }else {
                             html+='<span class="l-title">项目评分：</span>'
-                              +'<a class="r-con" href="'+res.schedule.scoreUrl+'">'+res.schedule.score+'</a>'
+                              +'<a  class="r-con"  data-toggle="modal" data-target="#myModal1"><span class="star" id="star'+index+'"></span>'+res.schedule.score+'分</a>';
+                            // $("#star"+index).raty({ readOnly: true, score: 3.56 });
+
                           }
                         }
+
                           html+='</li>';
 
 
@@ -297,8 +300,23 @@ function renderData (res)  {
                   html+='</ul>'
                 +'</div>'
               +'</li>'
-  $('#listWrapper').append(html);
 
+  $('#listWrapper').append(html);
+  $("#star"+index).raty({
+    readOnly: true,
+    score: res.schedule.score,
+    size: 14
+  });
+  var imgurl = 'static/img/scoreimg/';
+  $("#star"+index).click(function(){
+    $('body').css('overflow','hidden');
+    $('.mask').addClass('active');
+    $('#scoreImg').attr('src',imgurl+res.base.name+".png")
+  })
+  $('.mask').click(function(){
+    $('body').css('overflow','auto');
+    $('.mask').removeClass('active');
+  })
 }
 //点击下拉按钮展开或收缩
 function clickArrow (e) {
@@ -862,7 +880,7 @@ function statusClick(dataArr){
             return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
           });
           statusArr.forEach(function(item,index){
-            renderData (item)
+            renderData (item,index)
           })
         }else {
           var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
@@ -875,7 +893,7 @@ function statusClick(dataArr){
           return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
         })
         typeArrData.forEach(function(item,index){
-          renderData (item)
+          renderData (item,index)
         })
       }
     }else {
@@ -891,7 +909,7 @@ function statusClick(dataArr){
             return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
           });
           statusArr.forEach(function(item,index){
-            renderData (item)
+            renderData (item,index)
           })
         }else {
           var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
@@ -912,7 +930,7 @@ function statusClick(dataArr){
               return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
             });
             abnormalArr.forEach(function(item,index){
-              renderData (item)
+              renderData (item,index)
             })
           }else {
             var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
@@ -923,7 +941,7 @@ function statusClick(dataArr){
         statusArrData = dataArr;
         if (value1 == '全部'){
           dataArr.forEach(function(item,index){
-            renderData (item)
+            renderData (item,index)
           })
         }
       }
@@ -949,7 +967,7 @@ function statusClick(dataArr){
             return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
           });
           typeArr.forEach(function(item,index){
-            renderData (item)
+            renderData (item,index)
           })
         }else {
           var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
@@ -961,7 +979,7 @@ function statusClick(dataArr){
           return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
         });
         statusArrData.forEach(function(item,index){
-          renderData (item)
+          renderData (item,index)
         })
       }
     }else {
@@ -977,7 +995,7 @@ function statusClick(dataArr){
             return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
           });
           typeArr.forEach(function(item,index){
-            renderData (item)
+            renderData (item,index)
           })
         }else {
           var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
@@ -987,7 +1005,7 @@ function statusClick(dataArr){
         typeArrData = dataArr;
         if(value == '全部'){
           dataArr.forEach(function(item,index){
-            renderData (item)
+            renderData (item,index)
           })
         }
 
@@ -1445,14 +1463,14 @@ function keyword(data){
     if(text == '小场景'){
       data.forEach(function(item){
         if(item.base.scene){
-          renderData (item);
+          renderData (item,index);
         }
       })
     }
     data.forEach(function(item){
       keywordObj[text].forEach(function(item1){
         if(item1 == item.base.name ){
-          renderData (item);
+          renderData (item,index);
         }
       })
     })
