@@ -7,11 +7,11 @@
     "scene":false                         
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": "已提测",                  
     "actualStartTime": "2017-10-31",    
-    "actualEndTime": "2017-12-15",      
+    "actualEndTime": "2017-12-24",      
     "estimatedStartTime": "2017-10-16", 
-    "estimatedEndTime": "2017-12-15",   
+    "estimatedEndTime": "2017-12-24",   
     "process": 95,                      
     "delay": false,                      
     "technology":["jquery","vue","element"],
@@ -31,6 +31,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "后台管理模块：已提测。企业专题：部分图表正在进行前后联调"                 
+    "remark": "后台管理模块：已提测。企业专题：已提测。两个模块后期可能会有需求新增和修改"                 
   }
 }
