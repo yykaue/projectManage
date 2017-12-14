@@ -19,7 +19,6 @@ function getInitData(){
   })
 }
 
-
 // 获取最外层json数据
 function getData() {
   $.ajax({
