@@ -14,8 +14,7 @@
     "process": 100,                     
     "delay": false, 
      "pages":11,
-    "score":"暂无",
-    "scoreUrl":"",
+    "score":"5"
     "technology":["css3","jquery"] 
   },
   "resources": {
