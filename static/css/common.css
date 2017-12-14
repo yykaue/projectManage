@@ -557,12 +557,12 @@ a.bug:hover {
 
 /*星星*/
 .star {
-    margin-right:5px;
+    margin-right:20px;
 }
 .star img {
     width: 15px;
     height: 15px;
-    margin: 7px 2px 0 0;
+    margin: 7px 1px 0 0;
 }
 .mask {
     position: fixed;
@@ -586,6 +586,9 @@ a.bug:hover {
     padding: 20px;
     background: #fff;
     border-radius: 6px;
+}
+.mask-wrapper img {
+    width:100%;
 }
 
 @media (min-width: 1200px) {
@@ -612,6 +615,8 @@ a.bug:hover {
 }
 .mask-wrapper{
     width: 1000px;
+    height: 800px;
+    overflow-y:auto;
 }
 }
 @media (min-width: 768px) and (max-width:991px) {
@@ -625,11 +630,12 @@ a.bug:hover {
     border: none;
     background: none;
 }
-.modal-dialog1{
-    width: 800px;
-    -webkit-box-shadow: 0 0 0 rgba(0,0,0,0.5);
-    box-shadow: 0 0 0 rgba(0,0,0,0.5);
-}
+    .mask-wrapper{
+        width: 900px;
+        height: 700px;
+        overflow-y:auto;
+        margin: 140px auto 30px auto;
+    }
 
 }
 @media  (max-width:768px) {
@@ -707,6 +713,20 @@ a.title-txt:active {
 .icon-relation {
     display: none;
 }
-
+.icon-changjing {
+    position: absolute;
+    top: 0;
+    left: -21px;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 10px;
+    font-size: 16px;
+}
+.mask-wrapper{
+    width: 300px;
+    height: 500px;
+    overflow-y:auto;
+    margin: 80px auto 30px auto;
+}
 }
 

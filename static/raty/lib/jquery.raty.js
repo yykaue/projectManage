@@ -266,10 +266,10 @@
       var score = parseInt(this.score.val(), 10), // TODO: 3.1 >> [['1'], ['2'], ['3', '.1', '.2']]
           hint  = score ? methods._getHint.call(this, score) : this.opt.noRatedMsg;
 
-      $(this).data('readonly', true).css('cursor', '');
+      $(this).data('readonly', true).css('cursor', 'pointer');
 
       this.score.attr('readonly', 'readonly');
-      this.stars.attr('title', '');
+      this.stars.removeAttr('title');
 
       if (this.cancel) {
         this.cancel.hide();

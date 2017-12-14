@@ -3,8 +3,8 @@ $(function () {
   dataArr =[];
   dataLen = 0,dataLen2 = 0;
   flag = false;
-  //getData();
-  getInitData();
+  getData();
+  //getInitData();
 });
 function getInitData(){
   $.getJSON('static/output.json',function(res){
@@ -86,12 +86,12 @@ function renderData (res,index)  {
               }
               if(res.base.url){
                 if(res.base.mobile) {
-                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url=' + res.base.url + '" target="_blank"><span class="fl">' + res.base.name + '<span class="num">(' + num + '人)</span></span>'
+                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url=' + res.base.url + '" target="_blank"><span class="fl">' + res.base.name + '<span class="num">(' + num + '人)</span></span>'
                 }else {
-                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9" href="' + res.base.url + '" target="_blank"><span class="fl">' + res.base.name + '<span class="num">(' + num + '人)</span></span>'
+                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9" href="' + res.base.url + '" target="_blank"><span class="fl">' + res.base.name + '<span class="num">(' + num + '人)</span></span>'
                 }
               }else {
-                html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-6 col-xs-9 " >'+res.base.name+'<span class="num">('+num+'人)</span>';
+                html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9 " >'+res.base.name+'<span class="num">('+num+'人)</span>';
               }
               if(res.base.mobile) {
                 html +='<i></i></a>'
@@ -132,16 +132,16 @@ function renderData (res,index)  {
                     html +='<div class="details-wrapper clearfix">'
 
             html +='<ul class="details clearfix row">'
-                    +'<li class="col-lg-4 col-md-5  col-sm-5 col-xs-12">'
+                    +'<li class="col-lg-4 col-md-5  col-sm-4 col-xs-12">'
                       +'<ul class="row details-ul">'
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
                             +'<span class="l-title">负责人：</span>'
                             +'<span class="r-con">'+res.resources.charge+'</span>'
                           +'</li>'
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">';
-                      if(res.resources.affiliate.length > 4){
+                      if(res.resources.affiliate.length > 3){
                         html+='<span class="l-title">参与人：</span>'
-                              +'<span class="r-con tooltip-show" data-toggle="tooltip" data-placement="bottom" title="'+res.resources.affiliate+'">'+res.resources.affiliate.slice(0,4)+'...'+'</span>'
+                              +'<span class="r-con tooltip-show" data-toggle="tooltip" data-placement="bottom" title="'+res.resources.affiliate+'">'+res.resources.affiliate.slice(0,2)+'...'+'</span>'
                       }else {
                         html+='<span class="l-title">参与人：</span>'
                               +'<span class="r-con">'+res.resources.affiliate+'</span>'
@@ -158,7 +158,7 @@ function renderData (res,index)  {
 
                       +'</ul>'
                     +'</li>'
-                    +'<li class="col-lg-4 col-md-3  col-sm-3  col-xs-12">'
+                    +'<li class="col-lg-4 col-md-3  col-sm-4  col-xs-12">'
                       +'<ul class="row details-ul">'
                           +'<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
                             +'<span class="l-title">bug统计：</span>'
@@ -234,7 +234,7 @@ function renderData (res,index)  {
                               +'<span class="r-con">'+res.schedule.score+'</span>'
                           }else {
                             html+='<span class="l-title">项目评分：</span>'
-                              +'<a  class="r-con"  data-toggle="modal" data-target="#myModal1"><span class="star" id="star'+index+'"></span>'+res.schedule.score+'分</a>';
+                              +'<span  class="r-con"><a class="star" id="star'+index+'" title="查看评分详情"></a>'+res.schedule.score+'分</span>';
                             // $("#star"+index).raty({ readOnly: true, score: 3.56 });
 
                           }
