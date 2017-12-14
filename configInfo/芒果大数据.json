@@ -15,8 +15,7 @@
     "delay": false,                     
     "technology":["gulp","vue","layui"],
     "pages":0,                           
-    "score":"暂无",                      
-    "scoreUrl":""
+    "score":"暂无"
   },
   "resources": {
     "demander": "农业部需求中心",            
@@ -26,11 +25,11 @@
     "affiliate": ["任传真","邵金东"]       
   },
   "bug": {
-    "total": 0,                     
+    "total": 420,                     
     "resolved": 0,                 
     "unsolved": 0                    
   },
   "others": {
-    "remark": "12.11-12.30暂定工作量比较大，可能人员不够"               
+    "remark": ""               
   }
 }
