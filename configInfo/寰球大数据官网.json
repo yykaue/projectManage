@@ -14,7 +14,7 @@
     "process": 100,                     
     "delay": false, 
      "pages":11,
-    "score":"5"
+    "score":"5",
     "technology":["css3","jquery"] 
   },
   "resources": {
