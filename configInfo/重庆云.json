@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-11-16",   
     "process": 90,                     
     "delay": false,                      
-    "technology":["vue"]            
+    "technology":["vue"],
+    "pages":0,                           
+    "score":"暂无",                      
+    "scoreUrl":""             
   },
   "resources": {
     "demander": "",                    
@@ -29,8 +32,5 @@
   },
   "others": {
     "remark": "需求有更改，账户名(17600801597),密码(111111)"                  
-  },
-  "pages":0,                           
-  "score":"暂无",                      
-  "scoreUrl":""    
+  }   
 }
