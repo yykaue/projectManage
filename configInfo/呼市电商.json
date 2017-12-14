@@ -15,8 +15,7 @@
     "delay": false,
     "technology":["jQuery","handlebars"],
     "pages":30,                           
-    "score":"暂无",                      
-    "scoreUrl":""   
+    "score":"5"  
   },
   "resources": {
     "demander": "亓桂玖",
