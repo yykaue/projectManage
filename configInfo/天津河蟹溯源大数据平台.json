@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-10-30",
     "estimatedEndTime": "2017-12-31",
-    "process": 90,                      
+    "process": 91,                      
     "delay": false,
     "technology":["vuejs"],
     "pages":10,
@@ -26,8 +26,8 @@
     "affiliate": ["李妮"]       
   },
   "bug": {
-    "total": 0,                     
-    "resolved": 0,                  
+    "total": 3,                     
+    "resolved": 3,                  
     "unsolved": 0                     
   },
   "others": {
