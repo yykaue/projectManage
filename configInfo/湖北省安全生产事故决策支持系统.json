@@ -10,11 +10,11 @@
     "actualStartTime": "2017-11-20",
     "actualEndTime": "",
     "estimatedStartTime": "2017-11-20",
-    "estimatedEndTime": "2017-12-15",
+    "estimatedEndTime": "2017-12-25",
     "process": 90,
     "delay": false,
     "technology":["VUE"],
-    "pages": 9,
+    "pages": 10,
     "score":"暂无",
     "scoreUrl":""
   },
@@ -31,6 +31,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "项目经理根据客户反馈，在整理修改问题，下周进行进一步开发"
+    "remark": "新增1个页面，3个页面需要调整，新增身份认证等功能"
   }
 }
