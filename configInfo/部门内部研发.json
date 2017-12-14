@@ -13,7 +13,9 @@
     "estimatedEndTime": "2018-6-30",
     "process": 30,
     "delay": false,
-    "technology":["Echarts","D3","WebGL","react","vue"]
+    "technology":["Echarts","D3","WebGL","react","vue"],
+    "pages":30,                           
+    "score":"暂无"   
   },
   "resources": {
     "demander": "",
