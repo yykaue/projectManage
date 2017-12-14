@@ -14,7 +14,7 @@
     "process":1,                      
     "delay": false,                     
     "technology":["gulp","vue","layui"],
-    "pages":0,                           
+    "pages":420,                           
     "score":"暂无"
   },
   "resources": {
@@ -30,6 +30,6 @@
     "unsolved": 0                    
   },
   "others": {
-    "remark": ""               
+    "remark": "部分原型暂无，部分页面在遵化溯源平台上修改，目前页面数是根据溯源平台估计，整体页面数暂时无法确定"               
   }
 }
