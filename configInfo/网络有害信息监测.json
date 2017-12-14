@@ -14,8 +14,7 @@
     "delay": false,
     "technology":["jQuery","Layui"],
     "pages":20,
-    "score":"暂无",
-    "scoreUrl":""    
+    "score":"5"  
   },
   "resources": {
     "demander": "全国扫黄打非工作小组办公室",
