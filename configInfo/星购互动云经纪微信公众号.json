@@ -15,8 +15,7 @@
     "delay": false,
     "technology":["Vue","Mint UI"],
     "pages":42,                           
-    "score":"暂无",                      
-    "scoreUrl":""  
+    "score":"5"
   },
   "resources": {
     "demander": "星购互动",
