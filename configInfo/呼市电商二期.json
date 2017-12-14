@@ -6,7 +6,7 @@
     "mobile":false
   },
   "schedule": {
-    "status": "开发中",
+    "status": "暂停开发",
     "actualStartTime": "2017-11-09",
     "actualEndTime": "",
     "estimatedStartTime": "2017-11-08",
@@ -14,7 +14,7 @@
     "process": 20,
     "delay": false,
     "technology":["jQuery","handlebars"],
-    "pages":0,                           
+    "pages":7,                           
     "score":"暂无",                      
     "scoreUrl":""
   },
