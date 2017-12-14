@@ -12,10 +12,10 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "未定", 
     "estimatedEndTime": "未定", 
-    "process":60,                      
+    "process":15,                      
     "delay": false,                     
     "technology":["vue","echarts"], 
-    "pages":3            
+    "pages":7            
   },
   "resources": {
     "demander": "九次方大数据",   
