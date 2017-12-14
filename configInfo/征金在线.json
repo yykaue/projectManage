@@ -13,7 +13,10 @@
     "estimatedEndTime": "2017-08-31",
     "process": 100,
     "delay": false,
-    "technology": ["omi", "echarts", "less"]
+    "technology": ["omi", "echarts", "less"],
+    "pages":0,                           
+    "score":"暂无",                      
+    "scoreUrl":"" 
   },
   "resources": {
     "demander": "福建省企业信用信息管理有限公司",
@@ -29,8 +32,5 @@
   },
   "others": {
     "remark": "暂无"
-  },
-  "pages":0,                           
-  "score":"暂无",                      
-  "scoreUrl":""    
+  }   
 }
