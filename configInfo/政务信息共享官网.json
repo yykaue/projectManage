@@ -6,17 +6,16 @@
     "mobile":false                       
   },
   "schedule": {
-    "status": "已提测",                  
+    "status": "已完成",                  
     "actualStartTime": "2017-10-24",  
     "actualEndTime": "",    
     "estimatedStartTime": "2017-10-24",
     "estimatedEndTime": "2017-12-15",  
-    "process": 97,                     
+    "process": 100,                     
     "delay": false,                   
     "technology":["gulp","css3","echarts"],
     "pages":28,                           
-    "score":"暂无",                      
-    "scoreUrl":""  
+    "score":"暂无"
   },
   "resources": {
     "demander": "王苏栋", 
