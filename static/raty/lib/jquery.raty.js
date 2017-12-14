@@ -51,7 +51,6 @@
         methods._apply.call(this, this.opt.score);
         var space  = this.opt.space ? 0 : 0,
             width  = this.opt.width || (this.opt.number * this.opt.size + this.opt.number * space);
-        console.log(space,width)
         if (this.opt.cancel) {
           this.cancel = methods._createCancel.call(this);
 

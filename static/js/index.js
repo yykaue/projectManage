@@ -3,8 +3,8 @@ $(function () {
   dataArr =[];
   dataLen = 0,dataLen2 = 0;
   flag = false;
-  getData();
-  //getInitData();
+  //getData();
+  getInitData();
 });
 function getInitData(){
   $.getJSON('static/output.json',function(res){
@@ -860,6 +860,7 @@ function statusClick(dataArr){
   });
   var value = '全部',value1= '全部';
   var statusArrData=[],typeArrData=[];
+  var maintainArr = ['苹果大数据后台管理系统','苹果大数据大屏展示项目'];
   $('.status-list span').click(function () {
     var statusArr=[];
     $('#listWrapper').html('');
@@ -868,6 +869,15 @@ function statusClick(dataArr){
     value = $(this).text();
     if (typeArrData.length > 0) {
       if(value !== '全部') {
+        if(value == '维护中'){
+          typeArrData.forEach(function(item,index){
+            maintainArr.forEach(function(item1){
+              if(item1 == item.base.name){
+                statusArr.push(item)
+              }
+            })
+          })
+        }
         typeArrData.forEach(function(item,index){
           if(item.schedule.status == value) {
             statusArr.push(item)
@@ -897,6 +907,15 @@ function statusClick(dataArr){
       }
     }else {
       if(value !== '全部') {
+        if(value == '维护中'){
+          dataArr.forEach(function(item,index){
+            maintainArr.forEach(function(item1){
+              if(item1 == item.base.name){
+                statusArr.push(item)
+              }
+            })
+          })
+        }
         dataArr.forEach(function(item,index){
           if(item.schedule.status == value) {
             statusArr.push(item)
