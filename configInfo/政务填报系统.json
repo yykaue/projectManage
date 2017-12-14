@@ -15,8 +15,7 @@
     "delay": false,                   
     "technology":["css3","jquery"],
     "pages":7,
-    "score":"暂无",
-    "scoreUrl":""
+    "score":"5"
   },
   "resources": {
     "demander": "王苏栋", 
