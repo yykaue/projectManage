@@ -3,8 +3,8 @@ $(function () {
   dataArr =[];
   dataLen = 0,dataLen2 = 0;
   flag = false;
-  //getData();
-  getInitData();
+  getData();
+  //getInitData();
 });
 function getInitData(){
   $.getJSON('static/output.json',function(res){
@@ -54,8 +54,8 @@ function getData1 (item,dataLen,index) {
         statusClick(dataArr);
         getPersonData(dataArr);
         keyword(dataArr);
-        dataArr.forEach(function(item){
-          renderData (item);
+        dataArr.forEach(function(item,index){
+          renderData (item,index);
         })
       }
     },
