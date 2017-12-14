@@ -11,12 +11,11 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-30", 
     "estimatedEndTime": "2017-12-18",   
-    "process": 90,
+    "process": 98,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"],
     "pages":90,
-    "score":"暂无",
-    "scoreUrl":""
+    "score":"暂无"
   },
   "resources": {
     "demander": "",                     
