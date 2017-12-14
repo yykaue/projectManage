@@ -8,9 +8,9 @@
   "schedule": {
     "status": "开发中",
     "actualStartTime": "2017-10-10",
-    "actualEndTime": "2017-11-30",
+    "actualEndTime": "2018-6-30",
     "estimatedStartTime": "2017-10-10",
-    "estimatedEndTime": "2017-11-30",
+    "estimatedEndTime": "2018-6-30",
     "process": 30,
     "delay": false,
     "technology":["Echarts","D3","WebGL","react","vue"]
@@ -28,6 +28,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "部门内部研发,前端通用组件开发(npm包管理,命名空间定义),定期组织部门内部培训；近期研发包括：vue培训、图表配置工具功能完善、WebGL、D3"
+    "remark": "近期部门研发项目：图表配置工具；部门内部研发,前端通用组件开发(npm包管理,命名空间定义),定期组织部门内部培训；近期研发包括：vue培训、图表配置工具功能完善、WebGL、D3"
   }
 }
