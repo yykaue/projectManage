@@ -10,7 +10,7 @@
     "actualStartTime": "2017-09-28",    
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-09-28", 
-    "estimatedEndTime": "2017-12-15",   
+    "estimatedEndTime": "2017-12-31",   
     "process": 95,                      
     "delay": false,                      
     "technology":["layui"],
@@ -26,9 +26,9 @@
     "affiliate": ["杨勇冠","王杰","王斌彦"]       
   },
   "bug": {
-    "total": 274,                     
-    "resolved": 266,                  
-    "unsolved": 8                     
+    "total": 404,                     
+    "resolved": 400,                  
+    "unsolved": 4                     
   },
   "others": {
     "remark": "账户名（jiyafeng）,密码（123456）"                  
