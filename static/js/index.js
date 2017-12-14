@@ -1460,13 +1460,13 @@ function keyword(data){
     $('.type-list span').removeClass('active').eq(0).addClass('active');
     $(this).addClass('active').siblings().removeClass('active');
     if(text == '小场景'){
-      data.forEach(function(item){
+      data.forEach(function(item,index){
         if(item.base.scene){
           renderData (item,index);
         }
       })
     }
-    data.forEach(function(item){
+    data.forEach(function(item,index){
       keywordObj[text].forEach(function(item1){
         if(item1 == item.base.name ){
           renderData (item,index);
