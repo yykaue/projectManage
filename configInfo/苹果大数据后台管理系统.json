@@ -14,8 +14,7 @@
     "delay": false,
     "technology":["jquery","echarts"],
     "pages":32,                           
-    "score":"暂无",                      
-    "scoreUrl":""   
+    "score":"暂无"
   },
   "resources": {
     "demander": "农业部信息中心",     
