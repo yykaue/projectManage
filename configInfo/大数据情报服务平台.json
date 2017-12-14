@@ -12,12 +12,11 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-09-05",
     "estimatedEndTime": "2017-12-10",
-    "process": 90,
+    "process": 95,
     "delay": true,
     "technology":["jQuery","Layui"],
     "pages":33,                           
-    "score":"暂无",                      
-    "scoreUrl":""
+    "score":"暂无"                      
   },
   "resources": {
     "demander": "九次方",
@@ -32,6 +31,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "目前已提供了一版静态页面，按照项目经理要求一些页面还在改动和修改"
+    "remark": "预计下周前端工作可结束"
   }
 }
