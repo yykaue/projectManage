@@ -13,7 +13,9 @@
     "estimatedEndTime": "2017-11-03",
     "process": 90,
     "delay": false,
-    "technology": ["vue"]
+    "technology": ["vue"],
+    "pages":0,
+    "score":"暂无"
   },
   "resources": {
     "demander": "福建星元次方",
