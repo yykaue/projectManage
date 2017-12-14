@@ -3,8 +3,8 @@ $(function () {
   dataArr =[];
   dataLen = 0,dataLen2 = 0;
   flag = false;
-  getData();
-  //getInitData();
+  //getData();
+  getInitData();
 });
 function getInitData(){
   $.getJSON('static/output.json',function(res){
