@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-05-02", 
     "estimatedEndTime": "2018-01-15",   
-    "process": 95,                      
+    "process": 96,                      
     "delay": false,                     
     "technology":["layui","gulp"],
     "pages":320,                           
@@ -26,8 +26,8 @@
     "affiliate": ["任传真","王帅"]       
   },
   "bug": {
-    "total": 167,                     
-    "resolved": 167,                  
+    "total": 168,                     
+    "resolved": 168,                  
     "unsolved": 0                     
   },
   "others": {
