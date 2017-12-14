@@ -15,8 +15,7 @@
     "delay": false,                     
     "technology":["layui","gulp"],
     "pages":320,                           
-    "score":"暂无",                      
-    "scoreUrl":""
+    "score":"暂无"
   },
   "resources": {
     "demander": "河北溯源大数据信息技术有限公司",                    
