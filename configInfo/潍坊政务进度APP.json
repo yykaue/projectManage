@@ -15,8 +15,7 @@
     "delay": false,
     "technology":["jQuery","sass"],
     "pages":20,                           
-    "score":"暂无",                      
-    "scoreUrl":""   
+    "score":"5" 
   },
   "resources": {
     "demander": "",
