@@ -15,8 +15,7 @@
     "delay": false,                      
     "technology":["vue","element-ui"],
     "pages":3,                           
-    "score":"暂无",                      
-    "scoreUrl":""                  
+    "score":"暂无"                                   
   },
   "resources": {
     "demander": "九次方大数据",                    
