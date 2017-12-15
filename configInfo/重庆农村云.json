@@ -15,7 +15,7 @@
     "delay": false,
     "technology": ["vue", "echarts", "sass"],
     "pages":12,                           
-    "score":""  
+    "score":"暂无"  
   },
   "resources": {
     "demander": "",
