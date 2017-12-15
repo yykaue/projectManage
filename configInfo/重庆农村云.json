@@ -1,0 +1,35 @@
+{
+  "base": {
+    "name": "重庆农村云",
+    "url": "http://192.168.1.6:8124/chongqing/index.html",
+    "desc": "",
+    "mobile":false
+  },
+  "schedule": {
+    "status": "进行中",
+    "actualStartTime": "2017-11-25",
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-11-25",
+    "estimatedEndTime": "2017-12-18",
+    "process": 80,
+    "delay": false,
+    "technology": ["vue", "echarts", "sass"],
+    "pages":12,                           
+    "score":""  
+  },
+  "resources": {
+    "demander": "",
+    "type": "独立纵队",
+    "manager": "许峰",
+    "charge": "韩凯波",
+    "affiliate": ["周志国"]
+  },
+  "bug": {
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": ""
+  }
+}
