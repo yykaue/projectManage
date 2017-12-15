@@ -270,6 +270,11 @@
       "name":"企业高管朋友圈",
       "url":"企业高管朋友圈.json", 
       "actualStartTime": "2017/12/4"
+    },
+     {
+      "name":"重庆农村云",
+      "url":"重庆农村云.json", 
+      "actualStartTime": "2017/11/25"
     }
   ]
 }
