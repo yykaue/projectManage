@@ -24,11 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="泸州市绩效考核系统.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="泸州市绩效考核系统.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configInfo/泸州市绩效考核系统.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="858">
               <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configInfo/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="285" column="22" lean-forward="false" selection-start-line="285" selection-start-column="22" selection-end-line="285" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -44,6 +54,7 @@
       <list>
         <option value="$PROJECT_DIR$/configInfo/泸州市公共信用信息共享平台.json" />
         <option value="$PROJECT_DIR$/configInfo/泸州市绩效考核系统.json" />
+        <option value="$PROJECT_DIR$/configInfo/config.json" />
       </list>
     </option>
   </component>
@@ -135,12 +146,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513414779329</updated>
-      <workItem from="1513414780887" duration="789000" />
+      <workItem from="1513414780887" duration="963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="789000" />
+    <option name="totallyTimeSpent" value="963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -187,6 +198,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
           <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configInfo/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="285" column="22" lean-forward="false" selection-start-line="285" selection-start-column="22" selection-end-line="285" selection-end-column="22" />
           <folding />
         </state>
       </provider>
