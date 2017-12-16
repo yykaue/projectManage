@@ -1,0 +1,35 @@
+{
+  "base": {
+    "name": "泸州市公共信用信息共享平台",
+    "url": "",
+    "desc": "政府服务，公共服务，专业机构服务，数据上报管理四个子系统",
+    "mobile":false,
+    "scene":true
+  },
+  "schedule": {
+    "status": "开发中",    
+    "actualStartTime": "2017-12-15",
+    "actualEndTime": "未定",
+    "estimatedStartTime": "2017-12-15",
+    "estimatedEndTime": "2017-12-30",
+    "process":20,
+    "delay": false,                     
+    "technology":["IE8兼容模板","layerUI"],
+    "pages":38
+  },
+  "resources": {
+    "demander": "九次方大数据",   
+    "type":"独立纵队",				       
+    "manager":"崔智华",
+    "charge": "王杰",
+    "affiliate": ["杨勇冠","郑梦丽","王斌彦"]
+  },
+  "bug": {
+    "total": 0,            
+    "resolved": 0,         
+    "unsolved": 0           
+  },
+  "others": {
+    "remark": ""     
+  }
+}
