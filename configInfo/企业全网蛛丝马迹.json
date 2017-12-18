@@ -1,7 +1,7 @@
 {
   "base": {
     "name": "企业全网蛛丝马迹",
-    "url": "http://192.168.1.6:8124/entTraces/index.html",
+    "url": "http://192.168.1.6:8123/entTraces/index.html",
     "desc": "",               
     "mobile":false,
     "scene":true
