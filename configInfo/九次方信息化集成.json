@@ -6,12 +6,12 @@
     "mobile":false                      
   },
   "schedule": {
-    "status": "已提测",                  
+    "status": "已完成",                  
     "actualStartTime": "2017-09-30",    
-    "actualEndTime": "未定",      
+    "actualEndTime": "2017-12-18",      
     "estimatedStartTime": "2017-09-30", 
     "estimatedEndTime": "2017-12-18",   
-    "process": 98,
+    "process": 100,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"],
     "pages":90,
