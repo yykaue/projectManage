@@ -10,7 +10,7 @@
     "actualStartTime": "2017-11-25",
     "actualEndTime": "",
     "estimatedStartTime": "2017-11-25",
-    "estimatedEndTime": "2017-12-18",
+    "estimatedEndTime": "2017-12-22",
     "process": 80,
     "delay": false,
     "technology": ["vue", "echarts", "sass"],
@@ -21,8 +21,8 @@
     "demander": "",
     "type": "独立纵队",
     "manager": "许峰",
-    "charge": "韩凯波",
-    "affiliate": ["周志国"]
+    "charge": "魏阁",
+    "affiliate": ["周志国","林源"]
   },
   "bug": {
     "total": 0,
