@@ -6,12 +6,12 @@
     "mobile":false
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已完成",
     "actualStartTime": "2017-11-20",
-    "actualEndTime": "",
+    "actualEndTime": "2017-12-20",
     "estimatedStartTime": "2017-11-20",
     "estimatedEndTime": "2017-12-25",
-    "process": 90,
+    "process": 100,
     "delay": false,
     "technology":["VUE"],
     "pages": 10,
