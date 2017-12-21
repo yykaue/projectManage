@@ -6,12 +6,12 @@
     "mobile":true                    
   },
   "schedule": {
-    "status": "暂停开发",                 
+    "status": "已完成",                 
     "actualStartTime": "2017-05-08",
     "actualEndTime": "未定",    
     "estimatedStartTime": "2017-05-08", 
     "estimatedEndTime": "2017-11-20",   
-    "process": 99,                     
+    "process": 100,                     
     "delay": false,                      
     "technology":["vue","mint-ui","webSocket"],
     "pages":48,                           
