@@ -3,8 +3,8 @@ $(function () {
   dataArr =[];
   dataLen = 0,dataLen2 = 0;
   flag = false;
-  //getData();
-  getInitData();
+  getData();
+  //getInitData();
 });
 function getInitData(){
   $.getJSON('static/output.json',function(res){
@@ -269,6 +269,10 @@ function renderData (res,index)  {
                   }
                   html+='</li>'
                       +'</ul>'
+                    +'</li>'
+                    +'<li class="full-li col-lg-12 col-md-12  col-sm-12 col-xs-12">'
+                    +'<span class="l-title">平均投入：</span>'
+                    +'<span class="r-con">'+res.resources.average+'人</span>'
                     +'</li>'
                     +'<li class="full-li col-lg-12 col-md-12  col-sm-12 col-xs-12">'
                       +'<span class="l-title">需求方：</span>'
