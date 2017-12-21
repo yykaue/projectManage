@@ -8,9 +8,9 @@
   "schedule": {
     "status": "已完成",                  
     "actualStartTime": "2017-09-30",    
-    "actualEndTime": "2017-12-18",      
+    "actualEndTime": "2017-12-04",      
     "estimatedStartTime": "2017-09-30", 
-    "estimatedEndTime": "2017-12-18",   
+    "estimatedEndTime": "2017-12-04",   
     "process": 100,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"],
@@ -22,7 +22,8 @@
     "type":"内部研发平台",				            
     "manager":"王远",                 
     "charge": "杨羽珂",                  
-    "affiliate": ["杜万福"]
+    "affiliate": ["杜万福"],
+    "average": 3
   },
   "bug": {
     "total": 182,
