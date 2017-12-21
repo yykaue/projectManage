@@ -9,10 +9,10 @@
   "schedule": {
     "status": "已提测",                  
     "actualStartTime": "2017-10-31",    
-    "actualEndTime": "2017-12-24",      
+    "actualEndTime": "2017-12-31",      
     "estimatedStartTime": "2017-10-16", 
     "estimatedEndTime": "2017-12-24",   
-    "process": 95,                      
+    "process": 96,                      
     "delay": false,                      
     "technology":["jquery","vue","element"],
     "pages":124,
@@ -23,7 +23,8 @@
     "type":"合资公司",				                  
     "manager":"王鹏",                   
     "charge": "邢玮",                   
-    "affiliate": ["林源"]       
+    "affiliate": [""],
+    "average":2
   },
   "bug": {
     "total": 22,                     
@@ -31,6 +32,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "后台管理模块：已提测。企业专题：已提测。两个模块后期可能会有需求新增和修改"                 
+    "remark": "后台管理模块：暂停开发。企业专题：目前根据客户需求进行页面优化。"                 
   }
 }
