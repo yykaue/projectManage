@@ -15,7 +15,7 @@
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"],
     "pages":90,
-    "score":"暂无"
+    "score":"5"
   },
   "resources": {
     "demander": "",                     
@@ -30,6 +30,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "二期已上线，但后期会有新需求，项目需要支持到18号。入口是portal。"
+    "remark": "项目入口是portal。"
   }
 }
