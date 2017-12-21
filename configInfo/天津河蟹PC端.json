@@ -23,12 +23,13 @@
     "type":"合资公司",
     "manager":"李静波",                  
     "charge": "胡杰",                  
-    "affiliate": ["商业庆"]       
+    "affiliate": ["商业庆"],
+    "average":1
   },
   "bug": {
     "total": 3,                     
-    "resolved": 2,                  
-    "unsolved": 1                     
+    "resolved": 3,                  
+    "unsolved": 0                     
   },
   "others": {
     "remark": "用户名visitor,密码123456,由于服务器是连的后台同事的电脑，可能会不稳定，请不要修改系统管理的数据，由于3个端的BUG都提在一起没办法区分PC和移动，目前只能统计未改的BUG"
