@@ -6,7 +6,7 @@ $(function(){
      var x = null;
      var url = 'static/output.json' //全部
      let result = null
-
+     var chartLoading = null;
      $("#condition-select span").on('click',function(){
 
         x=null;
@@ -17,37 +17,78 @@ $(function(){
         $(".type").text(txt)
         
         
-        $.getJSON(url,function(res){
-            switch(txt)
+        $.ajax({
+          type:"GET", 
+          url:url,
+          beforeSend:function(){
+             chartLoading = $("#chart1").myLoading({
+               msg: '请稍后',
+               mask: false,
+               img:true,
+             });
+              chartLoading.init();
+          },
+          success:function(res){
+             switch(txt)
             {
             case '全部':
               result = res
               break;
-            case 'VUE':
-             // 执行代码块 2
+            case 'VUE':             
              result = res.filter(function(v,i){
                 return contains(v.schedule.technology,"vue")
              })
               break;
-            case 'Jquery':
-             // 执行代码块 2
+            case 'Jquery':             
              result = res.filter(function(v,i){
                 return contains(v.schedule.technology,"jquery")
              })
               break;
-             case 'mobile':
-             // 执行代码块 2
+             case 'mobile':            
              result = res.filter(function(v,i){
                 return v.base.mobile === true
              })
               break;
-            default:
-              //n 与 case 1 和 case 2 不同时执行的代码
+            default:           
             }
             console.log('result',result)
             getInitData(result)
+            chartLoading.destroy()
 
+          }
         })
+
+        // $.getJSON(url,function(res){
+        //     switch(txt)
+        //     {
+        //     case '全部':
+        //       result = res
+        //       break;
+        //     case 'VUE':
+        //      // 执行代码块 2
+        //      result = res.filter(function(v,i){
+        //         return contains(v.schedule.technology,"vue")
+        //      })
+        //       break;
+        //     case 'Jquery':
+        //      // 执行代码块 2
+        //      result = res.filter(function(v,i){
+        //         return contains(v.schedule.technology,"jquery")
+        //      })
+        //       break;
+        //      case 'mobile':
+        //      // 执行代码块 2
+        //      result = res.filter(function(v,i){
+        //         return v.base.mobile === true
+        //      })
+        //       break;
+        //     default:
+        //       //n 与 case 1 和 case 2 不同时执行的代码
+        //     }
+        //     console.log('result',result)
+        //     getInitData(result)
+
+        // })
      })
      $("#condition-select span")[0].click()
      
@@ -373,3 +414,60 @@ function echartsResize(obj) {
     }, 100);
   });
 }
+
+
+(function($) {
+    $.fn.extend({
+        myLoading: function(config) {
+            var defaults = {
+                msg: '数据加载中,请稍后',
+                mask:true,
+                img:true,
+                callback:function(){
+                    alert(1)
+                }
+            };
+
+            var config = $.extend(defaults, config);
+        
+            this.init = function() {
+                this.destroy(false);
+                var loadDiv = $("<div class='loadDiv'>" + config.msg + "</div>");
+                this.css("position", "relative");
+                this.append(loadDiv);
+
+                if(config.mask){                   
+                    var mask = $("<div class='mask'></div>");
+                    this.append(mask);
+                }
+
+                if(config.img){                   
+                    var img = $("<div class='loader-inner line-scale'>"+
+                                     "<div></div>"+
+                                     "<div></div>"+
+                                     "<div></div>"+
+                                     "<div></div>"+
+                                     "<div></div>"+
+                              "</div>");
+                    this.find('.loadDiv').append(img);
+                }
+                else{
+                    var img = $("<div class='loadingGif'><img src='../img/loading2.gif' width='80' /></div>");
+                    this.find('.loadDiv').append(img);
+                }
+                              
+            }          
+
+
+            this.destroy = function(flag) {
+                if(flag)
+                {
+                     config.callback()
+                }               
+                $(this).children('.loadDiv').hide();
+                $(this).children(".mask").hide()
+            }
+            return this;
+        }
+    });
+})(window.jQuery);
