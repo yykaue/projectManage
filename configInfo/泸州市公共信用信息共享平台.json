@@ -14,7 +14,7 @@
     "estimatedEndTime": "2017-12-30",
     "process":90,
     "delay": false,                     
-    "technology":["IE8兼容模板","layerUI"],
+    "technology":["IE8兼容模板","layui"],
     "pages":38
   },
   "resources": {
