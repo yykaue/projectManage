@@ -14,7 +14,7 @@
     "process": 100,                     
     "delay": false,                      
     "technology":["vue","mint-ui","webSocket"],
-    "pages":48,                           
+    "pages":68,                           
     "score":"暂无",                      
     "scoreUrl":""      
   },
