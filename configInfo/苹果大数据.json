@@ -21,7 +21,8 @@
     "type":"独立纵队",			
     "manager":"陈乃赫",                 
     "charge": "邵金东",                 
-    "affiliate": ["魏彬","陈胜","郭惠敏"]
+    "affiliate": ["魏彬","陈胜","郭惠敏"],
+    'average':0
   },
   "bug": {
     "total": 456,                
