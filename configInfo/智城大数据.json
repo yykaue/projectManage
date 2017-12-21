@@ -15,15 +15,15 @@
     "delay": false,
     "technology":[""],
         "pages":11,                           
-    "score":"5",
-    "average":3
+    "score":"5"
   },
   "resources": {
     "demander": "九次方",
     "type":"独立纵队",
     "manager":"",
     "charge": "李猛",
-    "affiliate": []
+    "affiliate": [],
+    "average":3
   },
   "bug": {
     "total": 0,
