@@ -8,10 +8,10 @@
   "schedule": {
     "status": "已提测",
     "actualStartTime": "2017-09-25",
-    "actualEndTime": "未定",
+    "actualEndTime": "2017-12-10",
     "estimatedStartTime": "2017-09-25",
     "estimatedEndTime": "2018-01-31",
-    "process": 96,                    
+    "process": 98,                    
     "delay": false,
     "technology":["vue","echarts","sass"],
     "pages":74,                           
@@ -22,7 +22,8 @@
     "type":"独立纵队",			
     "manager":"陈乃赫",                 
     "charge": "邵金东",                 
-    "affiliate": ["陈胜","彭庆凯","魏彬"]
+    "affiliate": ["陈胜","魏彬"],
+    'average':0
   },
   "bug": {
     "total": 56,                
