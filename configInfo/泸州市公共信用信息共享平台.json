@@ -22,7 +22,8 @@
     "type":"独立纵队",				       
     "manager":"崔智华",
     "charge": "王杰",
-    "affiliate": ["杨勇冠","郑梦丽","王斌彦"]
+    "affiliate": ["杨勇冠","郑梦丽","王斌彦"],
+    "average":4
   },
   "bug": {
     "total": 0,            
