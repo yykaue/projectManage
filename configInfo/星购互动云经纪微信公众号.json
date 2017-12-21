@@ -22,7 +22,8 @@
     "type":"总部平台",
     "manager":"王健",
     "charge": "魏阁",
-    "affiliate": ["林源","邢玮"]
+    "affiliate": ["林源","邢玮"],
+    "average": 2
   },
   "bug": {
     "total": 11,
