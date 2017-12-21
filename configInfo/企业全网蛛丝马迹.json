@@ -12,7 +12,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-11-23",
     "estimatedEndTime": "",
-    "process":60, 
+    "process":80, 
     "delay": false,
     "pages":12,
     "score":"暂无",
@@ -24,7 +24,8 @@
     "type":"独立纵队",
     "manager":"",
     "charge": "张涛",
-    "affiliate": ["汝银娟"]
+    "affiliate": ["汝银娟"],
+    "average":2
   },
   "bug": {
     "total": 0,
