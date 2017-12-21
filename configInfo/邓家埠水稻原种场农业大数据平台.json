@@ -14,7 +14,7 @@
     "process": 10,                     
     "delay": false,                      
     "technology":[],
-    "pages":,                           
+    "pages":0,                           
     "score":"暂无"   
   },
   "resources": {
@@ -22,7 +22,7 @@
     "type":"总部平台",				         
     "manager":"杨青",                
     "charge": "颜庭光",              
-    "affiliate": ["彭庆凯","吕颖萍","杨薇"],
+    "affiliate": ["彭庆凯","吕颖萍","杨微"],
     "average":3
   },
   "bug": {
