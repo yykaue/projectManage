@@ -15,7 +15,8 @@
     "delay": false,
     "technology":[""],
         "pages":11,                           
-    "score":"5"  
+    "score":"5",
+    "average":3
   },
   "resources": {
     "demander": "九次方",
