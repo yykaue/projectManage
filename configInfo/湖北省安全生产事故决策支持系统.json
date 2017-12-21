@@ -1,19 +1,19 @@
 {
   "base": {
     "name": "湖北省安全生产事故决策支持系统",
-    "url": "",
+    "url": "http://192.168.200.11:7080/dist/#/login",
     "desc": "",
     "mobile":false
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已完成",
     "actualStartTime": "2017-11-20",
-    "actualEndTime": "",
+    "actualEndTime": "2017-12-20",
     "estimatedStartTime": "2017-11-20",
     "estimatedEndTime": "2017-12-25",
-    "process": 90,
+    "process": 100,
     "delay": false,
-    "technology":["VUE"],
+    "technology":["VUE","echarts"],
     "pages": 10,
     "score":"暂无",
     "scoreUrl":""
@@ -23,7 +23,8 @@
     "type":"",
     "manager":"胡曙",
     "charge": "徐媛媛",
-    "affiliate": ["邹非凡"]
+    "affiliate": ["邹非凡"],
+    "average": 2
   },
   "bug": { 
     "total": 0,
@@ -31,6 +32,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "新增1个页面，3个页面需要调整，新增身份认证等功能"
+    "remark": "登陆账号admin，密码q1q1q1q1"
   }
 }
