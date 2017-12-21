@@ -23,7 +23,8 @@
     "type":"独立纵队",				            
     "manager":"",                  
     "charge": "杨杰",                  
-    "affiliate": [""]       
+    "affiliate": [""],
+    "average": 1.5
   },
   "bug": {
     "total": 0,                     
