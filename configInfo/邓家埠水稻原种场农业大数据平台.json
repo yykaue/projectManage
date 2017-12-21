@@ -1,0 +1,36 @@
+{
+  "base": {
+    "name": "邓家埠水稻原种场农业大数据平台", 
+    "url": "",         
+    "desc": "项目乱炖",                          
+    "mobile":false                    
+  },
+  "schedule": {
+    "status": "开发中",                 
+    "actualStartTime": "",
+    "actualEndTime": "",    
+    "estimatedStartTime": "2017-12-21", 
+    "estimatedEndTime": "2017-12-29",   
+    "process": 10,                     
+    "delay": false,                      
+    "technology":[],
+    "pages":0,                           
+    "score":"暂无"   
+  },
+  "resources": {
+    "demander": "中交星宇科技有限公司",                    
+    "type":"总部平台",				         
+    "manager":"杨青",                
+    "charge": "颜庭光",              
+    "affiliate": ["彭庆凯","吕颖萍","杨微"],
+    "average":3
+  },
+  "bug": {
+    "total": 0,                    
+    "resolved": 0,                  
+    "unsolved": 0                  
+  },
+  "others": {
+    "remark": ""                  
+  }
+}
