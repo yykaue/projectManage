@@ -22,7 +22,8 @@
     "type": "独立纵队",
     "manager": "许峰",
     "charge": "魏阁",
-    "affiliate": ["周志国","林源"]
+    "affiliate": ["周志国","林源"],
+    "average": 3
   },
   "bug": {
     "total": 0,
