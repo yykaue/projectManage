@@ -22,7 +22,8 @@
     "type":"独立纵队",				      
     "manager":"王健",                
     "charge": "张涛",                 
-    "affiliate": [""]      
+    "affiliate": [""],
+    "average":1
   },
   "bug": {
     "total": 0, 
