@@ -22,7 +22,8 @@
     "type":"独立纵队",				      
     "manager":"王苏栋",                
     "charge": "汝银娟",                 
-    "affiliate": [""]      
+    "affiliate": [""],
+    "average":1
   },
   "bug": {
     "total": 0, 
