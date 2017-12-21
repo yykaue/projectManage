@@ -23,7 +23,8 @@
     "type":"总部平台",				         
     "manager":"李杰",                
     "charge": "杨勇冠",              
-    "affiliate": [""]      
+    "affiliate": [""],
+    "average":3
   },
   "bug": {
     "total": 135,                    
