@@ -12,7 +12,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-12-15",
     "estimatedEndTime": "2017-12-30",
-    "process":70,
+    "process":90,
     "delay": false,                     
     "technology":["IE8兼容模板","layerUI"],
     "pages":38
