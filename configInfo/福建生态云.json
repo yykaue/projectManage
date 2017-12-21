@@ -13,7 +13,7 @@
     "estimatedEndTime": "2017-08-10",
     "process": 100,
     "delay": true,
-    "technology": ["vue"],
+    "technology": ["vue", "echarts", "WebGL"],
     "pages": 5,
     "score": "4.75"
   },
@@ -22,7 +22,8 @@
     "type":"合资公司",
     "manager":"陈志丹",
     "charge": "陈胜",
-    "affiliate": ["王杰"]
+    "affiliate": ["王杰"],
+    "average": 2
   },
   "bug": {
     "total": 0,
