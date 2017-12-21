@@ -24,7 +24,8 @@
     "type":"独立纵队",				       
     "manager":"",            
     "charge": "冯彦文",        
-    "affiliate": [""]    
+    "affiliate": [""],
+    "average":1    
   },
   "bug": {
     "total": 0,            
