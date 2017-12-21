@@ -12,7 +12,7 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "未定", 
     "estimatedEndTime": "未定", 
-    "process":60,                      
+    "process":90,                      
     "delay": false,                     
     "technology":["vue","echarts"], 
     "pages":7            
@@ -22,7 +22,8 @@
     "type":"独立纵队",				       
     "manager":"",            
     "charge": "冯彦文",        
-    "affiliate": [""]    
+    "affiliate": [""],
+    "average":1
   },
   "bug": {
     "total": 0,            
