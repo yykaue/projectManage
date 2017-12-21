@@ -7,12 +7,12 @@
     "scene":false
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已完成",
     "actualStartTime": "2017-09-05",
-    "actualEndTime": "",
+    "actualEndTime": "2017-11-20",
     "estimatedStartTime": "2017-09-05",
     "estimatedEndTime": "2017-12-10",
-    "process": 95,
+    "process": 100,
     "delay": true,
     "technology":["jQuery","Layui"],
     "pages":33,                           
@@ -23,7 +23,8 @@
     "type":"总部平台",
     "manager":"何毅容",
     "charge": "李鹏飞",
-    "affiliate": ["柳杨"] 
+    "affiliate": ["柳杨"],
+    "average":3
   },
   "bug": {
     "total":0 ,
@@ -31,6 +32,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "预计下周前端工作可结束"
+    "remark": "舆情大数据共分两个版本，第一版完成后，期间中断一段时间参与开发泸州项目，之后二期改版重新投入，为计算投入资源因此项目实际完成时间有向前推"
   }
 }
