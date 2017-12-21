@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-05-02", 
     "estimatedEndTime": "2018-01-15",   
-    "process": 96,                      
+    "process": 97,                      
     "delay": false,                     
     "technology":["layui","gulp"],
     "pages":320,                           
@@ -22,7 +22,8 @@
     "type":"合资公司",				           
     "manager":"姚文龙",                 
     "charge": "杨杰",                  
-    "affiliate": ["任传真","王帅"]       
+    "affiliate": ["任传真","王帅"],
+    "average": 3
   },
   "bug": {
     "total": 168,                     
