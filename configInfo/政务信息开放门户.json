@@ -8,7 +8,7 @@
   "schedule": {
     "status": "已完成",                  
     "actualStartTime": "2017-11-13",  
-    "actualEndTime": "",    
+    "actualEndTime": "2017-12-18",    
     "estimatedStartTime": "2017-11-13",
     "estimatedEndTime": "2017-12-22",  
     "process": 100,                     
