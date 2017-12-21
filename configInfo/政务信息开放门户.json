@@ -22,7 +22,8 @@
     "type":"独立纵队",				      
     "manager":"王苏栋",                
     "charge": "李猛",                 
-    "affiliate": ["魏阁","郭惠敏"]      
+    "affiliate": ["魏阁","郭惠敏"],
+    "average": 3      
   },
   "bug": {
     "total": 8, 
