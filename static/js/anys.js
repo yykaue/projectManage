@@ -110,6 +110,7 @@ function getInitData(res){
      var pageNum = []; //总页面数
      var timeRange = []; //时间周期
      var peopleNum = []; //人数
+     var urlArr = []
      var html = ''
      res.forEach(function(v,i,a){
         if(v.base.name !== '部门内部研发' && 
@@ -149,6 +150,7 @@ function getInitData(res){
              //    peopleNum.push(v.resources.affiliate.length+1)
              // }
              peopleNum.push(v.resources.average)
+             urlArr.push(proUrl)
         }
         
         
@@ -162,8 +164,12 @@ function getInitData(res){
      $("#selectedPro").html(html)
 
      var calcRTNum = calcRT(timeRange,peopleNum)
-     chart1(projectName,pageNum,timeRange,peopleNum,calcRTNum)
-     x = getX(pageNum,timeRange,peopleNum)
+   
+     x = getX(pageNum,timeRange,peopleNum).x
+     var xArr = getX(pageNum,timeRange,peopleNum).xArr
+     console.log('getX.xArr',xArr)
+     console.log('getX.x',x)
+     chart1(projectName,pageNum,timeRange,peopleNum,calcRTNum,xArr,urlArr)
      //var notInput = ''
      $("#pageCont,#timeRange,#personCont").change(function(v){
 
@@ -219,7 +225,7 @@ function calcRT(timeRange,peopleNum){
     return s
 }
 
-function chart1(projectName,pageNum,timeRange,peopleNum,calcRTNum){
+function chart1(projectName,pageNum,timeRange,peopleNum,calcRTNum,xArr,urlArr){
     var myChart = echarts.init(document.getElementById('chart1'));
     myChart.setOption({
     backgroundColor:"#fff",
@@ -247,6 +253,7 @@ function chart1(projectName,pageNum,timeRange,peopleNum,calcRTNum){
           "axisPointer": {
             "type": "shadow"
           },
+          'triggerEvent':true,
           "axisLabel": {
             rotate:45,
             interval:0,
@@ -269,10 +276,10 @@ function chart1(projectName,pageNum,timeRange,peopleNum,calcRTNum){
         },
         {
           "type": "value",
-          "name": "人/天",
+          "name": "效率值",
           "min": 0,
       
-          "interval": 50,
+       
           splitLine: {
             show: false,
         },  
@@ -286,26 +293,57 @@ function chart1(projectName,pageNum,timeRange,peopleNum,calcRTNum){
         {
           "name": "页面数",
           "type": "bar",
+          'barCategoryGap':'100%',
+          'barWidth':'10', 
           "data": pageNum
         },
         {
           "name": "开发周期",
           "type": "bar",
+          'barWidth':'10', 
           "data": timeRange
         },
         {
           "name": "人员",
           "type": "bar",
+          'barWidth':'10', 
           "data": peopleNum
         },
         {
           "name": "人天",
-          "type": "line",
+          "type": "bar",
+          'barWidth':'10', 
           "data": calcRTNum
+        },
+        {
+          "name": "效率值",
+          "type": "line",
+          "data": xArr,
+            "yAxisIndex": 1,
         },
         
     ]
 })
+    console.log('projectName',projectName)
+    myChart.on('click',function(e){
+        var url = ''
+        var name = ''
+        //如果点击的是X轴
+        if(e.componentType == "xAxis"){  
+            name = e.value 
+        }
+        else{
+          name = e.name
+        }
+        var index = projectName.indexOf(name)
+        console.log(index)
+        url = urlArr[index]
+        
+        if(url && url!=='javascript:void(0)'){
+          window.open(url)
+        }
+       
+    })
 
     echartsResize(myChart)
 }
@@ -328,8 +366,15 @@ function getX(pageArr,timeArr,peopleArr){
 
   var x = (sum/xArr.length).toFixed(2);
 
-  console.log('x',x)
-  return x;
+  var xArr100 = xArr.map(function(v,i){
+     return (v*100).toFixed(2)
+  }) 
+  console.log('函数内x',x)
+  console.log('函数内xArr',xArr)
+  return {
+    xArr:xArr100,
+    x:x
+  };
 }
 
 
