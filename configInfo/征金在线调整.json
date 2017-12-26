@@ -22,7 +22,8 @@
     "type":"独立纵队",
     "manager":"樊利安",
     "charge": "徐媛媛",
-    "affiliate": ["韩凯波"]
+    "affiliate": ["韩凯波"],
+     "average": 2
   },
   "bug": {
     "total": 100,
