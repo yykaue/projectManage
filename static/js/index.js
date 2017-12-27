@@ -1,8 +1,11 @@
 $(function () {
-
-  dataArr =[];
+  highlightindex = -1; //高亮设置（-1为不高亮）
+  lastTime = 0; //搜索框keyup事件延迟时间
+  dataArr =[];  //大的json
   dataLen = 0,dataLen2 = 0;
+  statusArrData=[],typeArrData=[],searchBigArr=[];  //筛选条件
   flag = false;
+  $('[data-submenu]').submenupicker();
   //getData();
   getInitData();
 });
@@ -66,6 +69,7 @@ function getData1 (item,dataLen,index) {
 }
 //拼接html代码
 function renderData (res,index)  {
+
   var jsonUrl = res.base.name+'.json'
 	var processNum = getProcess(res.schedule.estimatedStartTime,res.schedule.estimatedEndTime,res.schedule.process,res.schedule.status);
 
@@ -86,12 +90,12 @@ function renderData (res,index)  {
               }
               if(res.base.url){
                 if(res.base.mobile) {
-                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url=' + res.base.url + '" target="_blank"><span class="fl">' + res.base.name + '<span class="num">(' + num + '人)</span></span>'
+                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9" href="http://192.168.1.6:8124/phoneView.html?url=' + res.base.url + '" target="_blank"><span class="fl"><span class="title-txt-width">' + res.base.name + '</span><span class="num">(' + num + '人)</span></span>'
                 }else {
-                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9" href="' + res.base.url + '" target="_blank"><span class="fl">' + res.base.name + '<span class="num">(' + num + '人)</span></span>'
+                  html += '<div class="title-wrapper clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9" href="' + res.base.url + '" target="_blank"><span class="fl"><span class="title-txt-width">' + res.base.name + '</span><span class="num">(' + num + '人)</span></span>'
                 }
               }else {
-                html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9 " >'+res.base.name+'<span class="num">('+num+'人)</span>';
+                html+='<div class="title-wrapper title-wrapper-none-url clearfix row"><a class="title-txt  col-lg-5 col-md-5 col-sm-5 col-xs-9 " ><span class="title-txt-width">'+res.base.name+'</span><span class="num">('+num+'人)</span>';
               }
               if(res.base.mobile) {
                 html +='<i></i></a>'
@@ -389,6 +393,8 @@ function monthDiff(time,process) {
   }
 
 }
+
+/***************************************图表数据***************************************/
 // 获取echart所需数据
 function getEchartData(data){
   var develop=0,measured=0,finished=0,frozen=0,suspend=0,start=0;
@@ -857,193 +863,12 @@ function chart4(data){
   })
   echartsResize(myChart)
 }
-// 筛选条件点击筛选
-function statusClick(dataArr){
-  dataArr.sort(function (a, b) {
-    return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
-  });
-  var value = '全部',value1= '全部';
-  var statusArrData=[],typeArrData=[];
-  var maintainArr = ['苹果大数据后台管理系统','苹果大数据大屏展示项目'];
-  $('.status-list span').click(function () {
-    var statusArr=[];
-    $('#listWrapper').html('');
-    $('.keyword-list span').removeClass('active');
-    $(this).addClass('active').siblings().removeClass('active');
-    value = $(this).text();
-    if (typeArrData.length > 0) {
-      if(value !== '全部') {
-        if(value == '维护中'){
-          typeArrData.forEach(function(item,index){
-            maintainArr.forEach(function(item1){
-              if(item1 == item.base.name){
-                statusArr.push(item)
-              }
-            })
-          })
-        }
-        typeArrData.forEach(function(item,index){
-          if(item.schedule.status == value) {
-            statusArr.push(item)
-          }
-        })
-        statusArrData = statusArr;
-        if (statusArr.length > 0){
-          statusArr.sort(function (a, b) {
-            return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
-          });
-          statusArr.forEach(function(item,index){
-            renderData (item,index)
-          })
-        }else {
-          var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
-          $('#listWrapper').append(html);
-        }
-
-      }else {
-        statusArrData = dataArr;
-        typeArrData.sort(function(a,b){
-          return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
-        })
-        typeArrData.forEach(function(item,index){
-          renderData (item,index)
-        })
-      }
-    }else {
-      if(value !== '全部') {
-        if(value == '维护中'){
-          dataArr.forEach(function(item,index){
-            maintainArr.forEach(function(item1){
-              if(item1 == item.base.name){
-                statusArr.push(item)
-              }
-            })
-          })
-        }
-        dataArr.forEach(function(item,index){
-          if(item.schedule.status == value) {
-            statusArr.push(item)
-          }
-        })
-        statusArrData = statusArr;
-        if (statusArr.length > 0){
-          statusArr.sort(function (a, b) {
-            return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
-          });
-          statusArr.forEach(function(item,index){
-            renderData (item,index)
-          })
-        }else {
-          var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
-          $('#listWrapper').append(html);
-        }
-        // 筛选出进度异常的数据
-        var abnormalArr = [];
-        dataArr.forEach(function(item){
-          var processAA = getProcess(item.schedule.estimatedStartTime,item.schedule.estimatedEndTime,item.schedule.process,item.schedule.status);
-          if (!processAA){
-            abnormalArr.push(item)
-          }
-        })
-        if(value == '进度异常'){
-          $('#listWrapper').html('');
-          if(abnormalArr.length > 0){
-            abnormalArr.sort(function (a, b) {
-              return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
-            });
-            abnormalArr.forEach(function(item,index){
-              renderData (item,index)
-            })
-          }else {
-            var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
-            $('#listWrapper').append(html);
-          }
-        }
-      }else {
-        statusArrData = dataArr;
-        if (value1 == '全部'){
-          dataArr.forEach(function(item,index){
-            renderData (item,index)
-          })
-        }
-      }
-    }
-  });
-  $('.type-list span').click(function () {
-    var typeArr=[];
-    $('#listWrapper').html('');
-    $('.keyword-list span').removeClass('active');
-    $(this).addClass('active').siblings().removeClass('active');
-    value1 = $(this).text();
-
-    if(statusArrData.length > 0){
-      if(value1 !== '全部') {
-        statusArrData.forEach(function(item,index){
-          if(item.resources.type == value1) {
-            typeArr.push(item)
-          }
-        })
-        typeArrData = typeArr;
-        if (typeArr.length > 0){
-          typeArr.sort(function (a, b) {
-            return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
-          });
-          typeArr.forEach(function(item,index){
-            renderData (item,index)
-          })
-        }else {
-          var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
-          $('#listWrapper').append(html);
-        }
-      }else {
-        typeArrData = dataArr;
-        statusArrData.sort(function (a, b) {
-          return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
-        });
-        statusArrData.forEach(function(item,index){
-          renderData (item,index)
-        })
-      }
-    }else {
-      if(value1 !== '全部') {
-        dataArr.forEach(function(item,index){
-          if(item.resources.type == value1) {
-            typeArr.push(item)
-          }
-        })
-        typeArrData = typeArr;
-        if (typeArr.length > 0){
-          typeArr.sort(function (a, b) {
-            return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
-          });
-          typeArr.forEach(function(item,index){
-            renderData (item,index)
-          })
-        }else {
-          var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
-          $('#listWrapper').append(html);
-        }
-      }else {
-        typeArrData = dataArr;
-        if(value == '全部'){
-          dataArr.forEach(function(item,index){
-            renderData (item,index)
-          })
-        }
-
-      }
-    }
-  });
-
-
-}
-
 //获取人员分配情况数据
 function getPersonData (data) {
   var person = [
     {
       name:'group0',
-      data:['李猛','郭惠敏','汝银娟','胡杰','彭庆凯','闫磊','张涛','周志国']
+      data:['李猛','郭惠敏','汝银娟','胡杰','彭庆凯','闫磊','张涛','周志国','李耀']
     },
     {
       name:'group1',
@@ -1059,7 +884,7 @@ function getPersonData (data) {
     },
     {
       name:'group4',
-      data:['任新杰','韩凯波','冯红阳','李妮','吕颖萍','徐媛媛','颜庭光']
+      data:['任新杰','韩凯波','冯红阳','李妮','吕颖萍','徐媛媛','颜庭光','邹非凡']
     }
   ]
   var person1 = [];
@@ -1141,7 +966,6 @@ function compare(arr1,arr2){
   }
   return temparray;
 }
-
 // 部门人员分配情况
 function chart5(data){
   var num = 0;
@@ -1161,7 +985,7 @@ function chart5(data){
             + '未投入('+params.data.value2.length+'人)：'+params.data.value2
         }else {
           return params.data.name +'：'+ params.data.value+'人'+'<br/>'
-          + '已投入('+params.data.value1.length+'人)：'+params.data.value1
+            + '已投入('+params.data.value1.length+'人)：'+params.data.value1
         }
 
 
@@ -1322,12 +1146,12 @@ function drawChart(data) {
   });
   // 封装一些配置参数
   var datas = persons.map(p => {
-    return {
-      name: p.name,
-      symbolSize: 10,
-      category: p.team
-    }
-  });
+      return {
+        name: p.name,
+        symbolSize: 10,
+        category: p.team
+      }
+    });
   datas.push(...projects.map((p, i) => {
     return {
       name: p.name,
@@ -1338,18 +1162,18 @@ function drawChart(data) {
   var links = [];
   projects.forEach(pro => {
     links.push(...pro.persons.map(per => {
-      return {
-        source: pro.name,
-        target: per,
-        value: 200
-      }
-    }))
-  });
-  var categories = teams.map(team => {
     return {
-      name: team
+      source: pro.name,
+      target: per,
+      value: 200
     }
-  });
+  }))
+});
+  var categories = teams.map(team => {
+      return {
+        name: team
+      }
+    });
   categories.push(...projects.map(p => {
     return {
       name: p.name
@@ -1450,7 +1274,7 @@ function drawChart(data) {
         });
       }
     });
-    showProjects=Array.from(selectedProjects); 
+    showProjects=Array.from(selectedProjects);
     var person=opt.series[0].data.slice(0,persons.length);
     var newData=person.concat(showProjects);
     opt.series[0].data=newData;
@@ -1460,6 +1284,186 @@ function drawChart(data) {
   myChart.setOption(option);
 
 }
+/***************************************图表数据-结束***************************************/
+// 筛选条件点击筛选
+function statusClick(dataArr){
+
+  var value = '全部',value1= '全部';
+
+  var maintainArr = ['苹果大数据后台管理系统','苹果大数据大屏展示项目'];
+  $('.status-list span').click(function () {
+    var statusArr=[];
+    $('#listWrapper').html('');
+    $('.keyword-list span').removeClass('active');
+    $(this).addClass('active').siblings().removeClass('active');
+    value = $(this).text();
+    if (typeArrData.length > 0) {
+      if(value !== '全部') {
+        if(value == '维护中'){
+          typeArrData.forEach(function(item,index){
+            maintainArr.forEach(function(item1){
+              if(item1 == item.base.name){
+                statusArr.push(item)
+              }
+            })
+          })
+        }
+        typeArrData.forEach(function(item,index){
+          if(item.schedule.status == value) {
+            statusArr.push(item)
+          }
+        })
+        statusArrData = statusArr;
+        if (statusArr.length > 0){
+          statusArr.sort(function (a, b) {
+            return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
+          });
+          statusArr.forEach(function(item,index){
+            renderData (item,index)
+          })
+        }else {
+          var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
+          $('#listWrapper').append(html);
+        }
+
+      }else {
+        statusArrData = dataArr;
+        typeArrData.sort(function(a,b){
+          return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
+        })
+        typeArrData.forEach(function(item,index){
+          renderData (item,index)
+        })
+      }
+    }else {
+      if(value !== '全部') {
+        if(value == '维护中'){
+          dataArr.forEach(function(item,index){
+            maintainArr.forEach(function(item1){
+              if(item1 == item.base.name){
+                statusArr.push(item)
+              }
+            })
+          })
+        }
+        dataArr.forEach(function(item,index){
+          if(item.schedule.status == value) {
+            statusArr.push(item)
+          }
+        })
+        statusArrData = statusArr;
+        if (statusArr.length > 0){
+          statusArr.sort(function (a, b) {
+            return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
+          });
+          statusArr.forEach(function(item,index){
+            renderData (item,index)
+          })
+        }else {
+          var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
+          $('#listWrapper').append(html);
+        }
+        // 筛选出进度异常的数据
+        var abnormalArr = [];
+        dataArr.forEach(function(item){
+          var processAA = getProcess(item.schedule.estimatedStartTime,item.schedule.estimatedEndTime,item.schedule.process,item.schedule.status);
+          if (!processAA){
+            abnormalArr.push(item)
+          }
+        })
+        if(value == '进度异常'){
+          $('#listWrapper').html('');
+          if(abnormalArr.length > 0){
+            abnormalArr.sort(function (a, b) {
+              return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
+            });
+            abnormalArr.forEach(function(item,index){
+              renderData (item,index)
+            })
+          }else {
+            var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
+            $('#listWrapper').append(html);
+          }
+        }
+      }else {
+        statusArrData = dataArr;
+        if (value1 == '全部'){
+          dataArr.forEach(function(item,index){
+            renderData (item,index)
+          })
+        }
+      }
+    }
+  });
+  $('.type-list span').click(function (){
+    var typeArr=[];
+    $('#listWrapper').html('');
+    $('.keyword-list span').removeClass('active');
+    $(this).addClass('active').siblings().removeClass('active');
+    value1 = $(this).text();
+
+    if(statusArrData.length > 0){
+      if(value1 !== '全部') {
+        statusArrData.forEach(function(item,index){
+          if(item.resources.type == value1) {
+            typeArr.push(item)
+          }
+        })
+        typeArrData = typeArr;
+        if (typeArr.length > 0){
+          typeArr.sort(function (a, b) {
+            return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
+          });
+          typeArr.forEach(function(item,index){
+            renderData (item,index)
+          })
+        }else {
+          var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
+          $('#listWrapper').append(html);
+        }
+      }else {
+        typeArrData = dataArr;
+        statusArrData.sort(function (a, b) {
+          return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
+        });
+        statusArrData.forEach(function(item,index){
+          renderData (item,index)
+        })
+      }
+    }else {
+      if(value1 !== '全部') {
+        dataArr.forEach(function(item,index){
+          if(item.resources.type == value1) {
+            typeArr.push(item)
+          }
+        })
+        typeArrData = typeArr;
+        if (typeArr.length > 0){
+          typeArr.sort(function (a, b) {
+            return parseInt(b.schedule.actualStartTime.replace(/-/g, ''), 10) - parseInt(a.schedule.actualStartTime.replace(/-/g, ''), 10);//降序
+          });
+          typeArr.forEach(function(item,index){
+            renderData (item,index)
+          })
+        }else {
+          var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
+          $('#listWrapper').append(html);
+        }
+      }else {
+        typeArrData = dataArr;
+        if(value == '全部'){
+          dataArr.forEach(function(item,index){
+            renderData (item,index)
+          })
+        }
+
+      }
+    }
+  });
+
+
+}
+
 //点击显示项目-人员关系图谱
 $('#force-modal').on('click',function(){
   $('#myModal').modal();
@@ -1499,4 +1503,202 @@ function keyword(data){
   })
 }
 
+/******************************搜索功能实现*******************************/
+// 阻止按上方向键时，光标移动到前面
+$('#inputVal').keydown(function(event){
+  var myEvent = event || window.event;
+  var keyCode = myEvent.keyCode;
+  if (keyCode === 38 || keyCode === 40) {
+    myEvent.preventDefault();
+  }
+});
+// 搜索框inputkeyup事件
+$('#inputVal').keyup(function(event){
+  var myEvent = event || window.event;
+  var keyCode = myEvent.keyCode;
+  //我们可以用jQuery的event.timeStamp来标记时间，这样每次的keyup事件都会修改lastTime的值，lastTime必需是全局变量
+  lastTime = event.timeStamp;
+  var inputVal = $('#inputVal').val();
+  if (keyCode === 38 || keyCode === 40) {
+    if(keyCode === 40){//向下
+      var liTags = $('#searchList').children('li');
+      if(highlightindex !== -1){
+        liTags.eq(highlightindex).removeClass('active');
+      }
+      highlightindex++;
+      var comText = liTags.eq(highlightindex).children('.project-name').text();
+      $("#inputVal").val(comText);
+      if(highlightindex == liTags.length){
+        highlightindex = 0;
+      }
+      liTags.eq(highlightindex).addClass('active');
+    }
+    if(keyCode === 38){//向上
+      var liTags = $('#searchList').children('li');
+
+      if(highlightindex !== -1){
+        liTags.eq(highlightindex).removeClass('active');
+        highlightindex--;
+        var comText = liTags.eq(highlightindex).children('.project-name').text();
+        $("#inputVal").val(comText);
+      }else {
+        highlightindex = liTags.length - 1;
+      }
+      if (highlightindex === -1) {
+        highlightindex = liTags.length - 1;
+      }
+      liTags.eq(highlightindex).addClass('active');
+
+    }
+  }else if(myEvent.keyCode === 13){
+    if (highlightindex !== -1) {
+      var comText = $("#searchList").hide().children("li").eq(highlightindex).children('.project-name').text();
+      highlightindex = -1;
+      $("#inputVal").val(comText);
+    }
+    searchBtn();
+  }else {
+    if(!inputVal){
+      $('#searchList').removeClass('active');
+    }else {
+      $('#searchList').removeClass('active').html('');
+      setTimeout(function(){
+        //如果时间差为0，也就是你停止输入0.5s之内都没有其它的keyup事件产生，这个时候就可以去请求服务器了
+        if(lastTime - event.timeStamp == 0){
+            getSearchList(inputVal);
+        }
+      },300);
+    }
+  }
+});
+// 获取模糊查询搜索框下拉列表、查询结果列表
+function getSearchList(inputVal){
+    var searchList=[];
+    // 筛选条件筛选数据
+    var statusVal = '',typeVal='';
+    $('.status-list span').each(function(item,element){
+      if($(element).hasClass('active')){
+        statusVal = $(element).text();
+      }
+    });
+    $('.type-list span').each(function(item,element){
+      if($(element).hasClass('active')){
+        typeVal = $(element).text();
+      }
+    });
+    if(statusVal == '全部' && typeVal == '全部'){
+      searchBigArr = dataArr;
+    }else if(statusVal != '全部'){
+      searchBigArr = typeArrData;
+    }else if(typeVal != '全部'){
+      searchBigArr = statusArrData;
+    }
+    //渲染搜索下拉列表
+    searchBigArr.forEach(function(item,index){
+      var proName = item.base.name;
+      var peopleArr = item.resources.affiliate.concat(item.resources.charge);
+      var affArr = [];
+      if(proName.indexOf(inputVal) > -1){
+        searchList.push({proName:proName,name:''});
+      }else {
+        var str = peopleArr.join(',');
+        peopleArr.forEach(function(item1,index1){
+          if(item1.indexOf(inputVal) > -1){
+            affArr.push(item1);
+          }
+        });
+        if(affArr.length>0){
+          if(str.indexOf(inputVal) > -1){
+            searchList.push({proName:proName,name:affArr});
+          }
+        }
+      }
+    });
+   if(searchList.length>0){
+     searchListHtml(searchList);
+   }
+}
+// 模糊查询下拉框列表展示
+function searchListHtml(searchList){
+  var html='';
+  for (var i = 0; i<searchList.length;i++){
+    html +='<li id="'+i+'">'
+      +'<a class="project-name">'+searchList[i].proName+'</a>'
+      +'<a class="project-people-name">'+searchList[i].name+'</a>'
+      +'</li>';
+  }
+  $('#searchList').addClass('active').append(html);
+  var liTag = $('#searchList').children('li');
+  //鼠标移入下拉框添加样式
+  liTag.mouseover(function(e){
+    if (highlightindex != -1) { //原来高亮的节点要取消高亮（是-1就不需要了）
+      liTag.eq(highlightindex).removeClass('active');
+    }
+    //记录新的高亮节点索引
+    highlightindex = e.target.id;
+    liTag.eq(highlightindex).addClass('active');
+  });
+  //鼠标移出下拉框添加样式
+  liTag.mouseout(function(e){
+    liTag.eq(e.target.id).removeClass('active');
+  });
+  //鼠标点击下拉框
+  $('#searchList li').click(function() {
+    //取出高亮节点的文本内容
+    var comText = $(this).children('.project-name').text();
+    highlightindex = -1;
+    //文本框中的内容变成高亮节点的内容
+    $("#inputVal").val(comText);
+    searchBtn();
+  })
+}
+// input搜索框获取焦点时，搜索按钮和父级边框选中
+function inputFocus() {
+  $('.search-box').addClass('active')
+}
+// 点击搜索按钮渲染页面列表数据
+function searchBtn(){
+  var arrList=[];
+  var inputVal = $('#inputVal').val();
+  $('#inputVal').blur();
+  searchBigArr.forEach(function(item,index){
+    var proName = item.base.name;
+    var peopleArr = item.resources.affiliate.concat(item.resources.charge);
+    if(proName.indexOf(inputVal) > -1){
+      arrList.push(item)
+    }else {
+      peopleArr.forEach(function(item1,index1){
+        if(item1.indexOf(inputVal) > -1){
+          arrList.push(item)
+        }
+      })
+    }
+  });
+  $('#listWrapper').html('');
+  $('#searchList').removeClass('active');
+  $('.search-box').removeClass('active');
+  highlightindex = -1;
+  if(arrList.length > 0){
+    arrList.forEach(function(item,index){
+      renderData (item,index)
+    })
+  }else {
+    var html = '<li><p class="no-result">没有符合条件的数据！</p></li>';
+    $('#listWrapper').append(html);
+  }
+
+}
+//点击页面隐藏自动补全提示框
+document.onclick = function(e) {
+  var e = e ? e : window.event;
+  var tar = e.srcElement || e.target;
+  if (tar.id != "inputVal") {
+    $('#inputVal').blur();
+    $('.search-box').removeClass('active');
+    if ($("#searchList").hasClass('active')) {
+      $("#searchList").removeClass('active');
+    }
+  }
+}
+/******************************搜索功能实现-结束*******************************/
 

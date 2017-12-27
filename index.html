@@ -21,6 +21,7 @@
 	<!--<link rel="stylesheet" href="index/css/index.css" >-->
 	<!-- /本地调试方式 -->
 	<link rel="stylesheet" href="static/css/lib/bootstrap.min.css" >
+	<link rel="stylesheet" href="static/css/lib/bootstrap-submenu.min.css" >
 	<link rel="stylesheet" href="static/font/iconfont.css" >
 	<link rel="stylesheet" href="static/raty/demo/css/application.css" >
 	<link rel="stylesheet" href="static/css/reset.css" >
@@ -39,15 +40,67 @@
 			</button>
 			<a class="navbar-brand logo" href="#">九次方前端</a>
 		</div>
-		<div class="navbar-collapse collapse ">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="https://jusfoun-fe.github.io/index.html#services ">前端规范</a></li>
-				<li><a href="https://jusfoun-fe.github.io/index.html#portfolio ">团队介绍</a></li>
-				<li><a href="https://jusfoun-fe.github.io/index.html#contact">加入我们</a></li>
-				<li><a href="https://jusfoun-fe.github.io/news.html" title="" target="_blank">新闻周刊</a></li>
-				<li><a href="https://jusfoun-fe.github.io/doc.html" target="_blank" id="priInfo">内部资料</a></li>
-				<li><a href="https://jusfoun-fe.github.io/Project.html" target="_blank">前端项目</a></li>
-				<li class="active"><a href="https://jusfoun-fe.github.io/projectManage/" target="_blank">项目管理</a></li>
+		<div id="navbar-collapse" class="navbar-collapse collapse ">
+			<ul class="nav navbar-nav">
+				<li class="dropdown" >
+					<a  href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle" data-submenu>规范须知<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="https://jusfoun-fe.github.io/index.html#services" target="_blank">代码规范</a></li>
+						<li><a href="https://jusfoun-fe.github.io/doc.html#dailySpecification" target="_blank">日常规范</a></li>
+						<li><a href="https://jusfoun-fe.github.io/doc.html#rules" target="_blank">入职注意事项</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)"  data-toggle="dropdown" class="dropdown-toggle"  data-submenu>学习共享<b class="caret"></b></a>
+					<ul class="dropdown-menu" >
+
+						<li class="dropdown-submenu">
+							<a href="javascript:void(0)" >技术提升</a>
+							<ul class="dropdown-menu">
+								<li><a href="https://jusfoun-fe.github.io/doc.html#cultivate" target="_blank">培训计划</a></li>
+								<li><a href="https://jusfoun-fe.github.io/news.html" target="_blank">技术周刊</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a href="javascript:void(0)">组件/工具</a>
+							<ul class="dropdown-menu">
+								<li><a href="javascript:void(0)">脚本库</a></li>
+								<li><a href="https://zhu18.github.io/visualcontrols/#/map3d/world" target="_blank">可视化组件</a></li>
+								<li><a href="http://img.9cfcf.com/#tp-scatter" target="_blank">图表配置</a></li>
+								<li><a href="https://jusfoun-fe.github.io/projectManage/analysis.html" target="_blank">工作量计算</a></li>
+								<li><a href="http://192.168.1.6:8765/texiao/" target="_blank">特效</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a href="javascript:void(0)" >信息反馈</a>
+							<ul class="dropdown-menu">
+								<li><a href="https://jusfoun-fe.github.io/doc.html#questionnaire" target="_blank">组件库调查</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)"  data-toggle="dropdown" class="dropdown-toggle" data-submenu>项目管理<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu"><a href="javascript:void(0)" >实施方案</a>
+							<ul class="dropdown-menu">
+								<li><a href="https://jusfoun-fe.github.io/doc.html#bugSuperviseScheme" target="_blank">bug监管方案</a></li>
+								<li><a href="https://jusfoun-fe.github.io/doc.html#qualitySupervision" target="_blank">质量监管方案</a></li>
+								<li><a href="https://jusfoun-fe.github.io/doc.html#staticPage" target="_blank">前端静态化方案</a></li>
+							</ul>
+						</li>
+						<li><a href="https://jusfoun-fe.github.io/Project.html" target="_blank">静态化项目</a></li>
+						<li><a href="https://jusfoun-fe.github.io/projectManage/" target="_blank">项目总览</a></li>
+					</ul>
+
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)"  data-toggle="dropdown" class="dropdown-toggle" data-submenu>关于我们<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="https://jusfoun-fe.github.io/index.html#portfolio" target="_blank">团队介绍</a></li>
+						<li><a href="https://jusfoun-fe.github.io/index.html#contact" target="_blank">加入我们</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -88,6 +141,26 @@
 
 		</div>
 		<div class="list-wrapper col-lg-8 col-lg-pull-4 col-md-12 col-sm-12">
+			<div class="search-wrapper">
+				<div class="search-box row">
+					<input id="inputVal" placeholder="请输入项目名称/参与人名字" class="col-lg-11 col-sm-11 col-xs-11" onfocus="inputFocus()">
+					<a class="col-lg-1 col-sm-1 col-xs-1 search-btn" onclick="searchBtn()"><i class="icon iconfont icon-sousuo1"></i></a>
+				</div>
+				<ul class="search-list" id="searchList"></ul>
+			</div>
+			<ul class="keyword">
+				<li class="clearfix">
+					<span class="condition-title">关键词：</span>
+					<div class="condition-list keyword-list">
+						<span>苹果</span>
+						<span>河蟹</span>
+						<span>小场景</span>
+						<span>一带一路</span>
+						<span>政务</span>
+						<span>泸州</span>
+					</div>
+				</li>
+			</ul>
 			<ul class="condition-wrapper">
 				<li class="clearfix row">
 					<span class="condition-title">项目状态：</span>
@@ -111,19 +184,6 @@
 						<span>合资公司</span>
 						<span>总部平台</span>
 						<span>内部研发平台</span>
-					</div>
-				</li>
-			</ul>
-			<ul class="keyword">
-				<li class="clearfix">
-					<span class="condition-title">关键词：</span>
-					<div class="condition-list keyword-list">
-						<span>苹果</span>
-						<span>河蟹</span>
-						<span>小场景</span>
-						<span>一带一路</span>
-						<span>政务</span>
-						<span>泸州</span>
 					</div>
 				</li>
 			</ul>
@@ -156,6 +216,7 @@
 <script src="static/js/lib/jquery.min.js"></script>
 <script src="static/js/lib/echarts.js"></script>
 <script src="static/js/lib/bootstrap.min.js"></script>
+<script src="static/js/lib/bootstrap-submenu.min.js"></script>
 <script src="static/raty/lib/jquery.raty.js"></script>
 <script src="static/js/index.js"></script>
 </body>
