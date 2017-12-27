@@ -15,7 +15,7 @@
     "process": 100,
     "delay": true,
     "technology":["jQuery","Layui"],
-    "pages":33,                           
+    "pages":60,                           
     "score":"暂无"                      
   },
   "resources": {
