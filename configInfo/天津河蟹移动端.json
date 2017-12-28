@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-09-11",
     "estimatedEndTime": "2017-12-31",
-    "process": 93,                      
+    "process": 96,                      
     "delay": false,
     "technology":["vuejs"],
     "pages":45,                           
@@ -27,9 +27,9 @@
     "average":1
   },
   "bug": {
-    "total": 13,                     
-    "resolved": 12,                  
-    "unsolved": 1                   
+    "total": 0,                     
+    "resolved": 0,                  
+    "unsolved": 0                   
   },
   "others": {
     "remark": "用户名:visitor,密码:123456,服务端连接的后台同事的电脑，所以可能会不稳定，由于3个端的BUG都提在一起没办法区分PC和移动，目前只能统计未改的BUG"
