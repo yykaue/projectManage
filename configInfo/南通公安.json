@@ -23,7 +23,8 @@
     "type":"总部平台",
     "manager":"马国杰",
     "charge": "柳杨",
-    "affiliate": []
+    "affiliate": [],
+    "average":1
   },
   "bug": {
     "total": 50,
