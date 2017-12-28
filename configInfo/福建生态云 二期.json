@@ -2,19 +2,19 @@
   "base": {
     "name": "福建生态云 二期",
     "url": "http://192.168.1.6:8124/ecology_v2/index.html",
-    "desc": "二期开发中",
+    "desc": "",
     "mobile": false
   },
   "schedule": {
-    "status": "开发中",
+    "status": "已完成",
     "actualStartTime": "2017-08-18",
     "actualEndTime": "2017-11-03",
     "estimatedStartTime": "2017-08-18",
     "estimatedEndTime": "2017-11-03",
-    "process": 90,
+    "process": 100,
     "delay": false,
     "technology": ["vue"],
-    "pages":0,
+    "pages":4,
     "score":"暂无"
   },
   "resources": {
@@ -22,7 +22,8 @@
     "type":"合资公司",
     "manager":"陈志丹",
     "charge": "任新杰",
-    "affiliate": []
+    "affiliate": [],
+    "average":2
   },
   "bug": {
     "total": 0,
@@ -30,6 +31,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": "一期跟客户对接需求，已暂停开发，现开发二期"
+    "remark": ""
   }
 }
