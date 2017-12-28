@@ -11,7 +11,7 @@
     "actualEndTime": "",    
     "estimatedStartTime": "2017-12-21", 
     "estimatedEndTime": "2017-12-29",   
-    "process": 10,                     
+    "process": 80,                     
     "delay": false,                      
     "technology":[],
     "pages":0,                           
