@@ -12,7 +12,7 @@
     "actualEndTime": "",
     "estimatedStartTime": "2017-11-23",
     "estimatedEndTime": "",
-    "process":90, 
+    "process":100, 
     "delay": false,
     "technology":["vue","element-ui","echarts"],
     "pages":4,
@@ -23,7 +23,8 @@
     "type":"独立纵队",
     "manager":"",
     "charge": "杨微",
-    "affiliate": [""]
+    "affiliate": [""],
+    "average":1
   },
   "bug": {
     "total": 0,
