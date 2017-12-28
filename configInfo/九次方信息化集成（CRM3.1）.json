@@ -1,0 +1,36 @@
+{
+  "base": {
+    "name": "九次方信息化集成（CRM3.1）",
+    "url": "http://192.168.1.6:8124/jusfounManagementSystem/index.html",
+    "desc": "",                          
+    "mobile":false                      
+  },
+  "schedule": {
+    "status": "开发中",                  
+    "actualStartTime": "2017-12-26",    
+    "actualEndTime": "未定",      
+    "estimatedStartTime": "2017-12-26", 
+    "estimatedEndTime": "2018-01-12",   
+    "process": 5,
+    "delay": false,                      
+    "technology":["jquery","layui","echarts","gulp"],
+    "pages":20,
+    "score":"暂无"
+  },
+  "resources": {
+    "demander": "",                     
+    "type":"内部研发平台",				            
+    "manager":"王远",                 
+    "charge": "杨羽珂",                  
+    "affiliate": ["杜万福"],
+    "average": 2
+  },
+  "bug": {
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0                     
+  },
+  "others": {
+    "remark": "因业务方有新增需求，需要在CRM3.0基础上迭代CRM3.1，新增功能和修改之前部分内容"
+  }
+}
