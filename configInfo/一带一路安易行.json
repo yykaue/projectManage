@@ -15,7 +15,7 @@
     "delay": false,                      
     "technology":["vue","mint-ui","webSocket"],
     "pages":68,                           
-    "score":"暂无",                      
+    "score":"5",                      
     "scoreUrl":""      
   },
   "resources": {
