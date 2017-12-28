@@ -12,9 +12,9 @@
     "actualEndTime": "未定",
     "estimatedStartTime": "2017-12-15",
     "estimatedEndTime": "2017-12-30",
-    "process":90,
+    "process":95,
     "delay": false,                     
-    "technology":["IE8兼容模板","layui"],
+    "technology":["IE8兼容模板","layui","kindeditor"],
     "pages":38
   },
   "resources": {
@@ -26,11 +26,11 @@
     "average":4
   },
   "bug": {
-    "total": 0,            
-    "resolved": 0,         
-    "unsolved": 0           
+    "total": 44,            
+    "resolved": 43,         
+    "unsolved": 1           
   },
   "others": {
-    "remark": "账户名(zmfy),密码(111111)"     
+    "remark": "账户名(root),密码(root)"     
   }
 }
