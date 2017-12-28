@@ -15,8 +15,7 @@
     "delay": false,
     "technology":["VUE","echarts"],
     "pages": 10,
-    "score":"5",
-    "scoreUrl":""
+    "score":5
   },
   "resources": {
     "demander": "",
