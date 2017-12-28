@@ -7,7 +7,7 @@
     "scene":false                         
   },
   "schedule": {
-    "status": "已完成",                  
+    "status": "已提测",                  
     "actualStartTime": "2017-10-31",    
     "actualEndTime": "2017-12-22",      
     "estimatedStartTime": "2017-10-16", 
@@ -32,6 +32,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "后台管理模块：已完成。企业专题：已完成。"                 
+    "remark": "后台管理模块：已完成。企业专题：进行页面优化。"                 
   }
 }
