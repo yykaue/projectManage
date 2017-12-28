@@ -6,8 +6,8 @@
     "mobile":false
   },
   "schedule": {
-    "status": “开发中”,
-    "actualStartTime": "2017-12-28”,
+    "status": "开发中”,
+    "actualStartTime": "2017-12-28",
     "actualEndTime": "",
     "estimatedStartTime": "2017-12-28",
     "estimatedEndTime": "",
@@ -32,6 +32,6 @@
     "unsolved": 0
   },
   "others": {
-    "remark": “12-27下班给的新增需求，需求尚不明确，已邮件询问”
+    "remark": "12-27下班给的新增需求，需求尚不明确，已邮件询问"
   }
 }
