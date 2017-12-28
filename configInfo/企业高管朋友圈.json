@@ -7,7 +7,7 @@
     "scene":true
   },
   "schedule": {
-    "status": "开发完成",    
+    "status": "已完成",    
     "actualStartTime": "2017-12-04", 
     "actualEndTime": "2017-12-26",
     "estimatedStartTime": "2017-12-04", 
