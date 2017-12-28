@@ -1,0 +1,37 @@
+{
+  "base": {
+    "name": "湖北省安全生产事故决策支持系统调整",
+    "url": "http://192.168.200.11:7080/dist/#/login",
+    "desc": "",
+    "mobile":false
+  },
+  "schedule": {
+    "status": “开发中”,
+    "actualStartTime": "2017-12-28”,
+    "actualEndTime": "",
+    "estimatedStartTime": "2017-12-28",
+    "estimatedEndTime": "",
+    "process": 0,
+    "delay": false,
+    "technology":["VUE","echarts"],
+    "pages": 2,
+    "score":"暂无",
+    "scoreUrl":""
+  },
+  "resources": {
+    "demander": "",
+    "type":"",
+    "manager":"胡曙",
+    "charge": "徐媛媛",
+    "affiliate": ["邹非凡"],
+    "average": 2
+  },
+  "bug": { 
+    "total": 0,
+    "resolved": 0,
+    "unsolved": 0
+  },
+  "others": {
+    "remark": “12-27下班给的新增需求，需求尚不明确，已邮件询问”
+  }
+}
