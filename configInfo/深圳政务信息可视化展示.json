@@ -7,12 +7,12 @@
     "scene":false                         
   },
   "schedule": {
-    "status": "已提测",                  
+    "status": "已完成",                  
     "actualStartTime": "2017-10-31",    
-    "actualEndTime": "2017-12-31",      
+    "actualEndTime": "2017-12-22",      
     "estimatedStartTime": "2017-10-16", 
-    "estimatedEndTime": "2017-12-24",   
-    "process": 96,                      
+    "estimatedEndTime": "2017-12-31",   
+    "process": 100,                      
     "delay": false,                      
     "technology":["jquery","vue","element"],
     "pages":124,
@@ -32,6 +32,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "后台管理模块：暂停开发。企业专题：目前根据客户需求进行页面优化。"                 
+    "remark": "后台管理模块：已完成。企业专题：已完成。"                 
   }
 }
