@@ -7,15 +7,15 @@
     "scene":true
   },
   "schedule": {
-    "status": "开发中",    
+    "status": "开发完成",    
     "actualStartTime": "2017-12-04", 
-    "actualEndTime": "未定",
-    "estimatedStartTime": "未定", 
-    "estimatedEndTime": "未定", 
-    "process":90,                      
+    "actualEndTime": "2017-12-26",
+    "estimatedStartTime": "2017-12-04", 
+    "estimatedEndTime": "2017-12-26", 
+    "process":100,                      
     "delay": false,                     
     "technology":["vue","echarts"], 
-    "pages":7            
+    "pages":12            
   },
   "resources": {
     "demander": "九次方大数据",   
