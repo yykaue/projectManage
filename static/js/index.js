@@ -8,6 +8,7 @@ $(function () {
   $('[data-submenu]').submenupicker();
   //getData();
   getInitData();
+  navEvent();
 });
 function getInitData(){
   $.getJSON('static/output.json',function(res){
@@ -454,9 +455,11 @@ function getEchartData(data){
     }else if(item.schedule.status == '已提测') {
       measured += 1;
       measuredArr.push(item.base.name)
-      bugData.name.push(item.base.name);
-      bugData.resolved.push(item.bug.resolved);
-      bugData.unsolved.push(item.bug.unsolved);
+      if(item.bug.resolved){
+        bugData.name.push(item.base.name);
+        bugData.resolved.push(item.bug.resolved);
+        bugData.unsolved.push(item.bug.unsolved);
+      }
       staffInput1.name.push(item.base.name);
       if(item.resources.charge){
         if(item.resources.affiliate.length === 1 && !item.resources.affiliate[0]){
@@ -1702,3 +1705,21 @@ document.onclick = function(e) {
 }
 /******************************搜索功能实现-结束*******************************/
 
+//菜单滑入滑出事件
+function navEvent(){
+  $('.nav .dropdown').mouseover(function(){
+    $(this).addClass('open').siblings().removeClass('open');
+  });
+  $('.nav .dropdown').mouseout(function(){
+    $(this).removeClass('open');
+  });
+  $('.dropdown-submenu').mouseover(function(){
+    $(this).addClass('open').siblings().removeClass('open');
+  });
+  $('.dropdown-submenu').mouseout(function(){
+    $(this).removeClass('open');
+  });
+  $('.dropdown-menu').mouseout(function () {
+    $(this).parents('.dropdown').removeClass('open');
+  });
+}
