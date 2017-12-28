@@ -140,6 +140,10 @@ body {
 .navbar-collapse.in {
     overflow: hidden;
 }
+.caret {
+    margin-left: 4px;
+}
+
 @media (max-width: 767px){
     .container {
         padding: 0;
@@ -243,7 +247,7 @@ body {
 }
 
 .list-wrapper {
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .list-li {
     position: relative;
@@ -771,7 +775,8 @@ a.bug:hover {
 }
 .search-box:hover,
 .search-box.active{
-    border: 1px solid  #EB5055;
+    border: 1px solid  rgba(235,80,85,.65);
+    box-shadow: 0 2px 15px 0 rgba(235,80,85,.35);
 }
 
 .edit-btn {

@@ -1555,7 +1555,7 @@ $('#inputVal').keyup(function(event){
     }
   }else if(myEvent.keyCode === 13){
     if (highlightindex !== -1) {
-      var comText = $("#searchList").hide().children("li").eq(highlightindex).children('.project-name').text();
+      var comText = $("#searchList").children("li").eq(highlightindex).children('.project-name').text();
       highlightindex = -1;
       $("#inputVal").val(comText);
     }
@@ -1565,15 +1565,19 @@ $('#inputVal').keyup(function(event){
       $('#searchList').removeClass('active');
     }else {
       $('#searchList').removeClass('active').html('');
-      setTimeout(function(){
+      _timer && clearTimeout(_timer);
+      _timer=setTimeout(function(){
+      //console.time('search')
         //如果时间差为0，也就是你停止输入0.5s之内都没有其它的keyup事件产生，这个时候就可以去请求服务器了
         if(lastTime - event.timeStamp == 0){
             getSearchList(inputVal);
         }
-      },300);
+      //console.timeEnd('search')
+      },0);
     }
   }
 });
+var _timer=null;
 // 获取模糊查询搜索框下拉列表、查询结果列表
 function getSearchList(inputVal){
     var searchList=[];
@@ -1638,8 +1642,7 @@ function searchListHtml(searchList){
       liTag.eq(highlightindex).removeClass('active');
     }
     //记录新的高亮节点索引
-    highlightindex = e.target.id;
-    liTag.eq(highlightindex).addClass('active');
+    liTag.eq(e.target.id).addClass('active');
   });
   //鼠标移出下拉框添加样式
   liTag.mouseout(function(e){
