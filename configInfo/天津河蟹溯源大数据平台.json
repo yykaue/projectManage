@@ -11,7 +11,7 @@
     "actualEndTime": "",      
     "estimatedStartTime": "2017-10-30",
     "estimatedEndTime": "2017-12-31",
-    "process": 95,                      
+    "process": 98,                      
     "delay": false,
     "technology":["vuejs"],
     "pages":10,
@@ -27,8 +27,8 @@
     "average":1
   },
   "bug": {
-    "total": 3,                     
-    "resolved": 3,                  
+    "total": 0,                     
+    "resolved": 0,                  
     "unsolved": 0                     
   },
   "others": {
