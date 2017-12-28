@@ -21,7 +21,8 @@
     "type":"独立纵队",			
     "manager":"黄建鹏",
     "charge": "闫磊",
-    "affiliate": [""]
+    "affiliate": [""],
+    "average":1
   },
   "bug": {
     "total": 0,
