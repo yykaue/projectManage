@@ -23,7 +23,8 @@
     "type":"独立纵队",				      
     "manager":"栾新瑞",                
     "charge": "闫磊",                 
-    "affiliate": ["郭志敏","褚甜甜","温兴月","李耀"]      
+    "affiliate": ["郭志敏","褚甜甜","温兴月","李耀"],
+    "average":5
   },
   "bug": {
     "total": 0, 
