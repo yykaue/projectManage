@@ -21,7 +21,8 @@
     "type":"合资公司",				           
     "manager":"柴成",                  
     "charge": "李妮",                  
-    "affiliate": []       
+    "affiliate": [],
+     "average": 1
   },
   "bug": {
     "total": 0,                     
