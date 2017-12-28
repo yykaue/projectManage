@@ -660,7 +660,7 @@ function chart2(data) {
     xAxis :
       {
         type : 'value',
-        max:data.seriesData[data.seriesData.length -1].value + 3,
+        max:data.seriesData[data.seriesData.length -1].value + 4,
         axisTick: {
           show:false
         },
