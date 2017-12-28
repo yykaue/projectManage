@@ -121,6 +121,10 @@ body {
 .header-wrapper .navbar-nav>li .dropdown-menu li:hover>a {
     color: #fff;
     background-color: #EB5055;
+    transition:all .3s;
+    -moz-transition:all .3s;
+    -webkit-transition:all .3s;
+    -o-transition:all .3s;
 }
 .navbar-nav {
     float: right;
