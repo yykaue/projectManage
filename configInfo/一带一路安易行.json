@@ -15,8 +15,7 @@
     "delay": false,                      
     "technology":["vue","mint-ui","webSocket"],
     "pages":68,                           
-    "score":"5",                      
-    "scoreUrl":""      
+    "score":5     
   },
   "resources": {
     "demander": "中交星宇科技有限公司",                    
