@@ -23,7 +23,8 @@
     "type":"合资公司",				           
     "manager":"周英",                  
     "charge": "李妮",                  
-    "affiliate": [""]       
+    "affiliate": [""],
+     "average": 1
   },
   "bug": {
     "total": 0,                     
