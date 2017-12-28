@@ -5,14 +5,14 @@
     "desc": ""                                         
   },
   "schedule": {
-    "status": "开发中",                  
+    "status": "已完成",                  
     "actualStartTime": "2017-11-03",    
     "actualEndTime": "2017-12-17",     
     "estimatedStartTime": "2017-11-03", 
     "estimatedEndTime": "2017-12-17",  
     "process": 100,                      
     "delay": false,                     
-    "technology":[""],
+    "technology":["JEECMS"],
     "pages":12,
     "score":"暂无",
     "scoreUrl":""
@@ -20,9 +20,10 @@
   "resources": {
     "demander": "",                     
     "type":"合资公司",				           
-    "manager":"",                  
+    "manager":"李哲",                  
     "charge": "汝银娟",                  
-    "affiliate": []       
+    "affiliate": [],
+    "average":1       
   },
   "bug": {
     "total": 0,                     
@@ -30,6 +31,6 @@
     "unsolved": 0                     
   },
   "others": {
-    "remark": "已上线，最近还有需要修改的新需求"                  
+    "remark": "已上线"                  
   }
 }
