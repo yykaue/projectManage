@@ -11,7 +11,7 @@
     "actualEndTime": "未定",      
     "estimatedStartTime": "2017-12-26", 
     "estimatedEndTime": "2018-01-12",   
-    "process": 5,
+    "process": 15,
     "delay": false,                      
     "technology":["jquery","layui","echarts","gulp"],
     "pages":20,
